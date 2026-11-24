@@ -31,7 +31,8 @@ def audit(selection_path):
             hashes.add(rgb_hash)
             if pair["scene_id"] != entry["scene"]:
                 raise ValueError(f"Unexpected scene ID at {entry['scene']}")
-            target, truth = next(iter(pair["pairs"].items()))
+            target = entry["target"] if "target" in entry else next(iter(pair["pairs"]))
+            truth = pair["pairs"][target]
             if truth != entry["label"]:
                 raise ValueError(f"Unexpected label at {entry['scene']}")
             point = np.array(pair["targets"][target]["position_m"])

@@ -1,0 +1,23 @@
+{
+  "threshold": 83.0,
+  "results": {
+    "train": {
+      "localization_failures": 0,
+      "image_pair_accuracy": 0.99609375,
+      "oracle_pointcloud_pair_accuracy": 1.0,
+      "total_pairs": 256
+    },
+    "dev": {
+      "localization_failures": 0,
+      "image_pair_accuracy": 1.0,
+      "oracle_pointcloud_pair_accuracy": 1.0,
+      "total_pairs": 64
+    },
+    "test": {
+      "localization_failures": 0,
+      "image_pair_accuracy": 1.0,
+      "oracle_pointcloud_pair_accuracy": 1.0,
+      "total_pairs": 160
+    }
+  }
+}

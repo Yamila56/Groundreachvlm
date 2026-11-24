@@ -1,0 +1,11 @@
+{
+  "layouts": 24,
+  "views": 48,
+  "queries": 192,
+  "checked_earlier_rgb": true,
+  "manifest_sha256": "b6d69acb81cf9b5856f4214541746da3c13181b5194edd2ff5f3a47286242e6a",
+  "max_replay_error_m": 0.001285661303814563,
+  "min_bound_margin_m": 0.27313625131859154,
+  "reachable_witnesses": 96,
+  "unreachable_bounds": 96
+}

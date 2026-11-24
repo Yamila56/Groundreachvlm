@@ -1,0 +1,53 @@
+{
+  "all": {
+    "count": 32,
+    "prompts": {
+      "original": {
+        "confusion": {
+          "Y-Y": 16,
+          "N-Y": 16
+        },
+        "scores": {
+          "margin": 16,
+          "marker_margin": 16
+        }
+      },
+      "explicit": {
+        "confusion": {
+          "Y-Y": 16,
+          "N-Y": 16
+        },
+        "scores": {
+          "margin": 19,
+          "marker_margin": 16
+        }
+      }
+    }
+  },
+  "unambiguous": {
+    "count": 32,
+    "prompts": {
+      "original": {
+        "confusion": {
+          "Y-Y": 16,
+          "N-Y": 16
+        },
+        "scores": {
+          "margin": 16,
+          "marker_margin": 16
+        }
+      },
+      "explicit": {
+        "confusion": {
+          "Y-Y": 16,
+          "N-Y": 16
+        },
+        "scores": {
+          "margin": 19,
+          "marker_margin": 16
+        }
+      }
+    }
+  },
+  "excluded": []
+}

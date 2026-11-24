@@ -1,0 +1,210 @@
+{
+  "alignment": {
+    "target_region_chroma": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 384
+        },
+        "confusion": {
+          "Y-Y": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 192
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 192
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 96
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      }
+    },
+    "workspace_point_cloud": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 384
+        },
+        "confusion": {
+          "Y-Y": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 192
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 192
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 96
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      }
+    },
+    "global_map_chroma": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-N": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-N": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-N": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "alignment_vs_frozen": {},
+  "official": {}
+}

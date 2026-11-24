@@ -1,0 +1,957 @@
+{
+  "alignment": {
+    "target_region_chroma": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      }
+    },
+    "workspace_point_cloud": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      }
+    },
+    "global_map_chroma": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-N": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-N": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-N": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      }
+    },
+    "frozen": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-Y": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-Y": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-Y": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      }
+    },
+    "frozen_crop": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-Y": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-Y": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-Y": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      }
+    },
+    "prior_full": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 94
+        },
+        "confusion": {
+          "Y-Y": 80,
+          "N-Y": 82,
+          "N-N": 14,
+          "Y-N": 16
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 94,
+          "reversed": 2,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 14,
+          "same": 66,
+          "reversed": 16,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 46
+        },
+        "confusion": {
+          "Y-Y": 40,
+          "N-Y": 42,
+          "Y-N": 8,
+          "N-N": 6
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 46,
+          "reversed": 2,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 6,
+          "same": 34,
+          "reversed": 8,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-Y": 40,
+          "N-Y": 40,
+          "N-N": 8,
+          "Y-N": 8
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 48,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 8,
+          "same": 32,
+          "reversed": 8,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      }
+    },
+    "prior_crop": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 67
+        },
+        "confusion": {
+          "Y-U": 95,
+          "N-N": 66,
+          "N-Y": 30,
+          "Y-Y": 1
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 1,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 95
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 1,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 95
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 19
+        },
+        "confusion": {
+          "Y-U": 48,
+          "N-Y": 29,
+          "N-N": 19
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 48
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 0,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 48
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 48
+        },
+        "confusion": {
+          "Y-U": 47,
+          "N-N": 47,
+          "Y-Y": 1,
+          "N-Y": 1
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 1,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 47
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 1,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 47
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 0
+        }
+      }
+    },
+    "repair17": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      }
+    },
+    "repair29": {
+      "all": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_-23": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 96,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 48,
+          "N-N": 48
+        },
+        "target_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 48,
+          "correct": 48,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 24,
+          "correct": 24
+        }
+      }
+    }
+  },
+  "alignment_vs_frozen": {
+    "frozen_crop": {
+      "n_layouts": 24,
+      "metrics": {
+        "query": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "target_switch": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "map_switch": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_four": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "prior_full": {
+      "n_layouts": 24,
+      "metrics": {
+        "query": {
+          "delta": -0.010416666666666666,
+          "ci95": [
+            -0.026041666666666668,
+            0.0
+          ]
+        },
+        "target_switch": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "map_switch": {
+          "delta": 0.14583333333333334,
+          "ci95": [
+            0.07291666666666667,
+            0.22916666666666666
+          ]
+        },
+        "joint_four": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "prior_crop": {
+      "n_layouts": 24,
+      "metrics": {
+        "query": {
+          "delta": -0.15104166666666666,
+          "ci95": [
+            -0.1875,
+            -0.11458333333333333
+          ]
+        },
+        "target_switch": {
+          "delta": 0.010416666666666666,
+          "ci95": [
+            0.0,
+            0.03125
+          ]
+        },
+        "map_switch": {
+          "delta": 0.010416666666666666,
+          "ci95": [
+            0.0,
+            0.03125
+          ]
+        },
+        "joint_four": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "repair17": {
+      "n_layouts": 24,
+      "metrics": {
+        "query": {
+          "delta": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "target_switch": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "map_switch": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "joint_four": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "repair29": {
+      "n_layouts": 24,
+      "metrics": {
+        "query": {
+          "delta": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "target_switch": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "map_switch": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "joint_four": {
+          "delta": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "official": {}
+}

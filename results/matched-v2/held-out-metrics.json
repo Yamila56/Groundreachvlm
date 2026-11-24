@@ -1,0 +1,7290 @@
+{
+  "frozen": {
+    "free": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 1,
+            "n": 80,
+            "accuracy": 0.0125
+          },
+          "YN": {
+            "correct": 1,
+            "n": 40,
+            "accuracy": 0.025
+          },
+          "family_15_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.509375,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 0.98125,
+        "flip_margin": null
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.503125,
+        "invalid": 0,
+        "recall_yes": 0.99375,
+        "false_positive": 0.9875,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 42,
+            "n": 80,
+            "accuracy": 0.525
+          },
+          "NN": {
+            "correct": 2,
+            "n": 40,
+            "accuracy": 0.05
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5125,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 0.975,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5,
+        "invalid": 0,
+        "recall_yes": 0.99375,
+        "false_positive": 0.99375,
+        "flip_margin": null
+      }
+    },
+    "margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 49,
+            "n": 80,
+            "accuracy": 0.6125
+          },
+          "NN": {
+            "correct": 17,
+            "n": 40,
+            "accuracy": 0.425
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 18,
+            "n": 80,
+            "accuracy": 0.225
+          },
+          "YN": {
+            "correct": 10,
+            "n": 40,
+            "accuracy": 0.25
+          },
+          "family_15_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "NY": {
+            "correct": 8,
+            "n": 40,
+            "accuracy": 0.2
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_110_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_110_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "family_315_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.63125,
+        "invalid": 10,
+        "recall_yes": 0.7875,
+        "false_positive": 0.48125,
+        "flip_margin": {
+          "mean": 0.39179694652557373,
+          "correct_direction": 0.9375
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 49,
+            "n": 80,
+            "accuracy": 0.6125
+          },
+          "NN": {
+            "correct": 17,
+            "n": 40,
+            "accuracy": 0.425
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.50625,
+        "invalid": 10,
+        "recall_yes": 0.65625,
+        "false_positive": 0.6125,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 52,
+            "n": 80,
+            "accuracy": 0.65
+          },
+          "NN": {
+            "correct": 18,
+            "n": 40,
+            "accuracy": 0.45
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.575,
+        "invalid": 4,
+        "recall_yes": 0.74375,
+        "false_positive": 0.56875,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 52,
+            "n": 80,
+            "accuracy": 0.65
+          },
+          "NN": {
+            "correct": 19,
+            "n": 40,
+            "accuracy": 0.475
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5625,
+        "invalid": 16,
+        "recall_yes": 0.7,
+        "false_positive": 0.525,
+        "flip_margin": null
+      }
+    },
+    "marker_margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.503125,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 0.99375,
+        "flip_margin": {
+          "mean": 0.38984377719461916,
+          "correct_direction": 0.675
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.503125,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 0.99375,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 40,
+            "n": 80,
+            "accuracy": 0.5
+          },
+          "NN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 1.0,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 41,
+            "n": 80,
+            "accuracy": 0.5125
+          },
+          "NN": {
+            "correct": 1,
+            "n": 40,
+            "accuracy": 0.025
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.50625,
+        "invalid": 0,
+        "recall_yes": 1.0,
+        "false_positive": 0.9875,
+        "flip_margin": null
+      }
+    }
+  },
+  "projector17": {
+    "free": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 65,
+            "n": 80,
+            "accuracy": 0.8125
+          },
+          "NN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 65,
+            "n": 80,
+            "accuracy": 0.8125
+          },
+          "YN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "NY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          }
+        },
+        "accuracy": 0.9,
+        "invalid": 0,
+        "recall_yes": 0.89375,
+        "false_positive": 0.09375,
+        "flip_margin": null
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 65,
+            "n": 80,
+            "accuracy": 0.8125
+          },
+          "NN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.49375,
+        "invalid": 0,
+        "recall_yes": 0.4875,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 74,
+            "n": 80,
+            "accuracy": 0.925
+          },
+          "NN": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "family_15_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.7125,
+        "invalid": 0,
+        "recall_yes": 0.725,
+        "false_positive": 0.3,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 69,
+            "n": 80,
+            "accuracy": 0.8625
+          },
+          "NN": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.68125,
+        "invalid": 0,
+        "recall_yes": 0.65625,
+        "false_positive": 0.29375,
+        "flip_margin": null
+      }
+    },
+    "margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 64,
+            "n": 80,
+            "accuracy": 0.8
+          },
+          "NN": {
+            "correct": 31,
+            "n": 40,
+            "accuracy": 0.775
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 65,
+            "n": 80,
+            "accuracy": 0.8125
+          },
+          "YN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "NY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          }
+        },
+        "accuracy": 0.896875,
+        "invalid": 2,
+        "recall_yes": 0.89375,
+        "false_positive": 0.09375,
+        "flip_margin": {
+          "mean": 11.47265623532221,
+          "correct_direction": 1
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 64,
+            "n": 80,
+            "accuracy": 0.8
+          },
+          "NN": {
+            "correct": 31,
+            "n": 40,
+            "accuracy": 0.775
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.4875,
+        "invalid": 2,
+        "recall_yes": 0.4875,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 73,
+            "n": 80,
+            "accuracy": 0.9125
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.703125,
+        "invalid": 4,
+        "recall_yes": 0.725,
+        "false_positive": 0.3,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 69,
+            "n": 80,
+            "accuracy": 0.8625
+          },
+          "NN": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.68125,
+        "invalid": 0,
+        "recall_yes": 0.65625,
+        "false_positive": 0.29375,
+        "flip_margin": null
+      }
+    },
+    "marker_margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 37,
+            "n": 80,
+            "accuracy": 0.4625
+          },
+          "NN": {
+            "correct": 10,
+            "n": 40,
+            "accuracy": 0.25
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 36,
+            "n": 80,
+            "accuracy": 0.45
+          },
+          "YN": {
+            "correct": 18,
+            "n": 40,
+            "accuracy": 0.45
+          },
+          "family_15_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "NY": {
+            "correct": 18,
+            "n": 40,
+            "accuracy": 0.45
+          },
+          "YY": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_70_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_70_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_110_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_110_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "family_225_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_315_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_315_stable": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          }
+        },
+        "accuracy": 0.625,
+        "invalid": 1,
+        "recall_yes": 0.74375,
+        "false_positive": 0.49375,
+        "flip_margin": {
+          "mean": 0.972973644733429,
+          "correct_direction": 0.725
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 37,
+            "n": 80,
+            "accuracy": 0.4625
+          },
+          "NN": {
+            "correct": 10,
+            "n": 40,
+            "accuracy": 0.25
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 9,
+            "n": 80,
+            "accuracy": 0.1125
+          },
+          "YN": {
+            "correct": 3,
+            "n": 40,
+            "accuracy": 0.075
+          },
+          "family_15_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "NY": {
+            "correct": 6,
+            "n": 40,
+            "accuracy": 0.15
+          },
+          "YY": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_70_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_70_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "family_110_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_110_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "family_225_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          },
+          "family_315_stable": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 1,
+            "n": 10,
+            "accuracy": 0.1
+          }
+        },
+        "accuracy": 0.45625,
+        "invalid": 1,
+        "recall_yes": 0.575,
+        "false_positive": 0.6625,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 47,
+            "n": 80,
+            "accuracy": 0.5875
+          },
+          "NN": {
+            "correct": 19,
+            "n": 40,
+            "accuracy": 0.475
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_70_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.54375,
+        "invalid": 0,
+        "recall_yes": 0.65,
+        "false_positive": 0.5625,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 46,
+            "n": 80,
+            "accuracy": 0.575
+          },
+          "NN": {
+            "correct": 15,
+            "n": 40,
+            "accuracy": 0.375
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 31,
+            "n": 40,
+            "accuracy": 0.775
+          },
+          "family_70_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5375,
+        "invalid": 2,
+        "recall_yes": 0.66875,
+        "false_positive": 0.59375,
+        "flip_margin": null
+      }
+    }
+  },
+  "lora17": {
+    "free": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 22,
+            "n": 40,
+            "accuracy": 0.55
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 54,
+            "n": 80,
+            "accuracy": 0.675
+          },
+          "YN": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_15_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "NY": {
+            "correct": 26,
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_315_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          }
+        },
+        "accuracy": 0.8375,
+        "invalid": 0,
+        "recall_yes": 0.9875,
+        "false_positive": 0.3125,
+        "flip_margin": null
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 22,
+            "n": 40,
+            "accuracy": 0.55
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5,
+        "invalid": 0,
+        "recall_yes": 0.65,
+        "false_positive": 0.65,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.6625,
+        "invalid": 0,
+        "recall_yes": 0.825,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 29,
+            "n": 40,
+            "accuracy": 0.725
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.8125,
+        "false_positive": 0.4625,
+        "flip_margin": null
+      }
+    },
+    "margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 22,
+            "n": 40,
+            "accuracy": 0.55
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 53,
+            "n": 80,
+            "accuracy": 0.6625
+          },
+          "YN": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_15_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "NY": {
+            "correct": 26,
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_315_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          }
+        },
+        "accuracy": 0.83125,
+        "invalid": 2,
+        "recall_yes": 0.9875,
+        "false_positive": 0.3125,
+        "flip_margin": {
+          "mean": 9.221093789242513,
+          "correct_direction": 0.9625
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 22,
+            "n": 40,
+            "accuracy": 0.55
+          },
+          "family_15_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.496875,
+        "invalid": 2,
+        "recall_yes": 0.65,
+        "false_positive": 0.65,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.6625,
+        "invalid": 0,
+        "recall_yes": 0.825,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 67,
+            "n": 80,
+            "accuracy": 0.8375
+          },
+          "NN": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.665625,
+        "invalid": 4,
+        "recall_yes": 0.8125,
+        "false_positive": 0.4625,
+        "flip_margin": null
+      }
+    },
+    "marker_margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 55,
+            "n": 80,
+            "accuracy": 0.6875
+          },
+          "YN": {
+            "correct": 27,
+            "n": 40,
+            "accuracy": 0.675
+          },
+          "family_15_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "NY": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          }
+        },
+        "accuracy": 0.840625,
+        "invalid": 0,
+        "recall_yes": 0.89375,
+        "false_positive": 0.2125,
+        "flip_margin": {
+          "mean": 3.7531250357627868,
+          "correct_direction": 0.95
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 61,
+            "n": 80,
+            "accuracy": 0.7625
+          },
+          "NN": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.496875,
+        "invalid": 0,
+        "recall_yes": 0.55,
+        "false_positive": 0.55625,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 67,
+            "n": 80,
+            "accuracy": 0.8375
+          },
+          "NN": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.66875,
+        "invalid": 0,
+        "recall_yes": 0.71875,
+        "false_positive": 0.38125,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 67,
+            "n": 80,
+            "accuracy": 0.8375
+          },
+          "NN": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.66875,
+        "invalid": 0,
+        "recall_yes": 0.725,
+        "false_positive": 0.3875,
+        "flip_margin": null
+      }
+    }
+  },
+  "projector29": {
+    "free": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 67,
+            "n": 80,
+            "accuracy": 0.8375
+          },
+          "YN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "NY": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_315_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          }
+        },
+        "accuracy": 0.909375,
+        "invalid": 0,
+        "recall_yes": 0.91875,
+        "false_positive": 0.1,
+        "flip_margin": null
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.490625,
+        "invalid": 0,
+        "recall_yes": 0.5,
+        "false_positive": 0.51875,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 73,
+            "n": 80,
+            "accuracy": 0.9125
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.70625,
+        "invalid": 0,
+        "recall_yes": 0.71875,
+        "false_positive": 0.30625,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 71,
+            "n": 80,
+            "accuracy": 0.8875
+          },
+          "NN": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.69375,
+        "invalid": 0,
+        "recall_yes": 0.7,
+        "false_positive": 0.3125,
+        "flip_margin": null
+      }
+    },
+    "margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 67,
+            "n": 80,
+            "accuracy": 0.8375
+          },
+          "YN": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_15_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "NY": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_315_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          }
+        },
+        "accuracy": 0.909375,
+        "invalid": 0,
+        "recall_yes": 0.91875,
+        "false_positive": 0.1,
+        "flip_margin": {
+          "mean": 8.034375010001531,
+          "correct_direction": 1
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 66,
+            "n": 80,
+            "accuracy": 0.825
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.490625,
+        "invalid": 0,
+        "recall_yes": 0.5,
+        "false_positive": 0.51875,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 73,
+            "n": 80,
+            "accuracy": 0.9125
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 39,
+            "n": 40,
+            "accuracy": 0.975
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.70625,
+        "invalid": 0,
+        "recall_yes": 0.71875,
+        "false_positive": 0.30625,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 71,
+            "n": 80,
+            "accuracy": 0.8875
+          },
+          "NN": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_260_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.69375,
+        "invalid": 0,
+        "recall_yes": 0.7,
+        "false_positive": 0.3125,
+        "flip_margin": null
+      }
+    },
+    "marker_margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 59,
+            "n": 80,
+            "accuracy": 0.7375
+          },
+          "NN": {
+            "correct": 38,
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 46,
+            "n": 80,
+            "accuracy": 0.575
+          },
+          "YN": {
+            "correct": 21,
+            "n": 40,
+            "accuracy": 0.525
+          },
+          "family_15_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "NY": {
+            "correct": 25,
+            "n": 40,
+            "accuracy": 0.625
+          },
+          "YY": {
+            "correct": 21,
+            "n": 40,
+            "accuracy": 0.525
+          },
+          "family_70_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_70_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_110_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          }
+        },
+        "accuracy": 0.80625,
+        "invalid": 2,
+        "recall_yes": 0.63125,
+        "false_positive": 0.01875,
+        "flip_margin": {
+          "mean": 5.185534590482712,
+          "correct_direction": 0.9875
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 59,
+            "n": 80,
+            "accuracy": 0.7375
+          },
+          "NN": {
+            "correct": 38,
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 21,
+            "n": 40,
+            "accuracy": 0.525
+          },
+          "family_70_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.515625,
+        "invalid": 2,
+        "recall_yes": 0.34375,
+        "false_positive": 0.30625,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 64,
+            "n": 80,
+            "accuracy": 0.8
+          },
+          "NN": {
+            "correct": 38,
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 26,
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "family_70_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.646875,
+        "invalid": 4,
+        "recall_yes": 0.4625,
+        "false_positive": 0.1625,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 40,
+            "n": 40,
+            "accuracy": 1
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 28,
+            "n": 40,
+            "accuracy": 0.7
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.5125,
+        "false_positive": 0.1625,
+        "flip_margin": null
+      }
+    }
+  },
+  "lora29": {
+    "free": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 62,
+            "n": 80,
+            "accuracy": 0.775
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 56,
+            "n": 80,
+            "accuracy": 0.7
+          },
+          "YN": {
+            "correct": 26,
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "family_15_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "NY": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          }
+        },
+        "accuracy": 0.85,
+        "invalid": 0,
+        "recall_yes": 0.85,
+        "false_positive": 0.15,
+        "flip_margin": null
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 62,
+            "n": 80,
+            "accuracy": 0.775
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5,
+        "invalid": 0,
+        "recall_yes": 0.5,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.66875,
+        "false_positive": 0.31875,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.68125,
+        "false_positive": 0.33125,
+        "flip_margin": null
+      }
+    },
+    "margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 62,
+            "n": 80,
+            "accuracy": 0.775
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 56,
+            "n": 80,
+            "accuracy": 0.7
+          },
+          "YN": {
+            "correct": 26,
+            "n": 40,
+            "accuracy": 0.65
+          },
+          "family_15_flip": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "NY": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_110_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          }
+        },
+        "accuracy": 0.85,
+        "invalid": 0,
+        "recall_yes": 0.85,
+        "false_positive": 0.15,
+        "flip_margin": {
+          "mean": 5.521093760067015,
+          "correct_direction": 0.925
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 62,
+            "n": 80,
+            "accuracy": 0.775
+          },
+          "NN": {
+            "correct": 30,
+            "n": 40,
+            "accuracy": 0.75
+          },
+          "family_15_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 32,
+            "n": 40,
+            "accuracy": 0.8
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.5,
+        "invalid": 0,
+        "recall_yes": 0.5,
+        "false_positive": 0.5,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.66875,
+        "false_positive": 0.31875,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 68,
+            "n": 80,
+            "accuracy": 0.85
+          },
+          "NN": {
+            "correct": 35,
+            "n": 40,
+            "accuracy": 0.875
+          },
+          "family_15_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 33,
+            "n": 40,
+            "accuracy": 0.825
+          },
+          "family_70_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 10,
+            "n": 10,
+            "accuracy": 1
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.675,
+        "invalid": 0,
+        "recall_yes": 0.68125,
+        "false_positive": 0.33125,
+        "flip_margin": null
+      }
+    },
+    "marker_margin": {
+      "correct": {
+        "pairs": {
+          "stable": {
+            "correct": 47,
+            "n": 80,
+            "accuracy": 0.5875
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 30,
+            "n": 80,
+            "accuracy": 0.375
+          },
+          "YN": {
+            "correct": 16,
+            "n": 40,
+            "accuracy": 0.4
+          },
+          "family_15_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "NY": {
+            "correct": 14,
+            "n": 40,
+            "accuracy": 0.35
+          },
+          "YY": {
+            "correct": 13,
+            "n": 40,
+            "accuracy": 0.325
+          },
+          "family_70_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_70_flip": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_110_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 4,
+            "n": 10,
+            "accuracy": 0.4
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 2,
+            "n": 10,
+            "accuracy": 0.2
+          },
+          "family_315_flip": {
+            "correct": 3,
+            "n": 10,
+            "accuracy": 0.3
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          }
+        },
+        "accuracy": 0.68125,
+        "invalid": 2,
+        "recall_yes": 0.41875,
+        "false_positive": 0.05625,
+        "flip_margin": {
+          "mean": 3.1488280951976777,
+          "correct_direction": 0.95
+        }
+      },
+      "swapped": {
+        "pairs": {
+          "stable": {
+            "correct": 47,
+            "n": 80,
+            "accuracy": 0.5875
+          },
+          "NN": {
+            "correct": 34,
+            "n": 40,
+            "accuracy": 0.85
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 13,
+            "n": 40,
+            "accuracy": 0.325
+          },
+          "family_70_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_345_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.490625,
+        "invalid": 2,
+        "recall_yes": 0.23125,
+        "false_positive": 0.24375,
+        "flip_margin": null
+      },
+      "fixed_a": {
+        "pairs": {
+          "stable": {
+            "correct": 55,
+            "n": 80,
+            "accuracy": 0.6875
+          },
+          "NN": {
+            "correct": 38,
+            "n": 40,
+            "accuracy": 0.95
+          },
+          "family_15_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 17,
+            "n": 40,
+            "accuracy": 0.425
+          },
+          "family_70_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.59375,
+        "invalid": 0,
+        "recall_yes": 0.33125,
+        "false_positive": 0.14375,
+        "flip_margin": null
+      },
+      "fixed_b": {
+        "pairs": {
+          "stable": {
+            "correct": 53,
+            "n": 80,
+            "accuracy": 0.6625
+          },
+          "NN": {
+            "correct": 36,
+            "n": 40,
+            "accuracy": 0.9
+          },
+          "family_15_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "flip": {
+            "correct": 0,
+            "n": 80,
+            "accuracy": 0
+          },
+          "YN": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "family_15_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "NY": {
+            "correct": 0,
+            "n": 40,
+            "accuracy": 0
+          },
+          "YY": {
+            "correct": 17,
+            "n": 40,
+            "accuracy": 0.425
+          },
+          "family_70_stable": {
+            "correct": 9,
+            "n": 10,
+            "accuracy": 0.9
+          },
+          "family_70_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_110_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_165_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_165_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_225_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_225_stable": {
+            "correct": 7,
+            "n": 10,
+            "accuracy": 0.7
+          },
+          "family_260_stable": {
+            "correct": 5,
+            "n": 10,
+            "accuracy": 0.5
+          },
+          "family_260_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          },
+          "family_315_stable": {
+            "correct": 6,
+            "n": 10,
+            "accuracy": 0.6
+          },
+          "family_345_stable": {
+            "correct": 8,
+            "n": 10,
+            "accuracy": 0.8
+          },
+          "family_345_flip": {
+            "correct": 0,
+            "n": 10,
+            "accuracy": 0
+          }
+        },
+        "accuracy": 0.578125,
+        "invalid": 4,
+        "recall_yes": 0.31875,
+        "false_positive": 0.15625,
+        "flip_margin": null
+      }
+    }
+  },
+  "flip_difference_vs_frozen": {
+    "projector17": {
+      "delta": 0.8,
+      "ci95": {
+        "anchor": {
+          "n": 40,
+          "bounds": [
+            0.7,
+            0.8875
+          ]
+        },
+        "layout_family": {
+          "n": 8,
+          "bounds": [
+            0.7,
+            0.9
+          ]
+        }
+      }
+    },
+    "lora17": {
+      "delta": 0.6625,
+      "ci95": {
+        "anchor": {
+          "n": 40,
+          "bounds": [
+            0.525,
+            0.7875
+          ]
+        },
+        "layout_family": {
+          "n": 8,
+          "bounds": [
+            0.5,
+            0.825
+          ]
+        }
+      }
+    },
+    "projector29": {
+      "delta": 0.825,
+      "ci95": {
+        "anchor": {
+          "n": 40,
+          "bounds": [
+            0.7375,
+            0.9
+          ]
+        },
+        "layout_family": {
+          "n": 8,
+          "bounds": [
+            0.725,
+            0.9125
+          ]
+        }
+      }
+    },
+    "lora29": {
+      "delta": 0.6875,
+      "ci95": {
+        "anchor": {
+          "n": 40,
+          "bounds": [
+            0.5625,
+            0.8
+          ]
+        },
+        "layout_family": {
+          "n": 8,
+          "bounds": [
+            0.6125,
+            0.7875
+          ]
+        }
+      }
+    }
+  }
+}

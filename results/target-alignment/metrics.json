@@ -1,0 +1,1509 @@
+{
+  "alignment": {
+    "target_region_chroma": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 384
+        },
+        "confusion": {
+          "Y-Y": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 192,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 192,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 96
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      }
+    },
+    "workspace_point_cloud": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 384
+        },
+        "confusion": {
+          "Y-Y": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 192,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 192,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 96
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 96,
+          "same": 0,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 48
+        }
+      }
+    },
+    "global_map_chroma": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-N": 192,
+          "N-N": 192
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 0,
+          "same": 192,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 0,
+          "same": 192,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-N": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-N": 96,
+          "N-N": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      }
+    },
+    "frozen": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 191
+        },
+        "confusion": {
+          "Y-Y": 191,
+          "N-Y": 192,
+          "Y-N": 1
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 0,
+          "same": 191,
+          "reversed": 1,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 0,
+          "same": 191,
+          "reversed": 1,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 95
+        },
+        "confusion": {
+          "Y-Y": 95,
+          "N-Y": 96,
+          "Y-N": 1
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 95,
+          "reversed": 1,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 95,
+          "reversed": 1,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 96
+        },
+        "confusion": {
+          "Y-Y": 96,
+          "N-Y": 96
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 96,
+          "reversed": 0,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "candidate_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 183
+          },
+          "confusion": {
+            "Y-Y": 158,
+            "N-Y": 154,
+            "N-N": 25,
+            "Y-N": 26,
+            "N-U": 13,
+            "Y-U": 8
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 19,
+            "same": 133,
+            "reversed": 19,
+            "invalid": 21
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 5,
+            "same": 163,
+            "reversed": 4,
+            "invalid": 20
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 92
+          },
+          "confusion": {
+            "Y-Y": 87,
+            "N-Y": 85,
+            "N-N": 5,
+            "Y-N": 6,
+            "Y-U": 3,
+            "N-U": 6
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 5,
+            "same": 76,
+            "reversed": 6,
+            "invalid": 9
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 87,
+            "reversed": 1,
+            "invalid": 8
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 91
+          },
+          "confusion": {
+            "Y-Y": 71,
+            "N-Y": 69,
+            "N-N": 20,
+            "Y-N": 20,
+            "N-U": 7,
+            "Y-U": 5
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 14,
+            "same": 57,
+            "reversed": 13,
+            "invalid": 12
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 5,
+            "same": 76,
+            "reversed": 3,
+            "invalid": 12
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_margin": {
+        "all": {
+          "n": 96,
+          "positive": 44,
+          "zero": 23,
+          "mean_log_odds_contrast": 0.008789087335268656
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 22,
+          "zero": 10,
+          "mean_log_odds_contrast": 0.003906279802322388
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 22,
+          "zero": 13,
+          "mean_log_odds_contrast": 0.013671894868214926
+        }
+      },
+      "candidate_marker_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 192
+          },
+          "confusion": {
+            "Y-Y": 192,
+            "N-Y": 192
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 0,
+            "same": 192,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 0,
+            "same": 192,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 96
+          },
+          "confusion": {
+            "Y-Y": 96,
+            "N-Y": 96
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 96
+          },
+          "confusion": {
+            "Y-Y": 96,
+            "N-Y": 96
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_marker_margin": {
+        "all": {
+          "n": 96,
+          "positive": 46,
+          "zero": 5,
+          "mean_log_odds_contrast": -0.0009765494614839554
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 23,
+          "zero": 1,
+          "mean_log_odds_contrast": -0.007161439706881841
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 23,
+          "zero": 4,
+          "mean_log_odds_contrast": 0.00520834078391393
+        }
+      }
+    },
+    "projector17": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 192
+        },
+        "confusion": {
+          "Y-Y": 151,
+          "N-Y": 151,
+          "N-N": 41,
+          "Y-N": 41
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 8,
+          "same": 176,
+          "reversed": 8,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 38,
+          "same": 116,
+          "reversed": 38,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 93
+        },
+        "confusion": {
+          "Y-Y": 83,
+          "N-Y": 86,
+          "N-N": 10,
+          "Y-N": 13
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 93,
+          "reversed": 3,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 10,
+          "same": 73,
+          "reversed": 13,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 99
+        },
+        "confusion": {
+          "Y-Y": 68,
+          "N-Y": 65,
+          "N-N": 31,
+          "Y-N": 28
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 8,
+          "same": 83,
+          "reversed": 5,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 28,
+          "same": 43,
+          "reversed": 25,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "candidate_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 188
+          },
+          "confusion": {
+            "Y-Y": 151,
+            "N-Y": 151,
+            "N-N": 37,
+            "Y-N": 36,
+            "Y-U": 5,
+            "N-U": 4
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 5,
+            "same": 173,
+            "reversed": 5,
+            "invalid": 9
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 34,
+            "same": 116,
+            "reversed": 33,
+            "invalid": 9
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 93
+          },
+          "confusion": {
+            "Y-Y": 83,
+            "N-Y": 86,
+            "N-N": 10,
+            "Y-N": 12,
+            "Y-U": 1
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 93,
+            "reversed": 2,
+            "invalid": 1
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 10,
+            "same": 73,
+            "reversed": 12,
+            "invalid": 1
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 95
+          },
+          "confusion": {
+            "Y-Y": 68,
+            "N-Y": 65,
+            "N-N": 27,
+            "Y-N": 24,
+            "Y-U": 4,
+            "N-U": 4
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 5,
+            "same": 80,
+            "reversed": 3,
+            "invalid": 8
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 24,
+            "same": 43,
+            "reversed": 21,
+            "invalid": 8
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_margin": {
+        "all": {
+          "n": 96,
+          "positive": 64,
+          "zero": 0,
+          "mean_log_odds_contrast": 0.08203124917781679
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 28,
+          "zero": 0,
+          "mean_log_odds_contrast": 0.02734375100408215
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 36,
+          "zero": 0,
+          "mean_log_odds_contrast": 0.13671874735155143
+        }
+      },
+      "candidate_marker_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 192
+          },
+          "confusion": {
+            "Y-N": 77,
+            "N-N": 78,
+            "Y-Y": 114,
+            "N-Y": 114,
+            "Y-U": 1
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 3,
+            "same": 186,
+            "reversed": 2,
+            "invalid": 1
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 15,
+            "same": 161,
+            "reversed": 15,
+            "invalid": 1
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 96
+          },
+          "confusion": {
+            "Y-N": 77,
+            "N-N": 78,
+            "N-Y": 18,
+            "Y-Y": 18,
+            "Y-U": 1
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 3,
+            "same": 90,
+            "reversed": 2,
+            "invalid": 1
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 15,
+            "same": 65,
+            "reversed": 15,
+            "invalid": 1
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 96
+          },
+          "confusion": {
+            "Y-Y": 96,
+            "N-Y": 96
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 96,
+            "reversed": 0,
+            "invalid": 0
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_marker_margin": {
+        "all": {
+          "n": 96,
+          "positive": 55,
+          "zero": 1,
+          "mean_log_odds_contrast": 0.027730301022529602
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 25,
+          "zero": 1,
+          "mean_log_odds_contrast": 0.012369791666666666
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 30,
+          "zero": 0,
+          "mean_log_odds_contrast": 0.04309081037839254
+        }
+      }
+    },
+    "projector29": {
+      "all": {
+        "query": {
+          "n": 384,
+          "correct": 190
+        },
+        "confusion": {
+          "Y-Y": 151,
+          "N-Y": 153,
+          "N-N": 39,
+          "Y-N": 41
+        },
+        "target_switch": {
+          "n": 192,
+          "correct": 3,
+          "same": 184,
+          "reversed": 5,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 192,
+          "correct": 33,
+          "same": 124,
+          "reversed": 35,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 96,
+          "correct": 0
+        }
+      },
+      "yaw_0": {
+        "query": {
+          "n": 192,
+          "correct": 95
+        },
+        "confusion": {
+          "Y-Y": 86,
+          "N-Y": 87,
+          "N-N": 9,
+          "Y-N": 10
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 0,
+          "same": 95,
+          "reversed": 1,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 9,
+          "same": 77,
+          "reversed": 10,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "yaw_27": {
+        "query": {
+          "n": 192,
+          "correct": 95
+        },
+        "confusion": {
+          "Y-Y": 65,
+          "N-Y": 66,
+          "N-N": 30,
+          "Y-N": 31
+        },
+        "target_switch": {
+          "n": 96,
+          "correct": 3,
+          "same": 89,
+          "reversed": 4,
+          "invalid": 0
+        },
+        "map_switch": {
+          "n": 96,
+          "correct": 24,
+          "same": 47,
+          "reversed": 25,
+          "invalid": 0
+        },
+        "joint_four": {
+          "n": 48,
+          "correct": 0
+        }
+      },
+      "candidate_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 188
+          },
+          "confusion": {
+            "Y-Y": 151,
+            "N-Y": 153,
+            "N-N": 37,
+            "Y-N": 34,
+            "Y-U": 7,
+            "N-U": 2
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 2,
+            "same": 180,
+            "reversed": 2,
+            "invalid": 8
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 32,
+            "same": 122,
+            "reversed": 29,
+            "invalid": 9
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 95
+          },
+          "confusion": {
+            "Y-Y": 86,
+            "N-Y": 87,
+            "N-N": 9,
+            "Y-U": 2,
+            "Y-N": 8
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 0,
+            "same": 93,
+            "reversed": 1,
+            "invalid": 2
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 9,
+            "same": 77,
+            "reversed": 8,
+            "invalid": 2
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 93
+          },
+          "confusion": {
+            "Y-Y": 65,
+            "N-Y": 66,
+            "N-N": 28,
+            "Y-N": 26,
+            "N-U": 2,
+            "Y-U": 5
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 2,
+            "same": 87,
+            "reversed": 1,
+            "invalid": 6
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 23,
+            "same": 45,
+            "reversed": 21,
+            "invalid": 7
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_margin": {
+        "all": {
+          "n": 96,
+          "positive": 43,
+          "zero": 2,
+          "mean_log_odds_contrast": -0.011067698137291396
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 22,
+          "zero": 2,
+          "mean_log_odds_contrast": 0.00651042046956718
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 21,
+          "zero": 0,
+          "mean_log_odds_contrast": -0.028645816744149972
+        }
+      },
+      "candidate_marker_margin": {
+        "all": {
+          "query": {
+            "n": 384,
+            "correct": 185
+          },
+          "confusion": {
+            "Y-N": 140,
+            "N-N": 139,
+            "N-Y": 48,
+            "Y-Y": 46,
+            "Y-U": 6,
+            "N-U": 5
+          },
+          "target_switch": {
+            "n": 192,
+            "correct": 2,
+            "same": 176,
+            "reversed": 3,
+            "invalid": 11
+          },
+          "map_switch": {
+            "n": 192,
+            "correct": 41,
+            "same": 96,
+            "reversed": 44,
+            "invalid": 11
+          },
+          "joint_four": {
+            "n": 96,
+            "correct": 0
+          }
+        },
+        "yaw_0": {
+          "query": {
+            "n": 192,
+            "correct": 90
+          },
+          "confusion": {
+            "Y-N": 79,
+            "N-N": 78,
+            "N-Y": 13,
+            "Y-Y": 12,
+            "N-U": 5,
+            "Y-U": 5
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 1,
+            "same": 83,
+            "reversed": 2,
+            "invalid": 10
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 7,
+            "same": 70,
+            "reversed": 9,
+            "invalid": 10
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        },
+        "yaw_27": {
+          "query": {
+            "n": 192,
+            "correct": 95
+          },
+          "confusion": {
+            "Y-Y": 34,
+            "N-Y": 35,
+            "N-N": 61,
+            "Y-N": 61,
+            "Y-U": 1
+          },
+          "target_switch": {
+            "n": 96,
+            "correct": 1,
+            "same": 93,
+            "reversed": 1,
+            "invalid": 1
+          },
+          "map_switch": {
+            "n": 96,
+            "correct": 34,
+            "same": 26,
+            "reversed": 35,
+            "invalid": 1
+          },
+          "joint_four": {
+            "n": 48,
+            "correct": 0
+          }
+        }
+      },
+      "interaction_marker_margin": {
+        "all": {
+          "n": 96,
+          "positive": 48,
+          "zero": 3,
+          "mean_log_odds_contrast": -0.003092460334300995
+        },
+        "yaw_0": {
+          "n": 48,
+          "positive": 24,
+          "zero": 2,
+          "mean_log_odds_contrast": 0.003906264901161194
+        },
+        "yaw_27": {
+          "n": 48,
+          "positive": 24,
+          "zero": 1,
+          "mean_log_odds_contrast": -0.010091185569763184
+        }
+      }
+    }
+  },
+  "alignment_vs_frozen": {
+    "projector17": {
+      "n_layouts": 48,
+      "metrics": {
+        "query": {
+          "delta": 0.0026041666666666665,
+          "ci95": [
+            -0.015625,
+            0.020833333333333332
+          ]
+        },
+        "target_switch": {
+          "delta": 0.041666666666666664,
+          "ci95": [
+            0.015625,
+            0.06770833333333333
+          ]
+        },
+        "map_switch": {
+          "delta": 0.19791666666666666,
+          "ci95": [
+            0.15104166666666666,
+            0.24479166666666666
+          ]
+        },
+        "joint_four": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "projector29": {
+      "n_layouts": 48,
+      "metrics": {
+        "query": {
+          "delta": -0.0026041666666666665,
+          "ci95": [
+            -0.018229166666666668,
+            0.013020833333333334
+          ]
+        },
+        "target_switch": {
+          "delta": 0.015625,
+          "ci95": [
+            0.0,
+            0.036458333333333336
+          ]
+        },
+        "map_switch": {
+          "delta": 0.171875,
+          "ci95": [
+            0.11979166666666667,
+            0.22395833333333334
+          ]
+        },
+        "joint_four": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "official": {
+    "frozen": {
+      "all": {
+        "count": 64,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-Y": 21,
+              "Y-Y": 32,
+              "N-N": 11
+            },
+            "scores": {
+              "margin": 46,
+              "marker_margin": 40
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-Y": 18,
+              "Y-Y": 32,
+              "N-N": 14
+            },
+            "scores": {
+              "margin": 49,
+              "marker_margin": 41
+            }
+          }
+        }
+      },
+      "unambiguous": {
+        "count": 62,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-Y": 20,
+              "Y-Y": 31,
+              "N-N": 11
+            },
+            "scores": {
+              "margin": 45,
+              "marker_margin": 39
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-Y": 17,
+              "Y-Y": 31,
+              "N-N": 14
+            },
+            "scores": {
+              "margin": 48,
+              "marker_margin": 40
+            }
+          }
+        }
+      },
+      "excluded": [
+        {
+          "id": "PANDA-23-N",
+          "truth": "N",
+          "question": "Is the book in the robot's reachable space?"
+        },
+        {
+          "id": "PANDA-23-Y",
+          "truth": "Y",
+          "question": "Is the book in the robot's reachable space?"
+        }
+      ]
+    },
+    "projector17": {
+      "all": {
+        "count": 64,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-Y": 28,
+              "Y-Y": 28,
+              "N-N": 2,
+              "Y-U": 4,
+              "N-U": 2
+            },
+            "scores": {
+              "margin": 33,
+              "marker_margin": 32
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-N": 15,
+              "Y-U": 1,
+              "Y-N": 14,
+              "N-Y": 17,
+              "Y-Y": 17
+            },
+            "scores": {
+              "margin": 33,
+              "marker_margin": 31
+            }
+          }
+        }
+      },
+      "unambiguous": {
+        "count": 62,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-Y": 27,
+              "Y-Y": 27,
+              "N-N": 2,
+              "Y-U": 4,
+              "N-U": 2
+            },
+            "scores": {
+              "margin": 32,
+              "marker_margin": 31
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-N": 15,
+              "Y-U": 1,
+              "Y-N": 14,
+              "N-Y": 16,
+              "Y-Y": 16
+            },
+            "scores": {
+              "margin": 32,
+              "marker_margin": 30
+            }
+          }
+        }
+      },
+      "excluded": [
+        {
+          "id": "PANDA-23-N",
+          "truth": "N",
+          "question": "Is the book in the robot's reachable space?"
+        },
+        {
+          "id": "PANDA-23-Y",
+          "truth": "Y",
+          "question": "Is the book in the robot's reachable space?"
+        }
+      ]
+    },
+    "projector29": {
+      "all": {
+        "count": 64,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-N": 2,
+              "Y-N": 2,
+              "Y-Y": 29,
+              "N-Y": 30,
+              "Y-U": 1
+            },
+            "scores": {
+              "margin": 35,
+              "marker_margin": 35
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-N": 13,
+              "Y-N": 9,
+              "N-Y": 19,
+              "Y-Y": 23
+            },
+            "scores": {
+              "margin": 36,
+              "marker_margin": 30
+            }
+          }
+        }
+      },
+      "unambiguous": {
+        "count": 62,
+        "prompts": {
+          "original": {
+            "confusion": {
+              "N-N": 2,
+              "Y-N": 2,
+              "Y-Y": 28,
+              "N-Y": 29,
+              "Y-U": 1
+            },
+            "scores": {
+              "margin": 34,
+              "marker_margin": 34
+            }
+          },
+          "explicit": {
+            "confusion": {
+              "N-N": 13,
+              "Y-N": 9,
+              "N-Y": 18,
+              "Y-Y": 22
+            },
+            "scores": {
+              "margin": 35,
+              "marker_margin": 29
+            }
+          }
+        }
+      },
+      "excluded": [
+        {
+          "id": "PANDA-23-N",
+          "truth": "N",
+          "question": "Is the book in the robot's reachable space?"
+        },
+        {
+          "id": "PANDA-23-Y",
+          "truth": "Y",
+          "question": "Is the book in the robot's reachable space?"
+        }
+      ]
+    }
+  }
+}

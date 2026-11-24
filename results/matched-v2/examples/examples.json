@@ -1,0 +1,5 @@
+{
+  "correct-stable": "test-0000-0",
+  "correct-flip": "test-0000-1",
+  "failed-flip": "test-0002-0"
+}

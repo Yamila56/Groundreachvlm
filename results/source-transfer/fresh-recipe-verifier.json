@@ -1,0 +1,60 @@
+{
+  "scope": "Panda with upstream simulator boxes; fresh scene seeds, shared asset catalog",
+  "source_n": 96,
+  "excluded_contradictory": 0,
+  "box_eligible_n": 94,
+  "configured_margin": 0,
+  "policy_active": 94,
+  "frozen": {
+    "n": 96,
+    "correct": 63,
+    "yes_correct": 48,
+    "no_correct": 15,
+    "invalid": 0,
+    "yes_n": 48,
+    "no_n": 48
+  },
+  "gated": {
+    "n": 96,
+    "correct": 86,
+    "yes_correct": 40,
+    "no_correct": 46,
+    "invalid": 0,
+    "yes_n": 48,
+    "no_n": 48
+  },
+  "gated_vs_frozen": {
+    "n_scenes": 52,
+    "delta": 0.23958333333333334,
+    "ci95": [
+      0.13829787234042554,
+      0.3333333333333333
+    ]
+  },
+  "frozen_box_eligible": {
+    "n": 94,
+    "correct": 62,
+    "yes_correct": 47,
+    "no_correct": 15,
+    "invalid": 0,
+    "yes_n": 47,
+    "no_n": 47
+  },
+  "fixed_threshold_box_eligible": {
+    "n": 94,
+    "correct": 85,
+    "yes_correct": 39,
+    "no_correct": 46,
+    "invalid": 0,
+    "yes_n": 47,
+    "no_n": 47
+  },
+  "fixed_threshold_vs_frozen": {
+    "n_scenes": 51,
+    "delta": 0.24468085106382978,
+    "ci95": [
+      0.14583333333333334,
+      0.3404255319148936
+    ]
+  }
+}

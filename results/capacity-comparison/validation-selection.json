@@ -1,0 +1,78 @@
+{
+  "candidates": [
+    {
+      "method": "projector",
+      "lr": "3e-5",
+      "path": "matched-capacity-20261125/train/projector-3e-5-17",
+      "epoch": 1,
+      "score": 0.0,
+      "map_switch": 6,
+      "num_params": 8916992
+    },
+    {
+      "method": "projector",
+      "lr": "1e-4",
+      "path": "target-repair-20261125/train/full_image17",
+      "epoch": 3,
+      "score": 0.041666666666666664,
+      "map_switch": 18,
+      "num_params": 8916992
+    },
+    {
+      "method": "projector",
+      "lr": "3e-4",
+      "path": "matched-capacity-20261125/train/projector-3e-4-17",
+      "epoch": 1,
+      "score": 0.0,
+      "map_switch": 0,
+      "num_params": 8916992
+    },
+    {
+      "method": "lora",
+      "lr": "3e-5",
+      "path": "matched-capacity-20261125/train/lora-3e-5-17",
+      "epoch": 1,
+      "score": 0.0,
+      "map_switch": 0,
+      "num_params": 8985600
+    },
+    {
+      "method": "lora",
+      "lr": "1e-4",
+      "path": "matched-capacity-20261125/train/lora-1e-4-17",
+      "epoch": 3,
+      "score": 0.125,
+      "map_switch": 14,
+      "num_params": 8985600
+    },
+    {
+      "method": "lora",
+      "lr": "3e-4",
+      "path": "matched-capacity-20261125/train/lora-3e-4-17",
+      "epoch": 3,
+      "score": 0.08333333333333333,
+      "map_switch": 10,
+      "num_params": 8985600
+    }
+  ],
+  "selected": {
+    "projector": {
+      "method": "projector",
+      "lr": "1e-4",
+      "path": "target-repair-20261125/train/full_image17",
+      "epoch": 3,
+      "score": 0.041666666666666664,
+      "map_switch": 18,
+      "num_params": 8916992
+    },
+    "lora": {
+      "method": "lora",
+      "lr": "1e-4",
+      "path": "matched-capacity-20261125/train/lora-1e-4-17",
+      "epoch": 3,
+      "score": 0.125,
+      "map_switch": 14,
+      "num_params": 8985600
+    }
+  }
+}

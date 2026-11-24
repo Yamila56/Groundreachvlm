@@ -1,0 +1,62 @@
+{
+  "train": {
+    "layouts": 36,
+    "yaws": [
+      0,
+      27
+    ],
+    "queries": 288,
+    "target_views": 144,
+    "certificate": {
+      "layouts": 36,
+      "views": 72,
+      "queries": 288,
+      "checked_earlier_rgb": true,
+      "manifest_sha256": "8849f8618e1abee0f96bba1e6dfd8a5e48f5c36fdb8b6f74f28d02501c907ef9",
+      "max_replay_error_m": 0.0013414090379114659,
+      "min_bound_margin_m": 0.28281203855239223,
+      "reachable_witnesses": 144,
+      "unreachable_bounds": 144
+    }
+  },
+  "dev": {
+    "layouts": 12,
+    "yaws": [
+      0,
+      27
+    ],
+    "queries": 96,
+    "target_views": 48,
+    "certificate": {
+      "layouts": 12,
+      "views": 24,
+      "queries": 96,
+      "checked_earlier_rgb": true,
+      "manifest_sha256": "82b41437f310cc6e4ca50ec39e7119a83e441af58c5d3b44d718fad81e20a8cc",
+      "max_replay_error_m": 0.0012846799130600175,
+      "min_bound_margin_m": 0.27427846995296057,
+      "reachable_witnesses": 48,
+      "unreachable_bounds": 48
+    }
+  },
+  "test": {
+    "layouts": 24,
+    "yaws": [
+      0,
+      -23
+    ],
+    "queries": 192,
+    "target_views": 96,
+    "certificate": {
+      "layouts": 24,
+      "views": 48,
+      "queries": 192,
+      "checked_earlier_rgb": true,
+      "manifest_sha256": "5e6a5d1021581aa3056afc5914a1ca8a0092a7ccb78c06920a166cf8de5da988",
+      "max_replay_error_m": 0.0012994038634644015,
+      "min_bound_margin_m": 0.2707850296323824,
+      "reachable_witnesses": 96,
+      "unreachable_bounds": 96
+    }
+  }
+}

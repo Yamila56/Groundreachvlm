@@ -41,7 +41,7 @@ def create_box(center, half_extents, color):
     return bullet.createMultiBody(baseMass=0, baseVisualShapeIndex=visual, basePosition=center)
 
 
-def render_scene(output, objects_layout=None):
+def render_scene(output, objects_layout=None, *, camera_yaw=0.0):
     width, height = 640, 480
     near, far = 0.2, 3.0
     eye = np.array([0.65, 0.0, 1.55] if objects_layout is None else [0.26, 0.0, 2.45])
@@ -50,7 +50,14 @@ def render_scene(output, objects_layout=None):
     fov = 58
     focal = height / (2 * np.tan(np.deg2rad(fov) / 2))
     intrinsics = {"fx": focal, "fy": focal, "cx": width / 2, "cy": height / 2}
-    view = bullet.computeViewMatrix(eye, [eye[0], eye[1], 0], [0, 1, 0])
+    up = [0, 1, 0]
+    if camera_yaw:
+        theta = np.deg2rad(camera_yaw)
+        c, s = np.cos(theta), np.sin(theta)
+        yaw_rotation = np.array([[c, -s, 0], [s, c, 0], [0, 0, 1]])
+        rotation = yaw_rotation @ rotation
+        up = (yaw_rotation @ up).tolist()
+    view = bullet.computeViewMatrix(eye, [eye[0], eye[1], 0], up)
     projection = bullet.computeProjectionMatrixFOV(fov, width / height, near, far)
     table_center = [0.70, 0, 0.18] if objects_layout is None else [0.26, 0.0, 0.18]
     table_size = [0.51, 0.47, 0.02] if objects_layout is None else [1.32, 0.51, 0.02]
@@ -133,17 +140,19 @@ def certify(base, targets):
     return results
 
 
-def generate_pair(output, objects_layout=None, target_name=None, scene_id=None):
+def generate_pair(output, objects_layout=None, target_name=None, scene_id=None, bases=None, *, camera_yaw=0.0):
     import generate_sp_map
     from generate_sp_map import DepthMapProcessor
 
     client = bullet.connect(bullet.DIRECT)
     try:
-        eye, rotation, intrinsics, targets = render_scene(output, objects_layout)
+        eye, rotation, intrinsics, targets = render_scene(output, objects_layout, camera_yaw=camera_yaw)
         if target_name is not None:
             targets = {target_name: targets[target_name]}
         configurations = {}
-        for key, base in (("A", np.array([0, 0, 0.20])), ("B", np.array([0.30, 0, 0.20]))):
+        if bases is None:
+            bases = ([0, 0, 0.20], [0.30, 0, 0.20])
+        for key, base in zip(("A", "B"), map(np.asarray, bases), strict=True):
             labels = certify(base, targets)
             entry = {
                 "raw_path": str(output / "depth.png"), "rgb_path": str(output / "rgb.png"),
@@ -154,7 +163,8 @@ def generate_pair(output, objects_layout=None, target_name=None, scene_id=None):
                 "camera_intrinsics": intrinsics, "workspace_radius": 0.05,
             }
             processor = DepthMapProcessor([entry])
-            processor.initialize_kdtree()
+            if generate_sp_map.global_kdtree is None:
+                processor.initialize_kdtree()
             processor.process_image_single(entry)
             rules = {}
             for name, target in targets.items():

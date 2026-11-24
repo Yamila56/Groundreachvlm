@@ -1,0 +1,68 @@
+{
+  "all": {
+    "count": 64,
+    "prompts": {
+      "original": {
+        "confusion": {
+          "N-Y": 21,
+          "Y-Y": 32,
+          "N-N": 11
+        },
+        "scores": {
+          "margin": 46,
+          "marker_margin": 40
+        }
+      },
+      "explicit": {
+        "confusion": {
+          "N-Y": 18,
+          "Y-Y": 32,
+          "N-N": 14
+        },
+        "scores": {
+          "margin": 49,
+          "marker_margin": 41
+        }
+      }
+    }
+  },
+  "unambiguous": {
+    "count": 62,
+    "prompts": {
+      "original": {
+        "confusion": {
+          "N-Y": 20,
+          "Y-Y": 31,
+          "N-N": 11
+        },
+        "scores": {
+          "margin": 45,
+          "marker_margin": 39
+        }
+      },
+      "explicit": {
+        "confusion": {
+          "N-Y": 17,
+          "Y-Y": 31,
+          "N-N": 14
+        },
+        "scores": {
+          "margin": 48,
+          "marker_margin": 40
+        }
+      }
+    }
+  },
+  "excluded": [
+    {
+      "id": "PANDA-23-N",
+      "truth": "N",
+      "question": "Is the book in the robot's reachable space?"
+    },
+    {
+      "id": "PANDA-23-Y",
+      "truth": "Y",
+      "question": "Is the book in the robot's reachable space?"
+    }
+  ]
+}

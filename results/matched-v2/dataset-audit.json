@@ -1,0 +1,175 @@
+{
+  "splits": {
+    "train": {
+      "n": 256,
+      "coordinate_only_accuracy": 0.25,
+      "families": [
+        0,
+        30,
+        90,
+        150,
+        180,
+        240,
+        300,
+        330
+      ],
+      "min_outer_margin_m": 0.18726596760576797,
+      "max_fk_error_m": 0.0012802324918581784
+    },
+    "dev": {
+      "n": 64,
+      "coordinate_only_accuracy": 0.25,
+      "families": [
+        50,
+        125,
+        205,
+        280
+      ],
+      "min_outer_margin_m": 0.19378752856100512,
+      "max_fk_error_m": 0.0012690826026529678
+    },
+    "test": {
+      "n": 160,
+      "coordinate_only_accuracy": 0.25,
+      "families": [
+        15,
+        70,
+        110,
+        165,
+        225,
+        260,
+        315,
+        345
+      ],
+      "min_outer_margin_m": 0.19318414198988965,
+      "max_fk_error_m": 0.0013341911032459877
+    }
+  },
+  "geometry": {
+    "threshold": 83.0,
+    "results": {
+      "train": {
+        "localization_failures": 0,
+        "image_pair_accuracy": 0.99609375,
+        "oracle_pointcloud_pair_accuracy": 1.0,
+        "total_pairs": 256
+      },
+      "dev": {
+        "localization_failures": 0,
+        "image_pair_accuracy": 1.0,
+        "oracle_pointcloud_pair_accuracy": 1.0,
+        "total_pairs": 64
+      }
+    }
+  },
+  "rgb_baseline": {
+    "train": {
+      "accuracy": 0.40234375,
+      "n": 256,
+      "labels": [
+        "NN",
+        "NY",
+        "YN",
+        "YY"
+      ],
+      "confusion": [
+        [
+          29,
+          10,
+          8,
+          17
+        ],
+        [
+          10,
+          22,
+          9,
+          23
+        ],
+        [
+          12,
+          11,
+          21,
+          20
+        ],
+        [
+          17,
+          5,
+          11,
+          31
+        ]
+      ]
+    },
+    "dev": {
+      "accuracy": 0.359375,
+      "n": 64,
+      "labels": [
+        "NN",
+        "NY",
+        "YN",
+        "YY"
+      ],
+      "confusion": [
+        [
+          8,
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          4,
+          4,
+          5
+        ],
+        [
+          10,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2,
+          9
+        ]
+      ]
+    },
+    "test": {
+      "accuracy": 0.275,
+      "n": 160,
+      "labels": [
+        "NN",
+        "NY",
+        "YN",
+        "YY"
+      ],
+      "confusion": [
+        [
+          15,
+          5,
+          11,
+          9
+        ],
+        [
+          17,
+          11,
+          3,
+          9
+        ],
+        [
+          11,
+          10,
+          9,
+          10
+        ],
+        [
+          13,
+          12,
+          6,
+          9
+        ]
+      ]
+    }
+  }
+}
