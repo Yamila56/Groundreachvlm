@@ -1,0 +1,12 @@
+__pycache__/
+/.venv/
+/upstream/
+/model/
+/runs/
+/study/outputs/
+.env
+.env.*
+*.safetensors
+*.gguf
+*.pem
+*.key

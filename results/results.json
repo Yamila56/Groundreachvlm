@@ -1,0 +1,2014 @@
+{
+  "strata": {
+    "YN": 40,
+    "NY": 40,
+    "YY": 40,
+    "NN": 40
+  },
+  "metrics": {
+    "flip": {
+      "model": {
+        "pairs": 80,
+        "both_correct": 0,
+        "pair_accuracy": 0.0,
+        "pair_accuracy_ci95": [
+          0,
+          0.0458181295355271
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "swapped_map": {
+        "pairs": 80,
+        "both_correct": 0,
+        "pair_accuracy": 0.0,
+        "pair_accuracy_ci95": [
+          0,
+          0.0458181295355271
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "fixed_map_a": {
+        "pairs": 80,
+        "both_correct": 0,
+        "pair_accuracy": 0.0,
+        "pair_accuracy_ci95": [
+          0,
+          0.0458181295355271
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "fixed_map_b": {
+        "pairs": 80,
+        "both_correct": 0,
+        "pair_accuracy": 0.0,
+        "pair_accuracy_ci95": [
+          0,
+          0.0458181295355271
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "workspace_nn": {
+        "pairs": 80,
+        "both_correct": 80,
+        "pair_accuracy": 1.0,
+        "pair_accuracy_ci95": [
+          0.9541818704644728,
+          0.9999999999999999
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 80,
+        "change_rate_on_valid": 1.0,
+        "questions_correct": 160,
+        "questions": 160,
+        "false_positives": 0,
+        "negative_questions": 80
+      },
+      "radial": {
+        "pairs": 80,
+        "both_correct": 80,
+        "pair_accuracy": 1.0,
+        "pair_accuracy_ci95": [
+          0.9541818704644728,
+          0.9999999999999999
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 80,
+        "change_rate_on_valid": 1.0,
+        "questions_correct": 160,
+        "questions": 160,
+        "false_positives": 0,
+        "negative_questions": 80
+      }
+    },
+    "stable": {
+      "model": {
+        "pairs": 80,
+        "both_correct": 40,
+        "pair_accuracy": 0.5,
+        "pair_accuracy_ci95": [
+          0.3929741508611972,
+          0.6070258491388028
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "swapped_map": {
+        "pairs": 80,
+        "both_correct": 40,
+        "pair_accuracy": 0.5,
+        "pair_accuracy_ci95": [
+          0.3929741508611972,
+          0.6070258491388028
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "fixed_map_a": {
+        "pairs": 80,
+        "both_correct": 40,
+        "pair_accuracy": 0.5,
+        "pair_accuracy_ci95": [
+          0.3929741508611972,
+          0.6070258491388028
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "fixed_map_b": {
+        "pairs": 80,
+        "both_correct": 40,
+        "pair_accuracy": 0.5,
+        "pair_accuracy_ci95": [
+          0.3929741508611972,
+          0.6070258491388028
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 80,
+        "questions": 160,
+        "false_positives": 80,
+        "negative_questions": 80
+      },
+      "workspace_nn": {
+        "pairs": 80,
+        "both_correct": 80,
+        "pair_accuracy": 1.0,
+        "pair_accuracy_ci95": [
+          0.9541818704644728,
+          0.9999999999999999
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 160,
+        "questions": 160,
+        "false_positives": 0,
+        "negative_questions": 80
+      },
+      "radial": {
+        "pairs": 80,
+        "both_correct": 80,
+        "pair_accuracy": 1.0,
+        "pair_accuracy_ci95": [
+          0.9541818704644728,
+          0.9999999999999999
+        ],
+        "valid_pairs": 80,
+        "invalid_answers": 0,
+        "changed_pairs": 0,
+        "change_rate_on_valid": 0.0,
+        "questions_correct": 160,
+        "questions": 160,
+        "false_positives": 0,
+        "negative_questions": 80
+      }
+    }
+  },
+  "paired_comparisons": {
+    "flip": {
+      "workspace_nn": {
+        "delta": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "radial": {
+        "delta": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ]
+      }
+    },
+    "stable": {
+      "workspace_nn": {
+        "delta": -0.5,
+        "ci95": [
+          -0.6125,
+          -0.3875
+        ]
+      },
+      "radial": {
+        "delta": -0.5,
+        "ci95": [
+          -0.6125,
+          -0.3875
+        ]
+      }
+    }
+  },
+  "cases": [
+    {
+      "scene": "scene-01000",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01001",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01002",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01003",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01004",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01005",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01006",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01007",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01008",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01009",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01010",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01011",
+      "target": "blue block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01012",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01013",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01014",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01015",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01016",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01017",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01018",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01019",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01020",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01021",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01022",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01023",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01024",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01025",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01026",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01027",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01028",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01029",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01030",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01031",
+      "target": "green block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01032",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01033",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01034",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01035",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01036",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01037",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01038",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01039",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01040",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01041",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01042",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01043",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01044",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01045",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01046",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01047",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01048",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01049",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01050",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01051",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01052",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01053",
+      "target": "red block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01054",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01055",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01056",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01057",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01058",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01059",
+      "target": "blue block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01060",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01061",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01062",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01063",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01064",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01065",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01066",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01067",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01068",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01069",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01070",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01071",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01072",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01073",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01074",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01075",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01076",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01077",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01078",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01079",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01080",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01081",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01082",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01083",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01084",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01085",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01086",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01087",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01088",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01089",
+      "target": "red block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01090",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01091",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01092",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01093",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01094",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01095",
+      "target": "blue block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01096",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01097",
+      "target": "red block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01098",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01099",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01100",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01101",
+      "target": "red block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01102",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01103",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01104",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01105",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01106",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01107",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01108",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01109",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01110",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01111",
+      "target": "green block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01112",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01113",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01114",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01115",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01116",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01117",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01118",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01119",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01120",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01121",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01122",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01123",
+      "target": "blue block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01124",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01125",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01126",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01127",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01128",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01129",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01130",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01131",
+      "target": "green block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01132",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01133",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01134",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01135",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01136",
+      "target": "blue block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01137",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01138",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01139",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01140",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01141",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01142",
+      "target": "yellow block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01143",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01144",
+      "target": "green block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01145",
+      "target": "blue block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01146",
+      "target": "blue block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01147",
+      "target": "red block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01148",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01149",
+      "target": "green block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01150",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01151",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01152",
+      "target": "red block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01153",
+      "target": "yellow block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01154",
+      "target": "red block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01155",
+      "target": "blue block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    },
+    {
+      "scene": "scene-01156",
+      "target": "yellow block",
+      "truth": "YN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YN",
+      "radial": "YN"
+    },
+    {
+      "scene": "scene-01157",
+      "target": "red block",
+      "truth": "NY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NY",
+      "radial": "NY"
+    },
+    {
+      "scene": "scene-01158",
+      "target": "green block",
+      "truth": "YY",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "YY",
+      "radial": "YY"
+    },
+    {
+      "scene": "scene-01159",
+      "target": "yellow block",
+      "truth": "NN",
+      "model": "YY",
+      "swapped_map": "YY",
+      "fixed_map_a": "YY",
+      "fixed_map_b": "YY",
+      "workspace_nn": "NN",
+      "radial": "NN"
+    }
+  ]
+}

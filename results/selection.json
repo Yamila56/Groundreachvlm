@@ -1,0 +1,812 @@
+{
+  "accepted": {
+    "YN": 40,
+    "NY": 40,
+    "YY": 40,
+    "NN": 40
+  },
+  "selection": [
+    {
+      "scene": "scene-01000",
+      "fixture": "scene-01000/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01001",
+      "fixture": "scene-01001/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01002",
+      "fixture": "scene-01002/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01003",
+      "fixture": "scene-01003/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01004",
+      "fixture": "scene-01004/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01005",
+      "fixture": "scene-01005/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01006",
+      "fixture": "scene-01006/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01007",
+      "fixture": "scene-01007/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01008",
+      "fixture": "scene-01008/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01009",
+      "fixture": "scene-01009/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01010",
+      "fixture": "scene-01010/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01011",
+      "fixture": "scene-01011/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01012",
+      "fixture": "scene-01012/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01013",
+      "fixture": "scene-01013/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01014",
+      "fixture": "scene-01014/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01015",
+      "fixture": "scene-01015/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01016",
+      "fixture": "scene-01016/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01017",
+      "fixture": "scene-01017/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01018",
+      "fixture": "scene-01018/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01019",
+      "fixture": "scene-01019/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01020",
+      "fixture": "scene-01020/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01021",
+      "fixture": "scene-01021/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01022",
+      "fixture": "scene-01022/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01023",
+      "fixture": "scene-01023/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01024",
+      "fixture": "scene-01024/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01025",
+      "fixture": "scene-01025/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01026",
+      "fixture": "scene-01026/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01027",
+      "fixture": "scene-01027/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01028",
+      "fixture": "scene-01028/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01029",
+      "fixture": "scene-01029/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01030",
+      "fixture": "scene-01030/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01031",
+      "fixture": "scene-01031/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01032",
+      "fixture": "scene-01032/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01033",
+      "fixture": "scene-01033/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01034",
+      "fixture": "scene-01034/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01035",
+      "fixture": "scene-01035/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01036",
+      "fixture": "scene-01036/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01037",
+      "fixture": "scene-01037/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01038",
+      "fixture": "scene-01038/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01039",
+      "fixture": "scene-01039/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01040",
+      "fixture": "scene-01040/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01041",
+      "fixture": "scene-01041/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01042",
+      "fixture": "scene-01042/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01043",
+      "fixture": "scene-01043/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01044",
+      "fixture": "scene-01044/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01045",
+      "fixture": "scene-01045/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01046",
+      "fixture": "scene-01046/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01047",
+      "fixture": "scene-01047/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01048",
+      "fixture": "scene-01048/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01049",
+      "fixture": "scene-01049/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01050",
+      "fixture": "scene-01050/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01051",
+      "fixture": "scene-01051/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01052",
+      "fixture": "scene-01052/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01053",
+      "fixture": "scene-01053/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01054",
+      "fixture": "scene-01054/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01055",
+      "fixture": "scene-01055/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01056",
+      "fixture": "scene-01056/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01057",
+      "fixture": "scene-01057/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01058",
+      "fixture": "scene-01058/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01059",
+      "fixture": "scene-01059/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01060",
+      "fixture": "scene-01060/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01061",
+      "fixture": "scene-01061/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01062",
+      "fixture": "scene-01062/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01063",
+      "fixture": "scene-01063/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01064",
+      "fixture": "scene-01064/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01065",
+      "fixture": "scene-01065/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01066",
+      "fixture": "scene-01066/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01067",
+      "fixture": "scene-01067/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01068",
+      "fixture": "scene-01068/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01069",
+      "fixture": "scene-01069/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01070",
+      "fixture": "scene-01070/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01071",
+      "fixture": "scene-01071/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01072",
+      "fixture": "scene-01072/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01073",
+      "fixture": "scene-01073/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01074",
+      "fixture": "scene-01074/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01075",
+      "fixture": "scene-01075/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01076",
+      "fixture": "scene-01076/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01077",
+      "fixture": "scene-01077/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01078",
+      "fixture": "scene-01078/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01079",
+      "fixture": "scene-01079/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01080",
+      "fixture": "scene-01080/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01081",
+      "fixture": "scene-01081/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01082",
+      "fixture": "scene-01082/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01083",
+      "fixture": "scene-01083/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01084",
+      "fixture": "scene-01084/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01085",
+      "fixture": "scene-01085/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01086",
+      "fixture": "scene-01086/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01087",
+      "fixture": "scene-01087/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01088",
+      "fixture": "scene-01088/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01089",
+      "fixture": "scene-01089/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01090",
+      "fixture": "scene-01090/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01091",
+      "fixture": "scene-01091/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01092",
+      "fixture": "scene-01092/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01093",
+      "fixture": "scene-01093/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01094",
+      "fixture": "scene-01094/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01095",
+      "fixture": "scene-01095/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01096",
+      "fixture": "scene-01096/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01097",
+      "fixture": "scene-01097/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01098",
+      "fixture": "scene-01098/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01099",
+      "fixture": "scene-01099/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01100",
+      "fixture": "scene-01100/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01101",
+      "fixture": "scene-01101/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01102",
+      "fixture": "scene-01102/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01103",
+      "fixture": "scene-01103/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01104",
+      "fixture": "scene-01104/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01105",
+      "fixture": "scene-01105/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01106",
+      "fixture": "scene-01106/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01107",
+      "fixture": "scene-01107/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01108",
+      "fixture": "scene-01108/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01109",
+      "fixture": "scene-01109/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01110",
+      "fixture": "scene-01110/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01111",
+      "fixture": "scene-01111/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01112",
+      "fixture": "scene-01112/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01113",
+      "fixture": "scene-01113/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01114",
+      "fixture": "scene-01114/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01115",
+      "fixture": "scene-01115/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01116",
+      "fixture": "scene-01116/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01117",
+      "fixture": "scene-01117/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01118",
+      "fixture": "scene-01118/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01119",
+      "fixture": "scene-01119/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01120",
+      "fixture": "scene-01120/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01121",
+      "fixture": "scene-01121/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01122",
+      "fixture": "scene-01122/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01123",
+      "fixture": "scene-01123/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01124",
+      "fixture": "scene-01124/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01125",
+      "fixture": "scene-01125/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01126",
+      "fixture": "scene-01126/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01127",
+      "fixture": "scene-01127/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01128",
+      "fixture": "scene-01128/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01129",
+      "fixture": "scene-01129/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01130",
+      "fixture": "scene-01130/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01131",
+      "fixture": "scene-01131/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01132",
+      "fixture": "scene-01132/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01133",
+      "fixture": "scene-01133/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01134",
+      "fixture": "scene-01134/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01135",
+      "fixture": "scene-01135/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01136",
+      "fixture": "scene-01136/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01137",
+      "fixture": "scene-01137/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01138",
+      "fixture": "scene-01138/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01139",
+      "fixture": "scene-01139/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01140",
+      "fixture": "scene-01140/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01141",
+      "fixture": "scene-01141/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01142",
+      "fixture": "scene-01142/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01143",
+      "fixture": "scene-01143/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01144",
+      "fixture": "scene-01144/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01145",
+      "fixture": "scene-01145/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01146",
+      "fixture": "scene-01146/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01147",
+      "fixture": "scene-01147/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01148",
+      "fixture": "scene-01148/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01149",
+      "fixture": "scene-01149/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01150",
+      "fixture": "scene-01150/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01151",
+      "fixture": "scene-01151/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01152",
+      "fixture": "scene-01152/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01153",
+      "fixture": "scene-01153/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01154",
+      "fixture": "scene-01154/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01155",
+      "fixture": "scene-01155/paired_pilot.json",
+      "label": "NN"
+    },
+    {
+      "scene": "scene-01156",
+      "fixture": "scene-01156/paired_pilot.json",
+      "label": "YN"
+    },
+    {
+      "scene": "scene-01157",
+      "fixture": "scene-01157/paired_pilot.json",
+      "label": "NY"
+    },
+    {
+      "scene": "scene-01158",
+      "fixture": "scene-01158/paired_pilot.json",
+      "label": "YY"
+    },
+    {
+      "scene": "scene-01159",
+      "fixture": "scene-01159/paired_pilot.json",
+      "label": "NN"
+    }
+  ],
+  "rejected": [],
+  "start_seed": 1000
+}
