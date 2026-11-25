@@ -41,7 +41,7 @@ def create_box(center, half_extents, color):
     return bullet.createMultiBody(baseMass=0, baseVisualShapeIndex=visual, basePosition=center)
 
 
-def render_scene(output, objects_layout=None, *, camera_yaw=0.0):
+def render_scene(output, objects_layout=None, *, camera_yaw=0.0, shapes=None):
     width, height = 640, 480
     near, far = 0.2, 3.0
     eye = np.array([0.65, 0.0, 1.55] if objects_layout is None else [0.26, 0.0, 2.45])
@@ -67,10 +67,18 @@ def render_scene(output, objects_layout=None, *, camera_yaw=0.0):
             "red block": ([1.00, 0.08, 0.245], [0.85, 0.15, 0.12, 1]),
             "blue block": ([0.54, -0.17, 0.245], [0.13, 0.30, 0.81, 1]),
         }
-    objects = {
-        name: create_box(center, [0.04, 0.045, 0.045], color)
-        for name, (center, color) in objects_layout.items()
-    }
+    half_extents = np.array([0.04, 0.045, 0.045])
+    objects = {}
+    for name, (center, color) in objects_layout.items():
+        shape = shapes.get(name, "box") if shapes else "box"
+        if shape == "box":
+            objects[name] = create_box(center, half_extents.tolist(), color)
+        else:
+            options = {"sphere": (bullet.GEOM_SPHERE, dict(radius=.045)),
+                       "cylinder": (bullet.GEOM_CYLINDER, dict(radius=.045, length=.09))}
+            kind, kwargs = options[shape]
+            visual = bullet.createVisualShape(kind, rgbaColor=color, **kwargs)
+            objects[name] = bullet.createMultiBody(baseMass=0, baseVisualShapeIndex=visual, basePosition=center)
     _, _, rgba, depth_buffer, segmentation = bullet.getCameraImage(
         width, height, view, projection, renderer=bullet.ER_TINY_RENDERER,
     )
@@ -80,17 +88,25 @@ def render_scene(output, objects_layout=None, *, camera_yaw=0.0):
         if not cv2.imwrite(str(output / filename), image):
             raise OSError(filename)
     targets = {}
-    for name, body in objects.items():
-        pixels = np.argwhere(np.asarray(segmentation) == body)
+    for index, (name, body) in enumerate(objects.items()):
+        mask = np.asarray(segmentation) == body
+        pixels = np.argwhere(mask)
         y, x = pixels[np.argmin(np.sum((pixels - pixels.mean(axis=0)) ** 2, axis=1))]
         z = depth_m[y, x]
         point = eye + rotation @ np.array([(width / 2 - x) * z / focal, (height / 2 - y) * z / focal, z])
         local = np.abs(point - np.array(objects_layout[name][0]))
-        half_extents = np.array([0.04, 0.045, 0.045])
         pixel_tolerance = max(0.002, 2 * z / focal)
-        if np.any(local > half_extents + pixel_tolerance) or np.min(np.abs(local - half_extents)) > pixel_tolerance:
+        if not shapes and (np.any(local > half_extents + pixel_tolerance)
+                           or np.min(np.abs(local - half_extents)) > pixel_tolerance):
             raise RuntimeError(f"Camera backprojection missed {name}: {point}")
         targets[name] = {"pixel_xy": [int(x), int(y)], "position_m": point.tolist()}
+        if shapes:
+            top, left = pixels.min(axis=0)
+            bottom, right = pixels.max(axis=0) + 1
+            filename = f"mask-{index}.png"
+            if not cv2.imwrite(str(output / filename), mask.astype(np.uint8) * 255):
+                raise OSError(filename)
+            targets[name].update(box=[int(left), int(top), int(right), int(bottom)], mask=filename)
     return eye, rotation, intrinsics, targets
 
 
@@ -140,13 +156,16 @@ def certify(base, targets):
     return results
 
 
-def generate_pair(output, objects_layout=None, target_name=None, scene_id=None, bases=None, *, camera_yaw=0.0):
+def generate_pair(output, objects_layout=None, target_name=None, scene_id=None, bases=None, *,
+                  camera_yaw=0.0, shapes=None):
     import generate_sp_map
     from generate_sp_map import DepthMapProcessor
 
     client = bullet.connect(bullet.DIRECT)
     try:
-        eye, rotation, intrinsics, targets = render_scene(output, objects_layout, camera_yaw=camera_yaw)
+        eye, rotation, intrinsics, targets = render_scene(
+            output, objects_layout, camera_yaw=camera_yaw, shapes=shapes,
+        )
         if target_name is not None:
             targets = {target_name: targets[target_name]}
         configurations = {}

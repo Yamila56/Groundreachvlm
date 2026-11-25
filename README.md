@@ -35,6 +35,23 @@ The boxes come from simulator metadata, so this measures transfer **given a know
 
 On the earlier 62-query source set, the target-crop adapters given upstream boxes scored **44/62 and 42/62** versus **42/62** for the frozen model on full images. The paired intervals both include zero. [Source-distribution adaptation comparison](results/source-transfer/retrospective-box-probe.json)
 
+## Automatic target localization
+
+In 48 additional Panda layouts, two objects share a color and swap positions. Each of the 96 views is queried for both targets and both workspaces. Independent reachability certificates establish the labels.
+
+| Target region and readout | Correct questions | All four correct |
+| --- | ---: | ---: |
+| Frozen model on full inputs | 190/384 | 0/96 |
+| Detector top box and map rule | 260/384 | 12/96 |
+| Detector top box and local projector, two seeds | 259/384 · 235/384 | 12/96 · 7/96 |
+| Detector boxes reranked by RGB chroma and map rule | 316/384 | 64/96 |
+| Detector boxes reranked by RGB chroma and local projector | 316/384 · 270/384 | 64/96 · 34/96 |
+| Simulator box and map rule | 384/384 | 96/96 |
+
+The detector's top proposal overlaps the requested object at IoU 0.5 or higher for 88 of 192 distinct image–description pairs. The top three deduplicated proposals cover all 192. On 96 newly regenerated upstream recipe questions, selecting a proposal by annotated identity and reading its map region with the frozen model as a fallback yields 86/96. The same test yields 65/96 with the original full-image model, 62/96 with the detector top box and 57/96 after RGB-chroma reranking.
+
+[Grounding results](results/grounding-study/metrics.json) · [Setup and analysis](study/目标定位实验报告.md)
+
 ## Reproduce
 
 The CPU generator and GPU inference use the same pinned upstream assets.
