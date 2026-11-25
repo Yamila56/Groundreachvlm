@@ -64,6 +64,12 @@ The source recipe labels the object's origin by its distance from the robot base
 
 [Learned ranking results](results/grounding-study/learned-reranker.json) · [Reachability labels and geometry audit](LABEL_SEMANTICS.md) · [Training and evaluation](study/目标定位实验报告.md)
 
+### Specified-point evaluation
+
+An independent test marks two visible surface points in each image and asks about the mark on the named object. Among 231 questions with independently replayed certificates, frozen PhysVLM scores **93**, detector boxes with the center rule score **171**, and the learned ranker with the same rule scores **198**. The score rises to **200** when the rule reads the marker pixel selected inside each ranked box. It answers all four questions correctly in **34/44** fully certified views. Reading the simulator marker reaches **231/231**. All errors of automatic marker-pixel readout are associated with target selection on this test. The remaining 25 questions carry an unknown certificate status.
+
+[Specified-point study and reproduction](study/marked-point-study.md)
+
 ## Reproduce
 
 The CPU generator and GPU inference use the same pinned upstream assets.

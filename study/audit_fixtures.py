@@ -20,6 +20,7 @@ def audit(selection_path):
     hashes = set()
     reached_errors = []
     negative_margins = []
+    uncertified = 0
     client = bullet.connect(bullet.DIRECT)
     try:
         for entry in selection["selection"]:
@@ -44,6 +45,13 @@ def audit(selection_path):
                 evidence = config["targets"][target]
                 if label != evidence["label"]:
                     raise ValueError(f"Label disagreement at {entry['scene']}/{side}")
+                if label == "U":
+                    origin, radius = workspace_bound(base)
+                    error = evidence["fk_error_m"]
+                    if np.linalg.norm(point-origin) > radius+TOLERANCE or (error is not None and error <= TOLERANCE):
+                        raise ValueError(f"Certified point marked unknown at {entry['scene']}/{side}")
+                    uncertified += 1
+                    continue
                 if label == "N":
                     origin, radius = workspace_bound(base)
                     margin = np.linalg.norm(point - origin) - radius
@@ -73,6 +81,7 @@ def audit(selection_path):
         "selection_sha256": digest(selection_path), "pairs": len(hashes),
         "reachable_witnesses": len(reached_errors), "max_fk_error_m": max(reached_errors, default=None),
         "unreachable_bounds": len(negative_margins), "minimum_bound_margin_m": min(negative_margins, default=None),
+        **({"unknown": uncertified} if uncertified else {}),
     }
 
 

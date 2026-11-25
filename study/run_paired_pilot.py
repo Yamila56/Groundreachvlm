@@ -41,7 +41,7 @@ def create_box(center, half_extents, color):
     return bullet.createMultiBody(baseMass=0, baseVisualShapeIndex=visual, basePosition=center)
 
 
-def render_scene(output, objects_layout=None, *, camera_yaw=0.0, shapes=None):
+def render_scene(output, objects_layout=None, *, camera_yaw=0.0, shapes=None, point_quantile=None):
     width, height = 640, 480
     near, far = 0.2, 3.0
     eye = np.array([0.65, 0.0, 1.55] if objects_layout is None else [0.26, 0.0, 2.45])
@@ -91,7 +91,10 @@ def render_scene(output, objects_layout=None, *, camera_yaw=0.0, shapes=None):
     for index, (name, body) in enumerate(objects.items()):
         mask = np.asarray(segmentation) == body
         pixels = np.argwhere(mask)
-        y, x = pixels[np.argmin(np.sum((pixels - pixels.mean(axis=0)) ** 2, axis=1))]
+        center_pixel = pixels.mean(axis=0)
+        if point_quantile is not None:
+            center_pixel[1] = np.quantile(pixels[:, 1], point_quantile)
+        y, x = pixels[np.argmin(np.sum((pixels - center_pixel) ** 2, axis=1))]
         z = depth_m[y, x]
         point = eye + rotation @ np.array([(width / 2 - x) * z / focal, (height / 2 - y) * z / focal, z])
         local = np.abs(point - np.array(objects_layout[name][0]))
@@ -157,14 +160,14 @@ def certify(base, targets):
 
 
 def generate_pair(output, objects_layout=None, target_name=None, scene_id=None, bases=None, *,
-                  camera_yaw=0.0, shapes=None):
+                  camera_yaw=0.0, shapes=None, point_quantile=None):
     import generate_sp_map
     from generate_sp_map import DepthMapProcessor
 
     client = bullet.connect(bullet.DIRECT)
     try:
         eye, rotation, intrinsics, targets = render_scene(
-            output, objects_layout, camera_yaw=camera_yaw, shapes=shapes,
+            output, objects_layout, camera_yaw=camera_yaw, shapes=shapes, point_quantile=point_quantile,
         )
         if target_name is not None:
             targets = {target_name: targets[target_name]}

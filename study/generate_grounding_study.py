@@ -5,9 +5,11 @@ import json
 import sys
 from pathlib import Path
 
+import cv2
 import numpy as np
 
 from audit_fixtures import audit
+from point_markers import marked_image
 from run_paired_pilot import SIMULATOR, generate_pair
 
 
@@ -15,7 +17,7 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def build(output, count, seed):
+def build(output, count, seed, point_check=False):
     output.mkdir(parents=True, exist_ok=False)
     rng = np.random.default_rng(seed)
     rows = []
@@ -32,7 +34,10 @@ def build(output, count, seed):
         names = tuple(f"{color} {shape}" for shape in shapes)
         yaw = int(rng.choice([-32, -17, 11, 26]))
         certified = None
-        for radius in ((.82, .78, .74, .70, .66, .62) if boundary else (.47,)):
+        radii = ((.82, .78, .74, .70, .66, .62) if boundary else (.47,))
+        if point_check:
+            radii = ((.72, .78, .84)[(layout//2) % 3],) if boundary else (.47,)
+        for radius in radii:
             provisional = []
             for ordering in (0, 1):
                 scene = f"s{seed}-layout{layout:03}-order{ordering}"
@@ -49,11 +54,20 @@ def build(output, count, seed):
                 expected = dict(zip(names, ("YN", "NY") if (ordering == (layout % 4 >= 2))
                                     else ("NY", "YN"), strict=True))
                 actual = generate_pair(folder, objects, scene_id=scene, bases=bases, camera_yaw=yaw,
-                                       shapes=dict(zip(names, shapes, strict=True)))
-                if actual != expected:
+                                       shapes=dict(zip(names, shapes, strict=True)),
+                                       point_quantile=(.24, .50, .76)[(layout+ordering) % 3] if point_check else None)
+                if not point_check and actual != expected:
                     break
                 fixture_path = folder / "paired_pilot.json"
                 fixture = json.loads(fixture_path.read_text())
+                marker_fields = {}
+                if point_check:
+                    marked = folder/"marked-rgb.png"
+                    rgb = cv2.imread(str(folder/"rgb.png"))
+                    markers = [fixture["targets"][target]["pixel_xy"] for target in names]
+                    if not cv2.imwrite(str(marked), marked_image(rgb, markers)):
+                        raise OSError(marked)
+                    marker_fields = dict(marked_image=f"{folder.name}/{marked.name}", marked_sha256=sha(marked))
                 for side, conf in fixture["configurations"].items():
                     for index, target in enumerate(names):
                         obj = fixture["targets"][target]
@@ -68,7 +82,10 @@ def build(output, count, seed):
                             sp_map=f"{folder.name}/{conf['sp_map']}", map_sha256=sha(folder / conf["sp_map"]),
                             box=obj["box"], mask=f"{folder.name}/{obj['mask']}", point=obj["pixel_xy"],
                             certificate=f"{folder.name}/paired_pilot.json", certificate_sha256=sha(fixture_path),
+                            **marker_fields,
                         ))
+                        if point_check:
+                            provisional[-1]["sampled_workspace_label"] = conf["rules"][target]["workspace_label"]
             if len(provisional) == 8:
                 certified = provisional
                 break
@@ -94,6 +111,7 @@ if __name__ == "__main__":
     parser.add_argument("output", type=Path)
     parser.add_argument("--count", type=int, required=True)
     parser.add_argument("--seed", type=int, required=True)
+    parser.add_argument("--point-check", action="store_true")
     args = parser.parse_args()
     sys.path.insert(0, str(SIMULATOR))
-    build(args.output.resolve(), args.count, args.seed)
+    build(args.output.resolve(), args.count, args.seed, args.point_check)

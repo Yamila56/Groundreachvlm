@@ -1,0 +1,20 @@
+[
+  {
+    "selection_sha256": "a03b61ec8e6575dd8c9f4c6ae6af3986e8a961c6d6d918bf6d07866c6b338785",
+    "pairs": 64,
+    "reachable_witnesses": 49,
+    "max_fk_error_m": 0.007992068732828057,
+    "unreachable_bounds": 74,
+    "minimum_bound_margin_m": 0.01579819063780774,
+    "unknown": 5
+  },
+  {
+    "selection_sha256": "048ec3f236764640608e901d489265b5a8a40716572a2588911956eac1362f87",
+    "pairs": 64,
+    "reachable_witnesses": 44,
+    "max_fk_error_m": 0.0024919008374192295,
+    "unreachable_bounds": 64,
+    "minimum_bound_margin_m": 0.31172677710042285,
+    "unknown": 20
+  }
+]
