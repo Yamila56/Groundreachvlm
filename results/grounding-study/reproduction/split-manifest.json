@@ -1,0 +1,71 @@
+{
+  "upstream_revision": "37e25fd83d8b9f0bdb425661e2dcdffa674a79c7",
+  "detector_revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "physvlm_revision": "411280628b973db0c1e58d3e1a22c0dda90729d5",
+  "marked_point": {
+    "seed": 563891,
+    "layouts": 32,
+    "manifest_sha256": "df5ce60a48999839c095a975ec93b7ce2b11f0ffdf2b2078616bdbc8a843025c",
+    "certificate_audit_sha256": "5b1ceba8e8e0b290d266a14c3761dbed9a023c1656c0d52298850d63a40312aa",
+    "cache_sha256": "9dac8fb070bd2fe287106428ae042a54efbc483dae77df2ffaf6a1161725461e"
+  },
+  "splits": [
+    {
+      "role": "train",
+      "group": "source-dev",
+      "questions": 96,
+      "images": 52,
+      "manifest_sha256": "ce8ebee7db01a4f60ce17bb8448145584ef3e8d7241d9a45e7275ef227a76bf2",
+      "cache_sha256": "03db1a7a37b762dfc4d30a7f84dd47eda617019fe00db3d2db22321b7c593ed0"
+    },
+    {
+      "role": "train",
+      "group": "source-test",
+      "questions": 96,
+      "images": 55,
+      "manifest_sha256": "1c8cd7625120fca94bded7bb609e4c88c8e0422f76adf77ae8ee930db0d20f67",
+      "cache_sha256": "40df279fc1126b465ac2d246cec18455bac6af17bcff519a0413430f2dfc435f"
+    },
+    {
+      "role": "train",
+      "group": "dev",
+      "questions": 96,
+      "images": 24,
+      "manifest_sha256": "095326aa3b2502ed0fa2495030f154e7e101ec8c20d89e3122d38c39b0521572",
+      "cache_sha256": "2af3caf4f76513e28559e4c841c82b4aa4350b17cce9ae80f60f86eec83e35f6"
+    },
+    {
+      "role": "development",
+      "group": "source-confirmation",
+      "questions": 94,
+      "images": 51,
+      "manifest_sha256": "323db1fb67000db24f465e8ca3330075f6ff0e7db6c554dc5c71aeaa2c3f8f9e",
+      "cache_sha256": "015b8e5b17103ba2521504016ed1c2e5db303122bfbe961fa988c6d766d4bc5f"
+    },
+    {
+      "role": "development",
+      "group": "test",
+      "questions": 384,
+      "images": 96,
+      "manifest_sha256": "17bb986a1c9c6bad28cd03843d3b1f23b1fa0e88323cfa340fc87da75a37a087",
+      "cache_sha256": "b8ca1b71fdf69fc5897f26a75b64d7398505daa4e9fb7c2addcc6b2e73ff5184"
+    },
+    {
+      "role": "holdout",
+      "group": "controlled-holdout",
+      "questions": 192,
+      "images": 48,
+      "manifest_sha256": "a84a400f01b13a6f13c809b1e0ab1108e617e24c1a9f3d82b707bf6f907cfe39",
+      "cache_sha256": "99521a7b42ab91a1af5faf2d116ba15cba8a020a83da3efc389edda1706045ad"
+    },
+    {
+      "role": "holdout",
+      "group": "source-holdout",
+      "questions": 128,
+      "images": 70,
+      "manifest_sha256": "1b097966468b3739b4320aedd9bb1d2e74705ab97438aa903e1d66d5b64f5034",
+      "cache_sha256": "6fa86cff0214c466806b07985a7fe3fe115dfe617364fde441bae2791a2ae8a0"
+    }
+  ]
+}

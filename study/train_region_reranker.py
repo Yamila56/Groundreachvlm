@@ -13,15 +13,16 @@ from grounding_readout import iou, save
 from prepare_official_box_probe import PREFIX, SUFFIX, normalized
 
 
-def features(item):
+def features(item, variant="full"):
     boxes = item["boxes"]
     visual, text = item["visual"], item["language"].expand(len(boxes), -1)
     similarity = torch.tensor([[box["score"], box["semantic"]] for box in boxes])
     base = ((similarity-similarity.mean(0))/similarity.std(0, unbiased=False).clamp_min(1e-6)).mean(1)
-    return torch.cat((visual, visual*text*visual.shape[-1]**.5, text), dim=1)*visual.shape[-1]**.5, base
+    inputs = (visual, text) if variant == "no-interaction" else (visual, visual*text*visual.shape[-1]**.5, text)
+    return torch.cat(inputs, dim=1)*visual.shape[-1]**.5, base
 
 
-def load_labeled(manifest, cache):
+def load_labeled(manifest, cache, variant="full"):
     rows = json.loads(manifest.read_text(encoding="utf-8"))["rows"]
     source = dict(root=manifest.parent, by_image=defaultdict(list))
     annotation = {}
@@ -43,7 +44,7 @@ def load_labeled(manifest, cache):
         positives = [iou(np.array(c["box"]), refs[match[0]]) >= .5 for c in item["boxes"]] if len(match) == 1 else []
         if not positives:
             continue
-        x, base = features(item)
+        x, base = features(item, variant)
         pairs.append((x, base, torch.tensor(positives)))
     return pairs, {r["image_sha256"] for r in rows}
 
@@ -60,7 +61,9 @@ def pack(pairs):
     return x, base, positive
 
 
-def network(dimensions):
+def network(dimensions, variant="full"):
+    if variant == "linear":
+        return nn.Sequential(nn.Linear(dimensions, 1))
     return nn.Sequential(nn.Linear(dimensions, 32), nn.GELU(), nn.Dropout(.15), nn.Linear(32, 1))
 
 
@@ -76,7 +79,7 @@ def train(args):
     train_pairs, dev_pairs, train_images, dev_images = [], [], set(), set()
     for specs, collection, images in ((args.train, train_pairs, train_images), (args.dev, dev_pairs, dev_images)):
         for manifest, cache in specs:
-            pairs, identities = load_labeled(Path(manifest), Path(cache))
+            pairs, identities = load_labeled(Path(manifest), Path(cache), args.variant)
             collection.extend(pairs)
             images.update(identities)
     if train_images & dev_images:
@@ -86,7 +89,7 @@ def train(args):
     dev = pack([p for p in dev_pairs if p[2].any()])
     torch.manual_seed(args.seed)
     generator = torch.Generator().manual_seed(args.seed)
-    model = network(x.shape[-1])
+    model = network(x.shape[-1], args.variant)
     nn.init.zeros_(model[-1].weight)
     nn.init.zeros_(model[-1].bias)
     opt = torch.optim.AdamW(model.parameters(), lr=.001, weight_decay=.03)
@@ -107,8 +110,8 @@ def train(args):
             best_step = epoch
         history.append(dict(epoch=epoch, correct=hits))
     args.output.mkdir(parents=True, exist_ok=False)
-    torch.save(dict(model=best, dimensions=x.shape[-1]), args.output/"weights.pt")
-    save(args.output/"training.json", dict(seed=args.seed, train_groups=len(train_pairs),
+    torch.save(dict(model=best, dimensions=x.shape[-1], variant=args.variant), args.output/"weights.pt")
+    save(args.output/"training.json", dict(seed=args.seed, variant=args.variant, train_groups=len(train_pairs),
          informative_groups=len(informative), dev_groups_with_positive=len(dev[0]),
          selected_epoch=best_step, dev_history=history,
          train_images=sorted(train_images), dev_images=sorted(dev_images)))
@@ -118,7 +121,8 @@ def train(args):
 def apply(args):
     weights = torch.load(args.checkpoint/"weights.pt", map_location="cpu", weights_only=True)
     provenance = json.loads((args.checkpoint/"training.json").read_text(encoding="utf-8"))
-    model = network(weights["dimensions"])
+    variant = weights.get("variant", "full")
+    model = network(weights["dimensions"], variant)
     model.load_state_dict(weights["model"])
     model.eval()
     output = []
@@ -128,7 +132,7 @@ def apply(args):
             raise ValueError("Held-out RGB overlaps the ranker training or development split")
         boxes = row["boxes"]
         if boxes:
-            x, base = features(row)
+            x, base = features(row, variant)
             best = int((base+model(x).squeeze(-1)).argmax())
             boxes = [boxes[best]]
         output.append(dict(image_sha256=row["image_sha256"], phrase=row["phrase"], boxes=boxes))
@@ -143,6 +147,7 @@ def main():
     fit.add_argument("--dev", nargs=2, action="append", required=True, metavar=("MANIFEST", "CACHE"))
     fit.add_argument("--output", type=Path, required=True)
     fit.add_argument("--seed", type=int, required=True)
+    fit.add_argument("--variant", choices=("full", "linear", "no-interaction"), default="full")
     predict = commands.add_parser("apply")
     for name in ("checkpoint", "cache", "output"):
         predict.add_argument(name, type=Path)

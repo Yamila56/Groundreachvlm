@@ -14,6 +14,7 @@ from evaluate_target_alignment import load_rows
 from fit_regional_readout import fit, load_split, summarize_region
 from grounding_readout import THRESHOLD, cluster_delta, read_predictions, rectangle, region
 from point_markers import find_markers, locate_marker
+from replay_marked_points import counts
 
 
 def read(path):
@@ -90,7 +91,7 @@ def prepare(args):
                                           marker_chroma=point_chroma(chroma, marker, 0),
                                           marker_neighborhood=point_chroma(chroma, marker, 2),
                                           features=summarize_region(chroma, box) if center else None)
-            if center is None or name == "detector":
+            if args.regions_only or center is None or name == "detector":
                 continue
             crop = rectangle(box, chroma.shape, 2)
             folder = args.output/name
@@ -115,24 +116,7 @@ def classify(value):
 
 def evaluate(rows, values, frozen):
     known = [r for r in rows if r["truth"] != "U"]
-    layouts, targets, workspaces = defaultdict(list), defaultdict(list), defaultdict(list)
-    for row in rows:
-        layouts[row["scene"]].append(row)
-        targets[row["scene"], row["side"]].append(row)
-        workspaces[row["scene"], row["target"]].append(row)
-
-    def joint(groups, size, opposite=False):
-        selected = [group for group in groups.values()
-                    if len(group) == size and all(r["truth"] != "U" for r in group)
-                    and (not opposite or {r["truth"] for r in group} == {"Y", "N"})]
-        return dict(total=len(groups), certified=len(selected),
-                    correct=sum(all(values[r["id"]] == r["truth"] for r in group) for group in selected))
-
-    return dict(certified=len(known), correct=sum(values[r["id"]] == r["truth"] for r in known),
-                unanswered=sum(values[r["id"]] == "U" for r in known),
-                confusion=dict(Counter(f"{r['truth']}-{values[r['id']]}" for r in rows)),
-                target_flip=joint(targets, 2, opposite=True), workspace_flip=joint(workspaces, 2, opposite=True),
-                four=joint(layouts, 4), versus_frozen=cluster_delta(known, values, frozen))
+    return dict(counts(rows, values), versus_frozen=cluster_delta(known, values, frozen))
 
 
 def fixed_readouts(training, development):
@@ -155,7 +139,7 @@ def score(args):
     frozen = read_predictions(args.frozen, "explicit")
     if frozen.keys() != keys:
         raise ValueError("Global model lacks evaluation rows")
-    models, center, scale, selection = fixed_readouts(args.train, args.dev)
+    models, center, scale, selection = fixed_readouts(args.train, args.dev) if args.train else ({}, None, None, {})
     all_methods = {name: {r["id"]: classify(r[key]) for r in rows}
                    for name, key in (("exact_pixel", "exact_pixel"), ("exact_neighborhood", "exact_neighborhood"))}
     all_methods.update(frozen=frozen, pcd={r["id"]: r["sampled_workspace_label"] for r in rows})
@@ -205,6 +189,12 @@ def score(args):
                                     r["boxes"][name]["marker_matches"] and
                                     all_methods[f"{name}-marker_chroma"][r["id"]] != r["truth"] for r in known))
                      for name in identity}
+    if args.export:
+        fields = ("id", "scene", "layout", "target", "side", "stratum", "truth")
+        write(args.export, [dict({key: row[key] for key in fields},
+                                marker_matches={name: box["marker_matches"] for name, box in row["boxes"].items()},
+                                predictions={name: values[row["id"]] for name, values in all_methods.items()})
+                            for row in rows])
     write(args.output, dict(n=len(rows), physical_layouts=len({r["layout"] for r in rows}),
                             labels=dict(Counter(r["truth"] for r in rows)), identity=identity,
                             readout_selection=selection, oracle_methods=oracle, metrics=metrics,
@@ -223,10 +213,18 @@ def main():
     prep.add_argument("manifest", type=Path)
     prep.add_argument("output", type=Path)
     prep.add_argument("--boxes", nargs="+", required=True)
+    prep.add_argument("--regions-only", action="store_true")
     ev = commands.add_parser("score")
     for name in ("regions", "train", "dev", "frozen", "output"):
         ev.add_argument(name, type=Path)
     ev.add_argument("--projector", nargs="+", default=[])
+    ev.add_argument("--export", type=Path)
+    rules = commands.add_parser("score-rules")
+    for name in ("regions", "frozen", "output"):
+        rules.add_argument(name, type=Path)
+    rules.add_argument("--export", type=Path)
+    rules.add_argument("--projector", nargs="+", default=[])
+    rules.set_defaults(train=None, dev=None)
     args = parser.parse_args()
     (prepare if args.command == "prepare" else score)(args)
 

@@ -26,15 +26,14 @@ At the specified pixels, the sampled upstream workspace agrees with all 231 cert
 
 ## Reproduce
 
-Generate the scenes in the CPU simulator configured in the repository README.
+Replay the frozen per-question archive against the published counts with Python 3 and the standard library.
 
 ```bash
-"$cpu_python" study/generate_grounding_study.py "$root/marked-point" \
-    --point-check --seed 563891 --count 32
+bash study/run_marked_point_study.sh replay
 ```
 
-Use the unmarked `manifest.json` for `detect_grounding_targets.py`, `score_region_semantics.py --confidence .12 --top-k 5 --features ...`, and both frozen checkpoints from the ranking study. Select raw detector order with `rerank_grounding_targets.py semantic --weight 0`.
+To regenerate the held-out scenes and run the detector, ranker, map rules and frozen model, use the pinned checkpoints and the `run` entry point documented in the repository README. Scene generation independently replays the certificates and writes `data/certificate-audit.json`. The ranker uses the two bundled historical checkpoints. The replay archive also retains the strict predictions of the historical local projector controls.
 
-Run `evaluate_marked_points.py prepare` with the manifest and the three outputs passed as `--boxes detector=... ranked17=... ranked29=...`. Run `evaluate_target_alignment.py predict --free-only` on `global.json` for frozen full-image inference. Run it with the matching local projector on the two ranked manifests, and with each projector on the oracle manifest. The scoring command takes `regions.json`, the historical `source-dev` and `source-test` manifests, and the frozen predictions. Pass the four projector prediction files with `--projector ranked17-projector=... ranked29-projector=... oracle-projector17=... oracle-projector29=...`.
+The reproduction archive contains study-trained residual rankers, split metadata and derived predictions. The PhysVLM model card declares Apache-2.0. The pinned simulator checkout has individual asset notices and no repository-wide root license file. Obtain the simulator, its assets and pretrained checkpoints from their source releases. [Pinned simulator tree](https://github.com/jetteezhou/PhysVLM/tree/37e25fd83d8b9f0bdb425661e2dcdffa674a79c7) · [PhysVLM model card](https://huggingface.co/JettZhou/PhysVLM-Qwen2.5-3B/tree/411280628b973db0c1e58d3e1a22c0dda90729d5)
 
-[Complete scores](../results/grounding-study/marked-point.json) · [Certificate replay](../results/grounding-study/marked-point-certificate-audit.json)
+[Per-question archive](../results/grounding-study/reproduction/marked-point-predictions.json) · [Split and checkpoint hashes](../results/grounding-study/reproduction/split-manifest.json) · [Complete scores](../results/grounding-study/marked-point.json) · [Certificate replay](../results/grounding-study/marked-point-certificate-audit.json)

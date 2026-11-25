@@ -48,7 +48,13 @@ flowchart TD
 
 ## Reproduce
 
-The simulator commands below regenerate the specified-point split on Ubuntu x86-64 using pinned upstream assets. Run from the repository root.
+Replay the published counts from per-question predictions with Python 3 and its standard library.
+
+```bash
+bash study/run_marked_point_study.sh replay --output replayed-metrics.json
+```
+
+To regenerate scenes and reproduce inference on Ubuntu x86-64, prepare the pinned simulator and checkpoints. Set `GROUNDING_PYTHON` to a CUDA environment with Transformers 4.57.1, PyTorch, OpenCV and Pillow. Set `VLM_PYTHON` to a CUDA environment with Transformers 4.37.2, tokenizers 0.15.2, Accelerate 0.27.2, safetensors 0.5.3, timm 0.6.13, einops, einops-exts, shortuuid and OpenCV.
 
 ```bash
 git clone https://github.com/jetteezhou/PhysVLM.git upstream
@@ -56,16 +62,19 @@ git -C upstream checkout 37e25fd83d8b9f0bdb425661e2dcdffa674a79c7
 export PHYSVLM_UPSTREAM="$PWD/upstream"
 
 bash study/setup_cpu_env.sh
-pilot_env="${PHYSVLM_PILOT_ENV:-$HOME/.local/share/physvlm-reachability}"
-export LD_LIBRARY_PATH="$pilot_env/native/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
-cpu_python="$pilot_env/venv/bin/python"
-root=study/outputs/reachability
-mkdir -p "$root"
-"$cpu_python" study/generate_grounding_study.py "$root/marked-point" \
-    --point-check --seed 563891 --count 32
+hf download IDEA-Research/grounding-dino-tiny \
+    --revision a2bb814dd30d776dcf7e30523b00659f4f141c71 --local-dir models/dino
+hf download openai/clip-vit-base-patch32 \
+    --revision 3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268 --local-dir models/clip
+hf download JettZhou/PhysVLM-Qwen2.5-3B \
+    --revision 411280628b973db0c1e58d3e1a22c0dda90729d5 --local-dir models/physvlm
+bash study/run_marked_point_study.sh run study/outputs/point-reproduction \
+    models/dino models/clip models/physvlm
 ```
 
-The [specified-point protocol](study/marked-point-study.md) connects scene generation to candidate detection, frozen feature extraction, ranking, and final score calculation. The [ranking protocol](study/目标定位实验报告.md) documents the historical training and development splits used by the two checkpoints. The [full experiment report](study/后续实验报告.md) covers the earlier map-switch diagnostics, local projector training, and source-recipe controls.
+The entry point writes regenerated certificates, model predictions and counts. The two bundled rankers contain the learned residual parameters and split metadata. The simulator, pretrained models, RGB files, workspace files and frozen embedding caches are obtained from the source dependencies or regenerated with the study code. [Specified-point protocol](study/marked-point-study.md) · [Artifact hashes](results/grounding-study/reproduction/sha256.json) · [Split provenance](results/grounding-study/reproduction/split-manifest.json)
+
+In a CPU ablation with frozen candidate boxes, the linear residual reaches 198/231 for both seeds, the MLP without explicit interaction reaches 200/231 and 203/231, and the full MLP reaches 200/231 for both seeds. Uncertainty intervals overlap zero for the interaction ablation. [Ranker ablation](study/ranker-ablation.md) · [Earlier experiments](study/后续实验报告.md)
 
 ## References
 

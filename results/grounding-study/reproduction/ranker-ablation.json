@@ -1,0 +1,156 @@
+{
+  "seed": [
+    17,
+    29
+  ],
+  "methods": {
+    "detector": {
+      "marker_correct": 88,
+      "marker_n": 128,
+      "certified_correct": 162,
+      "certified": 231,
+      "four_correct": 24,
+      "four_certified": 44,
+      "map_switch_correct": 64,
+      "map_switch_certified": 93,
+      "source_identity": 73,
+      "source_n": 128,
+      "source_overlap": 54,
+      "source_map_correct": 90
+    },
+    "fusion": {
+      "marker_correct": 92,
+      "marker_n": 128,
+      "certified_correct": 165,
+      "certified": 231,
+      "four_correct": 21,
+      "four_certified": 44,
+      "map_switch_correct": 63,
+      "map_switch_certified": 93,
+      "source_identity": 81,
+      "source_n": 128,
+      "source_overlap": 61,
+      "source_map_correct": 92
+    },
+    "full-17": {
+      "marker_correct": 110,
+      "marker_n": 128,
+      "certified_correct": 200,
+      "certified": 231,
+      "four_correct": 34,
+      "four_certified": 44,
+      "map_switch_correct": 80,
+      "map_switch_certified": 93,
+      "source_identity": 90,
+      "source_n": 128,
+      "source_overlap": 68,
+      "source_map_correct": 92,
+      "dev_selected_epoch": 8,
+      "dev_correct": 224,
+      "layout_paired_interval_versus_full_same_seed": [
+        0.0,
+        0.0
+      ]
+    },
+    "full-29": {
+      "marker_correct": 110,
+      "marker_n": 128,
+      "certified_correct": 200,
+      "certified": 231,
+      "four_correct": 34,
+      "four_certified": 44,
+      "map_switch_correct": 80,
+      "map_switch_certified": 93,
+      "source_identity": 89,
+      "source_n": 128,
+      "source_overlap": 69,
+      "source_map_correct": 93,
+      "dev_selected_epoch": 8,
+      "dev_correct": 225,
+      "layout_paired_interval_versus_full_same_seed": [
+        0.0,
+        0.0
+      ]
+    },
+    "linear-17": {
+      "marker_correct": 109,
+      "marker_n": 128,
+      "certified_correct": 198,
+      "certified": 231,
+      "four_correct": 33,
+      "four_certified": 44,
+      "map_switch_correct": 79,
+      "map_switch_certified": 93,
+      "source_identity": 89,
+      "source_n": 128,
+      "source_overlap": 67,
+      "source_map_correct": 91,
+      "dev_selected_epoch": 8,
+      "dev_correct": 217,
+      "layout_paired_interval_versus_full_same_seed": [
+        -0.02666666666666667,
+        0.0
+      ]
+    },
+    "linear-29": {
+      "marker_correct": 109,
+      "marker_n": 128,
+      "certified_correct": 198,
+      "certified": 231,
+      "four_correct": 33,
+      "four_certified": 44,
+      "map_switch_correct": 79,
+      "map_switch_certified": 93,
+      "source_identity": 88,
+      "source_n": 128,
+      "source_overlap": 67,
+      "source_map_correct": 92,
+      "dev_selected_epoch": 8,
+      "dev_correct": 217,
+      "layout_paired_interval_versus_full_same_seed": [
+        -0.02666666666666667,
+        0.0
+      ]
+    },
+    "no-interaction-17": {
+      "marker_correct": 110,
+      "marker_n": 128,
+      "certified_correct": 200,
+      "certified": 231,
+      "four_correct": 33,
+      "four_certified": 44,
+      "map_switch_correct": 80,
+      "map_switch_certified": 93,
+      "source_identity": 90,
+      "source_n": 128,
+      "source_overlap": 69,
+      "source_map_correct": 93,
+      "dev_selected_epoch": 8,
+      "dev_correct": 219,
+      "layout_paired_interval_versus_full_same_seed": [
+        -0.02553191489361702,
+        0.02564102564102564
+      ]
+    },
+    "no-interaction-29": {
+      "marker_correct": 111,
+      "marker_n": 128,
+      "certified_correct": 203,
+      "certified": 231,
+      "four_correct": 35,
+      "four_certified": 44,
+      "map_switch_correct": 82,
+      "map_switch_certified": 93,
+      "source_identity": 89,
+      "source_n": 128,
+      "source_overlap": 69,
+      "source_map_correct": 93,
+      "dev_selected_epoch": 8,
+      "dev_correct": 223,
+      "layout_paired_interval_versus_full_same_seed": [
+        -0.008849557522123894,
+        0.04017857142857143
+      ]
+    }
+  }
+}
