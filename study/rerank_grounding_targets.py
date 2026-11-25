@@ -74,11 +74,25 @@ def union_proposals(full, final_word):
     return result
 
 
-def calibration(manifest, candidates, confidence):
+def select_semantic(rows, weight):
+    result = []
+    for row in rows:
+        options = row["boxes"]
+        if options:
+            detector = np.array([option["score"] for option in options])
+            semantic = np.array([option["semantic"] for option in options])
+            combined = ((1-weight)*(detector-detector.mean())/max(detector.std(), 1e-6)
+                        + weight*(semantic-semantic.mean())/max(semantic.std(), 1e-6))
+            options = [options[int(np.argmax(combined))]]
+        result.append(dict(row, boxes=options))
+    return result
+
+
+def calibration(manifest, candidates, confidence, ranking_keys=RANKING_KEYS):
     rows = read(manifest)["rows"]
     by_key = {(r["image_sha256"], r["phrase"]): r["boxes"] for r in candidates}
     observed = set()
-    totals = {key: 0 for key in RANKING_KEYS}
+    totals = {key: 0 for key in ranking_keys}
     oracle3 = 0
     for row in rows:
         phrase = row["question"][len(PREFIX):-len(SUFFIX)]
@@ -94,7 +108,7 @@ def calibration(manifest, candidates, confidence):
         if oracle is None:
             continue
         observed.add(key)
-        for score in RANKING_KEYS:
+        for score in ranking_keys:
             prediction = select(targets, score, confidence)
             totals[score] += prediction is not None and iou(oracle, np.array(prediction["box"])) >= .5
         oracle3 += any(iou(oracle, np.array(b["box"])) >= .5 for b in targets[:3])
@@ -124,6 +138,10 @@ def main():
     union.add_argument("full", type=Path)
     union.add_argument("final_word", type=Path)
     union.add_argument("output", type=Path)
+    semantic = commands.add_parser("semantic")
+    semantic.add_argument("candidates", type=Path)
+    semantic.add_argument("output", type=Path)
+    semantic.add_argument("--weight", type=float, choices=(0, .25, .5, .75, 1), required=True)
     args = parser.parse_args()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.mode == "calibrate":
@@ -145,6 +163,8 @@ def main():
         save(args.output, assign_distinct(read(args.candidates), args.confidence))
     elif args.mode == "rgb-objectness":
         save(args.output, rank_rgb_objectness(args.manifest, read(args.candidates), args.confidence))
+    elif args.mode == "semantic":
+        save(args.output, select_semantic(read(args.candidates), args.weight))
     else:
         save(args.output, union_proposals(read(args.full), read(args.final_word)))
 

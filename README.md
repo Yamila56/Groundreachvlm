@@ -50,7 +50,9 @@ In 48 additional Panda layouts, two objects share a color and swap positions. Ea
 
 The detector's top proposal overlaps the requested object at IoU 0.5 or higher for 88 of 192 distinct image–description pairs. The top three deduplicated proposals cover all 192. On 96 newly regenerated upstream recipe questions, selecting a proposal by annotated identity and reading its map region with the frozen model as a fallback yields 86/96. The same test yields 65/96 with the original full-image model, 62/96 with the detector top box and 57/96 after RGB-chroma reranking.
 
-[Grounding results](results/grounding-study/metrics.json) · [Setup and analysis](study/目标定位实验报告.md)
+An additional 94-question upstream-recipe test confirms that reducing the detector threshold improves Top-5 identity recall from 82 to 90. Combining detector scores and frozen CLIP crop scores increases the number of top boxes with IoU ≥ 0.5 from 30 to 37. The corresponding map readout changes from 63 to 64 correct answers, while the full-image model answers 67 correctly.
+
+[Grounding results](results/grounding-study/metrics.json) · [Frozen CLIP comparison](results/grounding-study/frozen-semantic.json) · [Setup and analysis](study/目标定位实验报告.md)
 
 ## Reproduce
 
