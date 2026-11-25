@@ -1,0 +1,256 @@
+{
+  "lora": {
+    "baseline": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          6,
+          9,
+          8
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          8,
+          7,
+          8
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      }
+    },
+    "projection": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          8,
+          7,
+          8
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          8,
+          9,
+          9
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      },
+      "n_parameters": 1843200,
+      "peak_mib": 10178.23583984375,
+      "mode": "lora",
+      "seed": 17
+    }
+  },
+  "projection": {
+    "baseline": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          6,
+          9,
+          8
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          8,
+          7,
+          8
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      }
+    },
+    "projection": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          8,
+          9,
+          8
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          6,
+          9,
+          8
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      },
+      "n_parameters": 142144,
+      "peak_mib": 10082.13720703125,
+      "mode": "projection",
+      "seed": 17,
+      "heldout_swapped_tokens": {
+        "n_views": 16,
+        "correct": [
+          7,
+          10,
+          8
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      }
+    }
+  },
+  "projection-lora": {
+    "baseline": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          6,
+          9,
+          8
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          8,
+          7,
+          8
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 0,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      }
+    },
+    "projection": {
+      "train": {
+        "n_views": 16,
+        "correct": [
+          12,
+          12,
+          12
+        ],
+        "rule_correct": [
+          12,
+          8,
+          6
+        ],
+        "joint_four": 4,
+        "rule_joint_four": 1,
+        "four_question_groups": 8
+      },
+      "heldout": {
+        "n_views": 16,
+        "correct": [
+          11,
+          16,
+          12
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 3,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      },
+      "n_parameters": 1985344,
+      "peak_mib": 10185.0439453125,
+      "mode": "projection-lora",
+      "seed": 17,
+      "heldout_swapped_tokens": {
+        "n_views": 16,
+        "correct": [
+          9,
+          6,
+          10
+        ],
+        "rule_correct": [
+          16,
+          10,
+          10
+        ],
+        "joint_four": 2,
+        "rule_joint_four": 5,
+        "four_question_groups": 8
+      }
+    }
+  }
+}

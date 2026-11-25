@@ -1,0 +1,800 @@
+{
+  "readouts": {
+    "17": {
+      "train_n": 94,
+      "dev_n": 96,
+      "validation": {
+        "logistic-17": {
+          "step": 76,
+          "correct": 90,
+          "n": 96
+        },
+        "logistic-29": {
+          "step": 1,
+          "correct": 92,
+          "n": 96
+        },
+        "mlp-17": {
+          "step": 70,
+          "correct": 91,
+          "n": 96
+        },
+        "mlp-29": {
+          "step": 39,
+          "correct": 90,
+          "n": 96
+        }
+      },
+      "oracle": {
+        "n": 128,
+        "covered": 128,
+        "methods": {
+          "whole_box": {
+            "correct": 110,
+            "by_label": {
+              "Y": 46,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": -0.0390625,
+              "interval": [
+                -0.072,
+                -0.008
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.125,
+                "interval": [
+                  0.031007751937984496,
+                  0.2125984251968504
+                ]
+              },
+              "detector_center": {
+                "delta": 0.140625,
+                "interval": [
+                  0.06153846153846154,
+                  0.2248062015503876
+                ]
+              }
+            }
+          },
+          "center_box": {
+            "correct": 115,
+            "by_label": {
+              "Y": 51,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                0,
+                0
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1640625,
+                "interval": [
+                  0.07874015748031496,
+                  0.2440944881889764
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1796875,
+                "interval": [
+                  0.1076923076923077,
+                  0.2578125
+                ]
+              }
+            }
+          },
+          "logistic-17": {
+            "correct": 116,
+            "by_label": {
+              "Y": 52,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.0078125,
+              "interval": [
+                -0.016,
+                0.032
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.171875,
+                "interval": [
+                  0.08527131782945736,
+                  0.25384615384615383
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1875,
+                "interval": [
+                  0.11382113821138211,
+                  0.2677165354330709
+                ]
+              }
+            }
+          },
+          "logistic-29": {
+            "correct": 119,
+            "by_label": {
+              "Y": 56,
+              "N": 63
+            },
+            "paired_vs_center": {
+              "delta": 0.03125,
+              "interval": [
+                0.007518796992481203,
+                0.06349206349206349
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1953125,
+                "interval": [
+                  0.11538461538461539,
+                  0.27049180327868855
+                ]
+              },
+              "detector_center": {
+                "delta": 0.2109375,
+                "interval": [
+                  0.13740458015267176,
+                  0.2890625
+                ]
+              }
+            }
+          },
+          "mlp-17": {
+            "correct": 118,
+            "by_label": {
+              "Y": 54,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.0234375,
+              "interval": [
+                0,
+                0.05343511450381679
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1875,
+                "interval": [
+                  0.1,
+                  0.2677165354330709
+                ]
+              },
+              "detector_center": {
+                "delta": 0.203125,
+                "interval": [
+                  0.13076923076923078,
+                  0.28125
+                ]
+              }
+            }
+          },
+          "mlp-29": {
+            "correct": 117,
+            "by_label": {
+              "Y": 53,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.015625,
+              "interval": [
+                0,
+                0.0390625
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1796875,
+                "interval": [
+                  0.09448818897637795,
+                  0.25984251968503935
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1953125,
+                "interval": [
+                  0.12403100775193798,
+                  0.272
+                ]
+              }
+            }
+          }
+        }
+      },
+      "automatic": {
+        "n": 128,
+        "covered": 128,
+        "methods": {
+          "whole_box": {
+            "correct": 92,
+            "by_label": {
+              "Y": 38,
+              "N": 54
+            },
+            "paired_vs_center": {
+              "delta": -0.0078125,
+              "interval": [
+                -0.03225806451612903,
+                0.016
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": -0.015625,
+                "interval": [
+                  -0.10317460317460317,
+                  0.07317073170731707
+                ]
+              },
+              "detector_center": {
+                "delta": 0,
+                "interval": [
+                  -0.06923076923076923,
+                  0.06976744186046512
+                ]
+              }
+            }
+          },
+          "center_box": {
+            "correct": 93,
+            "by_label": {
+              "Y": 39,
+              "N": 54
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                0,
+                0
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": -0.0078125,
+                "interval": [
+                  -0.09375,
+                  0.07936507936507936
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0078125,
+                "interval": [
+                  -0.05511811023622047,
+                  0.07142857142857142
+                ]
+              }
+            }
+          },
+          "logistic-17": {
+            "correct": 93,
+            "by_label": {
+              "Y": 40,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                -0.03125,
+                0.031007751937984496
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": -0.0078125,
+                "interval": [
+                  -0.096,
+                  0.08130081300813008
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0078125,
+                "interval": [
+                  -0.06299212598425197,
+                  0.07751937984496124
+                ]
+              }
+            }
+          },
+          "logistic-29": {
+            "correct": 97,
+            "by_label": {
+              "Y": 44,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0.03125,
+              "interval": [
+                0,
+                0.06976744186046512
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.0234375,
+                "interval": [
+                  -0.06153846153846154,
+                  0.10687022900763359
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0390625,
+                "interval": [
+                  -0.03125,
+                  0.1076923076923077
+                ]
+              }
+            }
+          },
+          "mlp-17": {
+            "correct": 95,
+            "by_label": {
+              "Y": 42,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0.015625,
+              "interval": [
+                -0.015384615384615385,
+                0.047244094488188976
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.0078125,
+                "interval": [
+                  -0.078125,
+                  0.09523809523809523
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0234375,
+                "interval": [
+                  -0.046153846153846156,
+                  0.09016393442622951
+                ]
+              }
+            }
+          },
+          "mlp-29": {
+            "correct": 93,
+            "by_label": {
+              "Y": 40,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                -0.03125,
+                0.031007751937984496
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": -0.0078125,
+                "interval": [
+                  -0.096,
+                  0.08130081300813008
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0078125,
+                "interval": [
+                  -0.06299212598425197,
+                  0.07751937984496124
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "29": {
+      "train_n": 94,
+      "dev_n": 96,
+      "validation": {
+        "logistic-17": {
+          "step": 76,
+          "correct": 90,
+          "n": 96
+        },
+        "logistic-29": {
+          "step": 1,
+          "correct": 92,
+          "n": 96
+        },
+        "mlp-17": {
+          "step": 70,
+          "correct": 91,
+          "n": 96
+        },
+        "mlp-29": {
+          "step": 39,
+          "correct": 90,
+          "n": 96
+        }
+      },
+      "oracle": {
+        "n": 128,
+        "covered": 128,
+        "methods": {
+          "whole_box": {
+            "correct": 110,
+            "by_label": {
+              "Y": 46,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": -0.0390625,
+              "interval": [
+                -0.072,
+                -0.008
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.125,
+                "interval": [
+                  0.031007751937984496,
+                  0.2125984251968504
+                ]
+              },
+              "detector_center": {
+                "delta": 0.140625,
+                "interval": [
+                  0.06153846153846154,
+                  0.2248062015503876
+                ]
+              }
+            }
+          },
+          "center_box": {
+            "correct": 115,
+            "by_label": {
+              "Y": 51,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                0,
+                0
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1640625,
+                "interval": [
+                  0.07874015748031496,
+                  0.2440944881889764
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1796875,
+                "interval": [
+                  0.1076923076923077,
+                  0.2578125
+                ]
+              }
+            }
+          },
+          "logistic-17": {
+            "correct": 116,
+            "by_label": {
+              "Y": 52,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.0078125,
+              "interval": [
+                -0.016,
+                0.032
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.171875,
+                "interval": [
+                  0.08527131782945736,
+                  0.25384615384615383
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1875,
+                "interval": [
+                  0.11382113821138211,
+                  0.2677165354330709
+                ]
+              }
+            }
+          },
+          "logistic-29": {
+            "correct": 119,
+            "by_label": {
+              "Y": 56,
+              "N": 63
+            },
+            "paired_vs_center": {
+              "delta": 0.03125,
+              "interval": [
+                0.007518796992481203,
+                0.06349206349206349
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1953125,
+                "interval": [
+                  0.11538461538461539,
+                  0.27049180327868855
+                ]
+              },
+              "detector_center": {
+                "delta": 0.2109375,
+                "interval": [
+                  0.13740458015267176,
+                  0.2890625
+                ]
+              }
+            }
+          },
+          "mlp-17": {
+            "correct": 118,
+            "by_label": {
+              "Y": 54,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.0234375,
+              "interval": [
+                0,
+                0.05343511450381679
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1875,
+                "interval": [
+                  0.1,
+                  0.2677165354330709
+                ]
+              },
+              "detector_center": {
+                "delta": 0.203125,
+                "interval": [
+                  0.13076923076923078,
+                  0.28125
+                ]
+              }
+            }
+          },
+          "mlp-29": {
+            "correct": 117,
+            "by_label": {
+              "Y": 53,
+              "N": 64
+            },
+            "paired_vs_center": {
+              "delta": 0.015625,
+              "interval": [
+                0,
+                0.0390625
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.1796875,
+                "interval": [
+                  0.09448818897637795,
+                  0.25984251968503935
+                ]
+              },
+              "detector_center": {
+                "delta": 0.1953125,
+                "interval": [
+                  0.12403100775193798,
+                  0.272
+                ]
+              }
+            }
+          }
+        }
+      },
+      "automatic": {
+        "n": 128,
+        "covered": 128,
+        "methods": {
+          "whole_box": {
+            "correct": 93,
+            "by_label": {
+              "Y": 39,
+              "N": 54
+            },
+            "paired_vs_center": {
+              "delta": -0.0078125,
+              "interval": [
+                -0.03225806451612903,
+                0.016
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": -0.0078125,
+                "interval": [
+                  -0.09448818897637795,
+                  0.08264462809917356
+                ]
+              },
+              "detector_center": {
+                "delta": 0.0078125,
+                "interval": [
+                  -0.06349206349206349,
+                  0.07751937984496124
+                ]
+              }
+            }
+          },
+          "center_box": {
+            "correct": 94,
+            "by_label": {
+              "Y": 40,
+              "N": 54
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                0,
+                0
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0,
+                "interval": [
+                  -0.08461538461538462,
+                  0.088
+                ]
+              },
+              "detector_center": {
+                "delta": 0.015625,
+                "interval": [
+                  -0.047619047619047616,
+                  0.08333333333333333
+                ]
+              }
+            }
+          },
+          "logistic-17": {
+            "correct": 94,
+            "by_label": {
+              "Y": 41,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                -0.03125,
+                0.031007751937984496
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0,
+                "interval": [
+                  -0.08661417322834646,
+                  0.08661417322834646
+                ]
+              },
+              "detector_center": {
+                "delta": 0.015625,
+                "interval": [
+                  -0.05785123966942149,
+                  0.088
+                ]
+              }
+            }
+          },
+          "logistic-29": {
+            "correct": 98,
+            "by_label": {
+              "Y": 45,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0.03125,
+              "interval": [
+                0,
+                0.06976744186046512
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.03125,
+                "interval": [
+                  -0.05303030303030303,
+                  0.11363636363636363
+                ]
+              },
+              "detector_center": {
+                "delta": 0.046875,
+                "interval": [
+                  -0.024193548387096774,
+                  0.1171875
+                ]
+              }
+            }
+          },
+          "mlp-17": {
+            "correct": 96,
+            "by_label": {
+              "Y": 43,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0.015625,
+              "interval": [
+                -0.015384615384615385,
+                0.047244094488188976
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0.015625,
+                "interval": [
+                  -0.0703125,
+                  0.10236220472440945
+                ]
+              },
+              "detector_center": {
+                "delta": 0.03125,
+                "interval": [
+                  -0.0390625,
+                  0.1015625
+                ]
+              }
+            }
+          },
+          "mlp-29": {
+            "correct": 94,
+            "by_label": {
+              "Y": 41,
+              "N": 53
+            },
+            "paired_vs_center": {
+              "delta": 0,
+              "interval": [
+                -0.03125,
+                0.031007751937984496
+              ]
+            },
+            "paired_vs_reference": {
+              "frozen": {
+                "delta": 0,
+                "interval": [
+                  -0.08661417322834646,
+                  0.08661417322834646
+                ]
+              },
+              "detector_center": {
+                "delta": 0.015625,
+                "interval": [
+                  -0.05785123966942149,
+                  0.088
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

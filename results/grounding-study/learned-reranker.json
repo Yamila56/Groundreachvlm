@@ -113,6 +113,12 @@
         "overlap": 96
       }
     },
+    "oracle_candidate_readout": {
+      "n": 192,
+      "covered": 192,
+      "correct_on_covered": 192,
+      "correct_with_frozen_fallback": 192
+    },
     "methods": {
       "detector": {
         "top1": {
@@ -1873,6 +1879,12 @@
         "overlap": 92
       }
     },
+    "oracle_candidate_readout": {
+      "n": 128,
+      "covered": 119,
+      "correct_on_covered": 104,
+      "correct_with_frozen_fallback": 110
+    },
     "methods": {
       "detector": {
         "top1": {
@@ -3479,6 +3491,190 @@
               0.09917355371900827
             ]
           }
+        }
+      }
+    },
+    "oracle_projector": {
+      "oracle-projector17": {
+        "n": 128,
+        "correct": 102,
+        "by_label": {
+          "N": {
+            "correct": 56,
+            "n": 64
+          },
+          "Y": {
+            "correct": 46,
+            "n": 64
+          }
+        },
+        "complete": 0,
+        "four_question_views": 0,
+        "target_pairs": {
+          "correct": 0,
+          "n": 0
+        },
+        "workspace_pairs": {
+          "correct": 0,
+          "n": 0
+        },
+        "versus_frozen": {
+          "delta": 0.0625,
+          "interval": [
+            -0.04032258064516129,
+            0.16
+          ]
+        },
+        "four_question_versus_frozen": null
+      },
+      "oracle-projector29": {
+        "n": 128,
+        "correct": 88,
+        "by_label": {
+          "N": {
+            "correct": 58,
+            "n": 64
+          },
+          "Y": {
+            "correct": 30,
+            "n": 64
+          }
+        },
+        "complete": 0,
+        "four_question_views": 0,
+        "target_pairs": {
+          "correct": 0,
+          "n": 0
+        },
+        "workspace_pairs": {
+          "correct": 0,
+          "n": 0
+        },
+        "versus_frozen": {
+          "delta": -0.046875,
+          "interval": [
+            -0.1557377049180328,
+            0.06611570247933884
+          ]
+        },
+        "four_question_versus_frozen": null
+      }
+    },
+    "retrospective_semantics": {
+      "n": 128,
+      "changed_radial_to_point": 15,
+      "correct": {
+        "frozen": {
+          "radial": 94,
+          "sampled_workspace_majority": 80,
+          "sampled_workspace_point": 81
+        },
+        "oracle-full": {
+          "radial": 110,
+          "sampled_workspace_majority": 122,
+          "sampled_workspace_point": 121
+        },
+        "oracle-center": {
+          "radial": 115,
+          "sampled_workspace_majority": 127,
+          "sampled_workspace_point": 126
+        },
+        "oracle-projector17": {
+          "radial": 102,
+          "sampled_workspace_majority": 106,
+          "sampled_workspace_point": 105
+        },
+        "oracle-projector29": {
+          "radial": 88,
+          "sampled_workspace_majority": 95,
+          "sampled_workspace_point": 94
+        },
+        "predicted-full-17": {
+          "radial": 92,
+          "sampled_workspace_majority": 104,
+          "sampled_workspace_point": 105
+        },
+        "predicted-center-17": {
+          "radial": 93,
+          "sampled_workspace_majority": 105,
+          "sampled_workspace_point": 106
+        },
+        "predicted-projector-17": {
+          "radial": 85,
+          "sampled_workspace_majority": 93,
+          "sampled_workspace_point": 94
+        },
+        "predicted-full-29": {
+          "radial": 93,
+          "sampled_workspace_majority": 103,
+          "sampled_workspace_point": 104
+        },
+        "predicted-center-29": {
+          "radial": 94,
+          "sampled_workspace_majority": 104,
+          "sampled_workspace_point": 105
+        },
+        "predicted-projector-29": {
+          "radial": 80,
+          "sampled_workspace_majority": 88,
+          "sampled_workspace_point": 88
+        }
+      },
+      "on_changed": {
+        "frozen": {
+          "radial": 14,
+          "sampled_workspace_majority": 0,
+          "sampled_workspace_point": 1
+        },
+        "oracle-full": {
+          "radial": 2,
+          "sampled_workspace_majority": 14,
+          "sampled_workspace_point": 13
+        },
+        "oracle-center": {
+          "radial": 2,
+          "sampled_workspace_majority": 14,
+          "sampled_workspace_point": 13
+        },
+        "oracle-projector17": {
+          "radial": 6,
+          "sampled_workspace_majority": 10,
+          "sampled_workspace_point": 9
+        },
+        "oracle-projector29": {
+          "radial": 4,
+          "sampled_workspace_majority": 11,
+          "sampled_workspace_point": 10
+        },
+        "predicted-full-17": {
+          "radial": 1,
+          "sampled_workspace_majority": 13,
+          "sampled_workspace_point": 14
+        },
+        "predicted-center-17": {
+          "radial": 1,
+          "sampled_workspace_majority": 13,
+          "sampled_workspace_point": 14
+        },
+        "predicted-projector-17": {
+          "radial": 3,
+          "sampled_workspace_majority": 11,
+          "sampled_workspace_point": 12
+        },
+        "predicted-full-29": {
+          "radial": 2,
+          "sampled_workspace_majority": 12,
+          "sampled_workspace_point": 13
+        },
+        "predicted-center-29": {
+          "radial": 2,
+          "sampled_workspace_majority": 12,
+          "sampled_workspace_point": 13
+        },
+        "predicted-projector-29": {
+          "radial": 3,
+          "sampled_workspace_majority": 11,
+          "sampled_workspace_point": 11
         }
       }
     }

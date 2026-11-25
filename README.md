@@ -62,7 +62,7 @@ On 128 questions from 70 new upstream-recipe scenes, the ranker raises target id
 
 The source recipe labels the object's origin by its distance from the robot base. The map colors visible depth points by their distance to a sampled workspace. In the 70 replayed scenes, only 50 of the 64 positively labeled targets have a majority of visible pixels inside the sampled workspace threshold. Three have zero such pixels.
 
-[Learned ranking results](results/grounding-study/learned-reranker.json) · [Geometry audit](results/grounding-study/source-map-geometry.json) · [Training and evaluation](study/目标定位实验报告.md)
+[Learned ranking results](results/grounding-study/learned-reranker.json) · [Reachability labels and geometry audit](LABEL_SEMANTICS.md) · [Training and evaluation](study/目标定位实验报告.md)
 
 ## Reproduce
 

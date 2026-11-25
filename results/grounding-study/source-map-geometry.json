@@ -1,6 +1,24 @@
 {
   "manifest_sha256": "16f224fb9934329f89151d068ae458efe1325a418384f989a5089c72847a9aa6",
   "scene_count": 70,
+  "workspace_pcd": {
+    "PANDA": {
+      "sha256": "174839a80fbb4eea156f1cbb9f2573a2c65999a6414d577a3d14de9bee2b98f5",
+      "points": 20329
+    }
+  },
+  "documented_generation": {
+    "generator_sha256": "1aa3dce9e84fe0c4a28be534fe9e5639aa14f7babf1c220230bef6314a09025e",
+    "random_samples": 1000000,
+    "joint_ranges_degrees": [
+      -180,
+      180
+    ],
+    "voxel_size_m": 0.05,
+    "source": "pinned upstream script defaults"
+  },
+  "workspace_radius_m": 0.05,
+  "chroma_threshold": 83,
   "by_label": {
     "Y": {
       "queries": 64,
@@ -9,7 +27,9 @@
       "any_visible_within_5cm": 61,
       "majority_visible_within_5cm": 50,
       "high_median_chroma": 50,
-      "visible_median_inside_radial_label_radius": 60
+      "visible_median_inside_radial_label_radius": 60,
+      "sampled_workspace_point_positive": 50,
+      "sampled_workspace_point_jpeg_agreement": 64
     },
     "N": {
       "queries": 64,
@@ -18,14 +38,734 @@
       "any_visible_within_5cm": 2,
       "majority_visible_within_5cm": 0,
       "high_median_chroma": 0,
-      "visible_median_inside_radial_label_radius": 1
+      "visible_median_inside_radial_label_radius": 1,
+      "sampled_workspace_point_positive": 1,
+      "sampled_workspace_point_jpeg_agreement": 64
     }
   },
+  "map_checks": [
+    {
+      "image_sha256": "69d6317aa32e756176dc6ef5bfe933595a7db0d4add37ff6707b7b9e149d29e4",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 91909,
+      "true_negative": 214549,
+      "false_positive": 445,
+      "false_negative": 297
+    },
+    {
+      "image_sha256": "083708104a819f69a8013340bf067960a036f79cf47803083d8359c88dd254b1",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 146954,
+      "true_negative": 159674,
+      "false_positive": 530,
+      "false_negative": 42
+    },
+    {
+      "image_sha256": "9278f0173783b7b27b7d5badc7ba4b8dae58378c8b0dc1129f39567908c2a826",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 96440,
+      "true_negative": 210402,
+      "false_positive": 309,
+      "false_negative": 49
+    },
+    {
+      "image_sha256": "a58646438467446b920ee04df687bad73ccb119d2a1b34d9252bc0a9b3ace525",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 115214,
+      "true_negative": 191506,
+      "false_positive": 431,
+      "false_negative": 49
+    },
+    {
+      "image_sha256": "55fb78738c2c8cfdf1157e002ef5cb45116706c5ac3dfdbe69e1aaebf87a036b",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 93002,
+      "true_negative": 213732,
+      "false_positive": 314,
+      "false_negative": 152
+    },
+    {
+      "image_sha256": "a0b32b3eded0a59d5fb34298282e8ff39d89ad45997977fbf4fd4c1d9684c840",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 37682,
+      "true_negative": 269086,
+      "false_positive": 410,
+      "false_negative": 22
+    },
+    {
+      "image_sha256": "ff79c1ea9e89d3b1fa747a2ee3a60f0935bec07c5b6ddc85d3c7162fb83b09d8",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 73790,
+      "true_negative": 232620,
+      "false_positive": 684,
+      "false_negative": 106
+    },
+    {
+      "image_sha256": "e0690924c1463d1c470434c272cb7f7bfe6deff10f87e460e7c06924acbac091",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 58115,
+      "true_negative": 248573,
+      "false_positive": 484,
+      "false_negative": 28
+    },
+    {
+      "image_sha256": "2ffb26e21f28d06f96fe0ddc699ffabef20e2c4091ccee6c4d692aba9e3ccbc2",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 96481,
+      "true_negative": 210333,
+      "false_positive": 194,
+      "false_negative": 192
+    },
+    {
+      "image_sha256": "c938dd3c2edb0fdd2ba5f98a5d284ffbbd485980bb3cb4e45c3eca34d6786069",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 77309,
+      "true_negative": 229677,
+      "false_positive": 94,
+      "false_negative": 120
+    },
+    {
+      "image_sha256": "4eaae88f2a20da1168e03af164360c5a178fef0f138893771a36c238ca2bca6d",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 137205,
+      "true_negative": 169320,
+      "false_positive": 660,
+      "false_negative": 15
+    },
+    {
+      "image_sha256": "701f9c36c25e32e2950c2381be438100668a0a73584ad9d400be4ad0053717b0",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 25851,
+      "true_negative": 281031,
+      "false_positive": 268,
+      "false_negative": 50
+    },
+    {
+      "image_sha256": "6f603758eb9172cccc0e69ab5166d58de08a04f0013500b02e51de51425ec957",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 49700,
+      "true_negative": 256998,
+      "false_positive": 428,
+      "false_negative": 74
+    },
+    {
+      "image_sha256": "2ce1f75d9814965ff00c637de0c3e2943002a85a95bca939b197317bf2c863b7",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 112974,
+      "true_negative": 193682,
+      "false_positive": 497,
+      "false_negative": 47
+    },
+    {
+      "image_sha256": "1b22b0dcb1d80c1afecf3cfaeaf931c64aaf693711138a39da78ca88d1121f92",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 98872,
+      "true_negative": 207632,
+      "false_positive": 403,
+      "false_negative": 293
+    },
+    {
+      "image_sha256": "1b1c4038573af7b8b1134b469c78134aff8821378279ddcb663db69d1aa5b52c",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 98547,
+      "true_negative": 208234,
+      "false_positive": 275,
+      "false_negative": 144
+    },
+    {
+      "image_sha256": "8ac264cf42410c55a099bbe2e78ec1a4b3d163aca0a693379a2d9bcf8e4d5ec8",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 92863,
+      "true_negative": 214066,
+      "false_positive": 215,
+      "false_negative": 56
+    },
+    {
+      "image_sha256": "6a7c3fa12c04e4bb45e68748dc5421c450f76daaea16e7775f06edba317ea5d7",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 86626,
+      "true_negative": 220179,
+      "false_positive": 245,
+      "false_negative": 150
+    },
+    {
+      "image_sha256": "51b98b8d22651dbdc941e5c9551c59788ab0a3103424ef0e314802fe79760124",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 94797,
+      "true_negative": 212062,
+      "false_positive": 305,
+      "false_negative": 36
+    },
+    {
+      "image_sha256": "64dc7ff7188cc8db63f252a0c02ed1e54c9c95e3ecb88c28df9114b8a27f08f7",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 38028,
+      "true_negative": 268699,
+      "false_positive": 450,
+      "false_negative": 23
+    },
+    {
+      "image_sha256": "f8107923d7a2e3d3712a2c46849fd8f264439adf86af8a06ec2497984bab9dfa",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 32169,
+      "true_negative": 274727,
+      "false_positive": 263,
+      "false_negative": 41
+    },
+    {
+      "image_sha256": "cee473c20a4bd0f6e4074e60ae25bec89516a72b2c6da611d3eca20f76982002",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 28787,
+      "true_negative": 278082,
+      "false_positive": 293,
+      "false_negative": 38
+    },
+    {
+      "image_sha256": "3e6442a1ea1f17e114ec627fe7f6e9f9a9fcf53a4b272a4e559fa21d4eadc03c",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 135038,
+      "true_negative": 171611,
+      "false_positive": 522,
+      "false_negative": 29
+    },
+    {
+      "image_sha256": "a09990e2e987038a857d4cbafa4541966ffc7b6bf1e9cbdf2b8078b4a65ccb69",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 91608,
+      "true_negative": 215290,
+      "false_positive": 252,
+      "false_negative": 50
+    },
+    {
+      "image_sha256": "f48e875ce04844b5c9aecdd372697f537c6c138621701046681c648d0de9d5eb",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 83861,
+      "true_negative": 222715,
+      "false_positive": 544,
+      "false_negative": 80
+    },
+    {
+      "image_sha256": "bcc1dd3fbcce7309560632f69f743323d36976ccf17b54a1adaa0bac2e2f359e",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 78508,
+      "true_negative": 228209,
+      "false_positive": 288,
+      "false_negative": 195
+    },
+    {
+      "image_sha256": "9398833d3893bb93222622718e4fc80b84974576fa309417d0e5fcd0ada07d79",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 53508,
+      "true_negative": 253106,
+      "false_positive": 572,
+      "false_negative": 14
+    },
+    {
+      "image_sha256": "810f7758374d80922fffab73fcf5247e7ca32e226f2b6c38dc3c112b4a44a563",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 114815,
+      "true_negative": 191904,
+      "false_positive": 432,
+      "false_negative": 49
+    },
+    {
+      "image_sha256": "1601f94d66ef8afd02b0cac4eda6b5587c0c0fb679ed196cf72fa6c3d4cee6a5",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 96437,
+      "true_negative": 210129,
+      "false_positive": 277,
+      "false_negative": 357
+    },
+    {
+      "image_sha256": "603a640ec6988014a346aca301fea2b785fa871d66ff506299164aefc15d52f1",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 93692,
+      "true_negative": 213085,
+      "false_positive": 379,
+      "false_negative": 44
+    },
+    {
+      "image_sha256": "add99eddc07e8d9f406c673ec4466a6125b2e848a02c56f5575be7119e13033a",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 71433,
+      "true_negative": 235487,
+      "false_positive": 126,
+      "false_negative": 154
+    },
+    {
+      "image_sha256": "7cb1c9c939606cb8dd35233d99632aff91f61f9251c342d730b5ee62dcaf2bbf",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 126443,
+      "true_negative": 180399,
+      "false_positive": 255,
+      "false_negative": 103
+    },
+    {
+      "image_sha256": "7ea1b92755103f00955f165710e54f56ef8080c323fbb207205e3b4af13ecd3b",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 64095,
+      "true_negative": 242611,
+      "false_positive": 396,
+      "false_negative": 98
+    },
+    {
+      "image_sha256": "b6bcc2a1791f3561c89ab620b4193b6dde21c45a80e8f8aefb745a1d1486cd06",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 95817,
+      "true_negative": 211029,
+      "false_positive": 217,
+      "false_negative": 137
+    },
+    {
+      "image_sha256": "9af2743c675dfe317e659c4369c14be8c4678b92342f4618ca0fc9113771e77e",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 70703,
+      "true_negative": 235810,
+      "false_positive": 669,
+      "false_negative": 18
+    },
+    {
+      "image_sha256": "20232ea35860b4e48438fac21176eed177d717131cfa3992060ed5a253c0ea97",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 52719,
+      "true_negative": 253899,
+      "false_positive": 491,
+      "false_negative": 91
+    },
+    {
+      "image_sha256": "97030fe7dc11b0a9e9e0279aa3d7c999f4ffcd1c09e3bba3bb19d2322baaa703",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 76322,
+      "true_negative": 230579,
+      "false_positive": 177,
+      "false_negative": 122
+    },
+    {
+      "image_sha256": "c9234e6c286a89e8d3407f7097986b4b63370b0e8781b8bf2cc55fe71c20e7a6",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 113145,
+      "true_negative": 193710,
+      "false_positive": 213,
+      "false_negative": 132
+    },
+    {
+      "image_sha256": "b121ee442635c15edfb92f97ec07278c29a02bcb9428d6f3b52336bb2a3c80a7",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 74635,
+      "true_negative": 231846,
+      "false_positive": 623,
+      "false_negative": 96
+    },
+    {
+      "image_sha256": "9bf7161b2198b5e0a858bfae71b05b09d72b987789ea5a0b89b912de803077f8",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 94702,
+      "true_negative": 212188,
+      "false_positive": 206,
+      "false_negative": 104
+    },
+    {
+      "image_sha256": "afd3313c9675eb755f42a19ee93b77ada2eabcb2994c40a1b272f853bce8637e",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 87445,
+      "true_negative": 219008,
+      "false_positive": 447,
+      "false_negative": 300
+    },
+    {
+      "image_sha256": "d05a4e054d7341de429548fa72da5fc974d55595a8798c3308efd804be9dce0d",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 54647,
+      "true_negative": 251894,
+      "false_positive": 436,
+      "false_negative": 223
+    },
+    {
+      "image_sha256": "d522665c64a653c04a849a5edf7dfbace2a700802d6f4dbf83dc3a5334d1761d",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 28929,
+      "true_negative": 278012,
+      "false_positive": 207,
+      "false_negative": 52
+    },
+    {
+      "image_sha256": "37a85a6746c1839ff8cbde64ee92814a1ba84bc7df469572c43c97ed759b4553",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 44021,
+      "true_negative": 262663,
+      "false_positive": 489,
+      "false_negative": 27
+    },
+    {
+      "image_sha256": "ab1f56946a3a269461dadb41374b9165e908fb47e236ff9060692a6ec5983004",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 81404,
+      "true_negative": 225319,
+      "false_positive": 252,
+      "false_negative": 225
+    },
+    {
+      "image_sha256": "8f083b27c3d6d54ecd749075eea53bd9474f333ed95c9c793648848a42c5f5d4",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 25307,
+      "true_negative": 281581,
+      "false_positive": 204,
+      "false_negative": 108
+    },
+    {
+      "image_sha256": "cf6fc8227e7d667733371d74026b2b65b0acc7ec63d6838a051656cb2956f0b6",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 94153,
+      "true_negative": 212604,
+      "false_positive": 406,
+      "false_negative": 37
+    },
+    {
+      "image_sha256": "8d0fce4157be4fa958e0bba9289fea5bb98a2eb7e258789c191313ddb4c6e2e1",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 67588,
+      "true_negative": 239309,
+      "false_positive": 199,
+      "false_negative": 104
+    },
+    {
+      "image_sha256": "309d67392386f449959d81da41b6bed48b8e8aa8b63bc73426cd8ebdffe1d860",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 30747,
+      "true_negative": 276174,
+      "false_positive": 253,
+      "false_negative": 26
+    },
+    {
+      "image_sha256": "176fd4b2de852d1298955b3cdc9dd75827a53c6eba3b2f801002e600ae0e0a73",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 92993,
+      "true_negative": 213630,
+      "false_positive": 363,
+      "false_negative": 214
+    },
+    {
+      "image_sha256": "32c73437dac5be7b8d9c5ce99d5c08f98493604174e1e6eab42539ab7c5c25f1",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 41511,
+      "true_negative": 265464,
+      "false_positive": 181,
+      "false_negative": 44
+    },
+    {
+      "image_sha256": "c2da0c1cabdf583a33e3bcbba8f28755d68d80ff7b61f865f5d9a2b2c888a5ee",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 26078,
+      "true_negative": 280830,
+      "false_positive": 241,
+      "false_negative": 51
+    },
+    {
+      "image_sha256": "93ea89efc96f13e1425c7e78a39f6eb12a13986dc73bcacd8a4fc91bc696504c",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 76979,
+      "true_negative": 229729,
+      "false_positive": 364,
+      "false_negative": 128
+    },
+    {
+      "image_sha256": "c6692ae9e23e2353f928e7ec2fd397b4e3cb7464a9a3fe69cba0653613b2c42f",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 89471,
+      "true_negative": 217077,
+      "false_positive": 424,
+      "false_negative": 228
+    },
+    {
+      "image_sha256": "e16faafaf21754f622bf71ac4e54e6f094c124838ae3b26ee4a3cc57d1cd042f",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 81405,
+      "true_negative": 225425,
+      "false_positive": 291,
+      "false_negative": 79
+    },
+    {
+      "image_sha256": "c5ee99df8bf7db065647a9e94090ef6415932c692a65a4833b3a45911e72d301",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 30505,
+      "true_negative": 276422,
+      "false_positive": 230,
+      "false_negative": 43
+    },
+    {
+      "image_sha256": "78422692328576211a162bbdc70b325d2f2921e83cb7f98b706e6ea698e66b86",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 92921,
+      "true_negative": 213918,
+      "false_positive": 195,
+      "false_negative": 166
+    },
+    {
+      "image_sha256": "e7397204c581f75781148f5b437b25dd4e4a31842538c56aae84f63c5b1887cc",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 93362,
+      "true_negative": 213455,
+      "false_positive": 355,
+      "false_negative": 28
+    },
+    {
+      "image_sha256": "ca94ac2cb2505d1e8b0fe7c5447658df43aac70f0e4361f9c4229c78014547f2",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 126958,
+      "true_negative": 179838,
+      "false_positive": 317,
+      "false_negative": 87
+    },
+    {
+      "image_sha256": "89f82b144683dbb414fce6375b744fd1c67c75c54cfe7c0f660f15c4fd4338cd",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 97567,
+      "true_negative": 209285,
+      "false_positive": 265,
+      "false_negative": 83
+    },
+    {
+      "image_sha256": "8a0b3de90986c5a5ea1429c7c9aecab288c87e0377d97edd1efdf3d2b85271b6",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 91009,
+      "true_negative": 215652,
+      "false_positive": 312,
+      "false_negative": 227
+    },
+    {
+      "image_sha256": "544447e63646d7eafb308369cc4b0bd31b237c0ec532297f62b24542408ddc76",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 82189,
+      "true_negative": 224481,
+      "false_positive": 371,
+      "false_negative": 159
+    },
+    {
+      "image_sha256": "1c824910aeee1e1a57036e86b57d0dc032473b28c87be61d3a6467a2ac485c41",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 90413,
+      "true_negative": 216255,
+      "false_positive": 476,
+      "false_negative": 56
+    },
+    {
+      "image_sha256": "d2f77af100df47ad8f0b821079949138e8527d84d99f360ecdab43616268cceb",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 97471,
+      "true_negative": 209247,
+      "false_positive": 364,
+      "false_negative": 118
+    },
+    {
+      "image_sha256": "46596086b0d97c0cf7b70959977b6e6093dd50ec24d3f7deed93553ee3d2e913",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 100438,
+      "true_negative": 206156,
+      "false_positive": 426,
+      "false_negative": 180
+    },
+    {
+      "image_sha256": "7cb3cb96f2db484b954694f287d7aacc014ee54f467453b1323ca2e6978439a6",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 65778,
+      "true_negative": 240962,
+      "false_positive": 378,
+      "false_negative": 82
+    },
+    {
+      "image_sha256": "3f48b2eeafc1b87733b8269782c1c050c435f5280dbe27e103a45ff207278447",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 94051,
+      "true_negative": 212461,
+      "false_positive": 281,
+      "false_negative": 407
+    },
+    {
+      "image_sha256": "4d6da10df017399c13e5ecb17575087b0d4cb585c4695a93a3e0ee2db0423458",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 95561,
+      "true_negative": 211136,
+      "false_positive": 182,
+      "false_negative": 321
+    },
+    {
+      "image_sha256": "8fbbd3477918b10287f61b86ee48ce860dde7762324bc1f19df35b720456add3",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 92583,
+      "true_negative": 214188,
+      "false_positive": 292,
+      "false_negative": 137
+    },
+    {
+      "image_sha256": "ba7a86aced3c93fa19b6666dcebba1bb1a9f95163d6d43e036279b411b48c0a0",
+      "total_pixels": 307200,
+      "byte_identical": true,
+      "valid_pixels": 307200,
+      "true_positive": 129767,
+      "true_negative": 177075,
+      "false_positive": 331,
+      "false_negative": 27
+    }
+  ],
   "rows": [
     {
       "id": "PANDA-00-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 348,
+        "y": 139,
+        "workspace_distance_m": 0.3370054412041895,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1503,
       "pixels": 1503,
+      "visible_pixels_check": {
+        "valid_pixels": 1503,
+        "true_positive": 0,
+        "true_negative": 1503,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.31391377822247946,
       "visible_median_radial_margin_m": -0.23134348436961583,
       "origin_workspace_distance_m": 0.41403057212512556,
@@ -36,7 +776,23 @@
     {
       "id": "PANDA-00-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 345,
+        "y": 368,
+        "workspace_distance_m": 0.033056373043063254,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1588,
       "pixels": 1588,
+      "visible_pixels_check": {
+        "valid_pixels": 1588,
+        "true_positive": 1588,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.36771000961429434,
       "visible_median_radial_margin_m": 0.3111901075338197,
       "origin_workspace_distance_m": 0.04054076556353373,
@@ -47,7 +803,23 @@
     {
       "id": "PANDA-01-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 219,
+        "y": 178,
+        "workspace_distance_m": 0.2848730409294374,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 795,
       "pixels": 795,
+      "visible_pixels_check": {
+        "valid_pixels": 795,
+        "true_positive": 0,
+        "true_negative": 795,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2627001115465457,
       "visible_median_radial_margin_m": -0.18908382948784674,
       "origin_workspace_distance_m": 0.35160030088912525,
@@ -58,7 +830,23 @@
     {
       "id": "PANDA-01-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 180,
+        "y": 287,
+        "workspace_distance_m": 0.013914729927166884,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 2443,
       "pixels": 2443,
+      "visible_pixels_check": {
+        "valid_pixels": 2443,
+        "true_positive": 2443,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.40019651957563485,
       "visible_median_radial_margin_m": 0.36686867001049217,
       "origin_workspace_distance_m": 0.02396262092486511,
@@ -69,7 +857,23 @@
     {
       "id": "PANDA-02-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 222,
+        "y": 342,
+        "workspace_distance_m": 0.30118629609005815,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 5061,
       "pixels": 5061,
+      "visible_pixels_check": {
+        "valid_pixels": 5061,
+        "true_positive": 0,
+        "true_negative": 5061,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2569290431139801,
       "visible_median_radial_margin_m": -0.2331955595164923,
       "origin_workspace_distance_m": 0.3411133261023568,
@@ -80,7 +884,23 @@
     {
       "id": "PANDA-02-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 326,
+        "y": 298,
+        "workspace_distance_m": 0.03635239357454387,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 361,
       "pixels": 361,
+      "visible_pixels_check": {
+        "valid_pixels": 361,
+        "true_positive": 319,
+        "true_negative": 38,
+        "false_positive": 4,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.053950245889120785,
       "visible_median_radial_margin_m": 0.06426274537415522,
       "origin_workspace_distance_m": 0.05811404330675444,
@@ -91,7 +911,23 @@
     {
       "id": "PANDA-03-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 383,
+        "y": 166,
+        "workspace_distance_m": 0.20327560822641194,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 359,
       "pixels": 359,
+      "visible_pixels_check": {
+        "valid_pixels": 359,
+        "true_positive": 0,
+        "true_negative": 359,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.1852053317696376,
       "visible_median_radial_margin_m": -0.10644282338437949,
       "origin_workspace_distance_m": 0.2912159721170022,
@@ -102,18 +938,50 @@
     {
       "id": "PANDA-03-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 471,
+        "y": 294,
+        "workspace_distance_m": 0.014505422755834422,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 193,
       "pixels": 193,
+      "visible_pixels_check": {
+        "valid_pixels": 193,
+        "true_positive": 193,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.40590888605272835,
       "visible_median_radial_margin_m": 0.3568934440068261,
       "origin_workspace_distance_m": 0.022178850805595982,
-      "closest_visible_workspace_distance_m": 0.0038762940178412534,
+      "closest_visible_workspace_distance_m": 0.003876294017841193,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 249.0
     },
     {
       "id": "PANDA-04-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 403,
+        "y": 228,
+        "workspace_distance_m": 0.20089157292873208,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 670,
       "pixels": 670,
+      "visible_pixels_check": {
+        "valid_pixels": 670,
+        "true_positive": 0,
+        "true_negative": 668,
+        "false_positive": 2,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.1209211302597526,
       "visible_median_radial_margin_m": -0.11322336757439766,
       "origin_workspace_distance_m": 0.21968456825724572,
@@ -124,18 +992,50 @@
     {
       "id": "PANDA-04-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 345,
+        "y": 329,
+        "workspace_distance_m": 0.030550541473615897,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 326,
       "pixels": 326,
+      "visible_pixels_check": {
+        "valid_pixels": 326,
+        "true_positive": 326,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.23525845035235926,
       "visible_median_radial_margin_m": 0.19182079471881575,
       "origin_workspace_distance_m": 0.024836170531535497,
-      "closest_visible_workspace_distance_m": 0.012552389322374135,
+      "closest_visible_workspace_distance_m": 0.01255238932237411,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 251.0
     },
     {
       "id": "PANDA-05-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 267,
+        "y": 231,
+        "workspace_distance_m": 0.1848778621276039,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 828,
       "pixels": 828,
+      "visible_pixels_check": {
+        "valid_pixels": 828,
+        "true_positive": 0,
+        "true_negative": 828,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.10154181834464615,
       "visible_median_radial_margin_m": -0.0963789396199144,
       "origin_workspace_distance_m": 0.20407706223390687,
@@ -146,7 +1046,23 @@
     {
       "id": "PANDA-05-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 412,
+        "y": 238,
+        "workspace_distance_m": 0.0292796896476843,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 160,
       "pixels": 160,
+      "visible_pixels_check": {
+        "valid_pixels": 160,
+        "true_positive": 160,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.11279014345553662,
       "visible_median_radial_margin_m": 0.10597095168796156,
       "origin_workspace_distance_m": 0.037366105076335414,
@@ -157,7 +1073,23 @@
     {
       "id": "PANDA-06-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 294,
+        "y": 143,
+        "workspace_distance_m": 0.03288201290445561,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1509,
       "pixels": 1509,
+      "visible_pixels_check": {
+        "valid_pixels": 1509,
+        "true_positive": 1228,
+        "true_negative": 269,
+        "false_positive": 11,
+        "false_negative": 1
+      },
       "radial_margin_m": 0.15428508748173453,
       "visible_median_radial_margin_m": 0.14013103216809808,
       "origin_workspace_distance_m": 0.026745036676675753,
@@ -168,9 +1100,25 @@
     {
       "id": "PANDA-07-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 159,
+        "y": 253,
+        "workspace_distance_m": 0.473646922472036,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 2732,
       "pixels": 2732,
+      "visible_pixels_check": {
+        "valid_pixels": 2732,
+        "true_positive": 0,
+        "true_negative": 2732,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.39092814624425354,
-      "visible_median_radial_margin_m": -0.3855319005074904,
+      "visible_median_radial_margin_m": -0.38553190050749,
       "origin_workspace_distance_m": 0.47161199191598974,
       "closest_visible_workspace_distance_m": 0.3853323001037731,
       "visible_in_workspace_fraction": 0.0,
@@ -179,7 +1127,23 @@
     {
       "id": "PANDA-07-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 328,
+        "y": 189,
+        "workspace_distance_m": 0.01931048412388753,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 149,
       "pixels": 149,
+      "visible_pixels_check": {
+        "valid_pixels": 149,
+        "true_positive": 149,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.1996160017861318,
       "visible_median_radial_margin_m": 0.1786582291441403,
       "origin_workspace_distance_m": 0.027962141351332903,
@@ -190,18 +1154,50 @@
     {
       "id": "PANDA-08-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 406,
+        "y": 164,
+        "workspace_distance_m": 0.028589355616581054,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1338,
       "pixels": 1338,
+      "visible_pixels_check": {
+        "valid_pixels": 1338,
+        "true_positive": 368,
+        "true_negative": 941,
+        "false_positive": 0,
+        "false_negative": 29
+      },
       "radial_margin_m": -0.06291241828993432,
       "visible_median_radial_margin_m": 0.02688025389704507,
       "origin_workspace_distance_m": 0.17856596578454959,
-      "closest_visible_workspace_distance_m": 0.009527851090571453,
+      "closest_visible_workspace_distance_m": 0.009527851090571476,
       "visible_in_workspace_fraction": 0.296711509715994,
       "visible_median_chroma": 46.0
     },
     {
       "id": "PANDA-08-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 292,
+        "y": 270,
+        "workspace_distance_m": 0.02598014204561108,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 228,
       "pixels": 228,
+      "visible_pixels_check": {
+        "valid_pixels": 228,
+        "true_positive": 228,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.12166567630747138,
       "visible_median_radial_margin_m": 0.1088092280859656,
       "origin_workspace_distance_m": 0.02582166833772079,
@@ -212,7 +1208,23 @@
     {
       "id": "PANDA-09-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 401,
+        "y": 372,
+        "workspace_distance_m": 0.34348545965628946,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 2049,
       "pixels": 2049,
+      "visible_pixels_check": {
+        "valid_pixels": 2049,
+        "true_positive": 0,
+        "true_negative": 2048,
+        "false_positive": 1,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.3869444051491848,
       "visible_median_radial_margin_m": -0.26380266181744116,
       "origin_workspace_distance_m": 0.46811025626135694,
@@ -223,7 +1235,23 @@
     {
       "id": "PANDA-09-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 427,
+        "y": 267,
+        "workspace_distance_m": 0.059692528035550245,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1134,
       "pixels": 1134,
+      "visible_pixels_check": {
+        "valid_pixels": 1134,
+        "true_positive": 363,
+        "true_negative": 765,
+        "false_positive": 0,
+        "false_negative": 6
+      },
       "radial_margin_m": 0.029786249915210172,
       "visible_median_radial_margin_m": 0.038019872164573476,
       "origin_workspace_distance_m": 0.06951545489858268,
@@ -234,7 +1262,23 @@
     {
       "id": "PANDA-10-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 404,
+        "y": 176,
+        "workspace_distance_m": 0.29760844337256004,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 181,
       "pixels": 181,
+      "visible_pixels_check": {
+        "valid_pixels": 181,
+        "true_positive": 0,
+        "true_negative": 181,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.266929568702007,
       "visible_median_radial_margin_m": -0.19128165549094422,
       "origin_workspace_distance_m": 0.371230524769621,
@@ -245,7 +1289,23 @@
     {
       "id": "PANDA-10-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 451,
+        "y": 279,
+        "workspace_distance_m": 0.02568185130491499,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 534,
       "pixels": 534,
+      "visible_pixels_check": {
+        "valid_pixels": 534,
+        "true_positive": 534,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.4225840827150881,
       "visible_median_radial_margin_m": 0.41948852930025216,
       "origin_workspace_distance_m": 0.023286350539704143,
@@ -256,7 +1316,23 @@
     {
       "id": "PANDA-11-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 392,
+        "y": 240,
+        "workspace_distance_m": 0.15984213086652613,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 385,
       "pixels": 385,
+      "visible_pixels_check": {
+        "valid_pixels": 385,
+        "true_positive": 0,
+        "true_negative": 372,
+        "false_positive": 13,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.0638137399677452,
       "visible_median_radial_margin_m": -0.07662099219010565,
       "origin_workspace_distance_m": 0.14345330580587334,
@@ -267,9 +1343,25 @@
     {
       "id": "PANDA-11-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 203,
+        "y": 203,
+        "workspace_distance_m": 0.06254571077538279,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 160,
       "pixels": 160,
+      "visible_pixels_check": {
+        "valid_pixels": 160,
+        "true_positive": 7,
+        "true_negative": 153,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.07593073846942189,
-      "visible_median_radial_margin_m": 0.053446887977506075,
+      "visible_median_radial_margin_m": 0.053446887977505964,
       "origin_workspace_distance_m": 0.038755904481527846,
       "closest_visible_workspace_distance_m": 0.04855246600951102,
       "visible_in_workspace_fraction": 0.04375,
@@ -278,7 +1370,23 @@
     {
       "id": "PANDA-12-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 191,
+        "y": 303,
+        "workspace_distance_m": 0.2507718101464946,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 565,
       "pixels": 565,
+      "visible_pixels_check": {
+        "valid_pixels": 565,
+        "true_positive": 0,
+        "true_negative": 565,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.18528497426728574,
       "visible_median_radial_margin_m": -0.15380059370176302,
       "origin_workspace_distance_m": 0.2928236477588478,
@@ -289,7 +1397,23 @@
     {
       "id": "PANDA-12-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 218,
+        "y": 198,
+        "workspace_distance_m": 0.005074080073130217,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 3380,
       "pixels": 3380,
+      "visible_pixels_check": {
+        "valid_pixels": 3380,
+        "true_positive": 3380,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.25794446846332275,
       "visible_median_radial_margin_m": 0.2386056461119559,
       "origin_workspace_distance_m": 0.02407116886666594,
@@ -300,7 +1424,23 @@
     {
       "id": "PANDA-13-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 361,
+        "y": 191,
+        "workspace_distance_m": 0.2706954892301188,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 493,
       "pixels": 493,
+      "visible_pixels_check": {
+        "valid_pixels": 493,
+        "true_positive": 0,
+        "true_negative": 493,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.20172957773827993,
       "visible_median_radial_margin_m": -0.16682640289991513,
       "origin_workspace_distance_m": 0.30265140597066953,
@@ -311,7 +1451,23 @@
     {
       "id": "PANDA-13-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 363,
+        "y": 285,
+        "workspace_distance_m": 0.02197974429099001,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 2438,
       "pixels": 2438,
+      "visible_pixels_check": {
+        "valid_pixels": 2438,
+        "true_positive": 2438,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.17682400787752306,
       "visible_median_radial_margin_m": 0.1871631945363409,
       "origin_workspace_distance_m": 0.02250932540967109,
@@ -322,7 +1478,23 @@
     {
       "id": "PANDA-14-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 434,
+        "y": 287,
+        "workspace_distance_m": 0.26171550948829064,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 213,
       "pixels": 213,
+      "visible_pixels_check": {
+        "valid_pixels": 213,
+        "true_positive": 0,
+        "true_negative": 213,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.14814135793917416,
       "visible_median_radial_margin_m": -0.1564970732852775,
       "origin_workspace_distance_m": 0.2565228496627502,
@@ -333,9 +1505,25 @@
     {
       "id": "PANDA-14-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 232,
+        "y": 152,
+        "workspace_distance_m": 0.0967880942806816,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 9736,
       "pixels": 9736,
+      "visible_pixels_check": {
+        "valid_pixels": 9736,
+        "true_positive": 3036,
+        "true_negative": 6599,
+        "false_positive": 101,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.01672905087501042,
-      "visible_median_radial_margin_m": 0.06150395834103517,
+      "visible_median_radial_margin_m": 0.06150395834103528,
       "origin_workspace_distance_m": 0.10855667504420016,
       "closest_visible_workspace_distance_m": 0.0033238309908297722,
       "visible_in_workspace_fraction": 0.31183237469186526,
@@ -344,7 +1532,23 @@
     {
       "id": "PANDA-15-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 283,
+        "y": 252,
+        "workspace_distance_m": 0.1437476460913306,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 992,
       "pixels": 992,
+      "visible_pixels_check": {
+        "valid_pixels": 992,
+        "true_positive": 55,
+        "true_negative": 929,
+        "false_positive": 0,
+        "false_negative": 8
+      },
       "radial_margin_m": -0.015203398791266642,
       "visible_median_radial_margin_m": -0.03866938301389533,
       "origin_workspace_distance_m": 0.12032675290968593,
@@ -355,7 +1559,23 @@
     {
       "id": "PANDA-15-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 306,
+        "y": 119,
+        "workspace_distance_m": 0.0669560022094048,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 3999,
       "pixels": 3999,
+      "visible_pixels_check": {
+        "valid_pixels": 3999,
+        "true_positive": 1793,
+        "true_negative": 2176,
+        "false_positive": 29,
+        "false_negative": 1
+      },
       "radial_margin_m": 0.032725509971127886,
       "visible_median_radial_margin_m": 0.05795338107979642,
       "origin_workspace_distance_m": 0.07889443391094655,
@@ -366,7 +1586,23 @@
     {
       "id": "PANDA-16-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 292,
+        "y": 251,
+        "workspace_distance_m": 0.01770800414875059,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 205,
       "pixels": 205,
+      "visible_pixels_check": {
+        "valid_pixels": 205,
+        "true_positive": 205,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.14407907058772118,
       "visible_median_radial_margin_m": 0.14686911329548413,
       "origin_workspace_distance_m": 0.021630067050533316,
@@ -377,9 +1613,25 @@
     {
       "id": "PANDA-17-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 346,
+        "y": 365,
+        "workspace_distance_m": 0.3080575516410042,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 5272,
       "pixels": 5272,
+      "visible_pixels_check": {
+        "valid_pixels": 5272,
+        "true_positive": 0,
+        "true_negative": 5258,
+        "false_positive": 14,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.30262561521050735,
-      "visible_median_radial_margin_m": -0.23108575292229694,
+      "visible_median_radial_margin_m": -0.23108575292229672,
       "origin_workspace_distance_m": 0.407011975536702,
       "closest_visible_workspace_distance_m": 0.1825515839907482,
       "visible_in_workspace_fraction": 0.0,
@@ -388,18 +1640,50 @@
     {
       "id": "PANDA-17-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 260,
+        "y": 124,
+        "workspace_distance_m": 0.021955061372566455,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 161,
       "pixels": 161,
+      "visible_pixels_check": {
+        "valid_pixels": 161,
+        "true_positive": 161,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.3888036030132378,
       "visible_median_radial_margin_m": 0.38729774548441054,
       "origin_workspace_distance_m": 0.023925961140696436,
-      "closest_visible_workspace_distance_m": 0.006832079083500248,
+      "closest_visible_workspace_distance_m": 0.006832079083500325,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 216.0
     },
     {
       "id": "PANDA-18-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 377,
+        "y": 184,
+        "workspace_distance_m": 0.25149816514367734,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 2694,
       "pixels": 2694,
+      "visible_pixels_check": {
+        "valid_pixels": 2694,
+        "true_positive": 0,
+        "true_negative": 2694,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.18796284975007072,
       "visible_median_radial_margin_m": -0.1540298337662156,
       "origin_workspace_distance_m": 0.29168142814064574,
@@ -410,18 +1694,50 @@
     {
       "id": "PANDA-18-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 149,
+        "y": 240,
+        "workspace_distance_m": 0.032037202078156087,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 416,
       "pixels": 416,
+      "visible_pixels_check": {
+        "valid_pixels": 416,
+        "true_positive": 416,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.5526866883886687,
       "visible_median_radial_margin_m": 0.5524994117858741,
       "origin_workspace_distance_m": 0.028917936638088036,
-      "closest_visible_workspace_distance_m": 0.003844334521306281,
+      "closest_visible_workspace_distance_m": 0.0038443345213062456,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 237.0
     },
     {
       "id": "PANDA-19-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 258,
+        "y": 256,
+        "workspace_distance_m": 0.21242867056322015,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 298,
       "pixels": 298,
+      "visible_pixels_check": {
+        "valid_pixels": 298,
+        "true_positive": 0,
+        "true_negative": 298,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.14507645368798672,
       "visible_median_radial_margin_m": -0.13225371131195884,
       "origin_workspace_distance_m": 0.24397532412482165,
@@ -432,7 +1748,23 @@
     {
       "id": "PANDA-19-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 276,
+        "y": 205,
+        "workspace_distance_m": 0.03861119835173908,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 2838,
       "pixels": 2838,
+      "visible_pixels_check": {
+        "valid_pixels": 2838,
+        "true_positive": 1910,
+        "true_negative": 863,
+        "false_positive": 65,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.16436949191982797,
       "visible_median_radial_margin_m": 0.11306195080695813,
       "origin_workspace_distance_m": 0.03183949358239794,
@@ -443,7 +1775,23 @@
     {
       "id": "PANDA-20-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 369,
+        "y": 243,
+        "workspace_distance_m": 0.22254399100941724,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1157,
       "pixels": 1157,
+      "visible_pixels_check": {
+        "valid_pixels": 1157,
+        "true_positive": 0,
+        "true_negative": 1157,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.13375823177968704,
       "visible_median_radial_margin_m": -0.12440239542889531,
       "origin_workspace_distance_m": 0.23631522678029557,
@@ -454,7 +1802,23 @@
     {
       "id": "PANDA-20-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 386,
+        "y": 209,
+        "workspace_distance_m": 0.09381215099309094,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 136,
       "pixels": 136,
+      "visible_pixels_check": {
+        "valid_pixels": 136,
+        "true_positive": 0,
+        "true_negative": 134,
+        "false_positive": 2,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.017205529777322814,
       "visible_median_radial_margin_m": -0.003977432047440388,
       "origin_workspace_distance_m": 0.06477143481781347,
@@ -465,7 +1829,23 @@
     {
       "id": "PANDA-21-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 299,
+        "y": 312,
+        "workspace_distance_m": 0.47355899860552203,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 982,
       "pixels": 982,
+      "visible_pixels_check": {
+        "valid_pixels": 982,
+        "true_positive": 0,
+        "true_negative": 982,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.4090949972125075,
       "visible_median_radial_margin_m": -0.39845577022264034,
       "origin_workspace_distance_m": 0.5007140995941696,
@@ -476,18 +1856,50 @@
     {
       "id": "PANDA-21-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 469,
+        "y": 201,
+        "workspace_distance_m": 0.023251278009380576,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 127,
       "pixels": 127,
+      "visible_pixels_check": {
+        "valid_pixels": 127,
+        "true_positive": 127,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.28507196016216996,
-      "visible_median_radial_margin_m": 0.25934092521358065,
+      "visible_median_radial_margin_m": 0.25934092521358076,
       "origin_workspace_distance_m": 0.034056759672149294,
-      "closest_visible_workspace_distance_m": 0.011754349125592247,
+      "closest_visible_workspace_distance_m": 0.011754349125592298,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 230.0
     },
     {
       "id": "PANDA-22-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 294,
+        "y": 152,
+        "workspace_distance_m": 0.40254371588483123,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 381,
       "pixels": 381,
+      "visible_pixels_check": {
+        "valid_pixels": 381,
+        "true_positive": 0,
+        "true_negative": 381,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.4083846387494059,
       "visible_median_radial_margin_m": -0.3176617270049127,
       "origin_workspace_distance_m": 0.508682147413287,
@@ -498,7 +1910,23 @@
     {
       "id": "PANDA-22-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 255,
+        "y": 225,
+        "workspace_distance_m": 0.0278750232515407,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 462,
       "pixels": 462,
+      "visible_pixels_check": {
+        "valid_pixels": 462,
+        "true_positive": 462,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.1063321375857238,
       "visible_median_radial_margin_m": 0.130216744111481,
       "origin_workspace_distance_m": 0.030930219053253806,
@@ -509,7 +1937,23 @@
     {
       "id": "PANDA-23-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 393,
+        "y": 184,
+        "workspace_distance_m": 0.2582482572052836,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 583,
       "pixels": 583,
+      "visible_pixels_check": {
+        "valid_pixels": 583,
+        "true_positive": 0,
+        "true_negative": 583,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.17627952239680744,
       "visible_median_radial_margin_m": -0.16146428205527652,
       "origin_workspace_distance_m": 0.26003231571136276,
@@ -520,7 +1964,23 @@
     {
       "id": "PANDA-23-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 228,
+        "y": 295,
+        "workspace_distance_m": 0.024036332009030208,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 12525,
       "pixels": 12525,
+      "visible_pixels_check": {
+        "valid_pixels": 12525,
+        "true_positive": 12518,
+        "true_negative": 5,
+        "false_positive": 2,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.26979744849074727,
       "visible_median_radial_margin_m": 0.29786133417125904,
       "origin_workspace_distance_m": 0.037540350264043246,
@@ -531,7 +1991,23 @@
     {
       "id": "PANDA-24-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 292,
+        "y": 205,
+        "workspace_distance_m": 0.08293493526815612,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 606,
       "pixels": 606,
+      "visible_pixels_check": {
+        "valid_pixels": 606,
+        "true_positive": 24,
+        "true_negative": 565,
+        "false_positive": 16,
+        "false_negative": 1
+      },
       "radial_margin_m": 0.028393743153401263,
       "visible_median_radial_margin_m": 0.017396639832116256,
       "origin_workspace_distance_m": 0.07469901105645389,
@@ -542,7 +2018,23 @@
     {
       "id": "PANDA-25-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 375,
+        "y": 285,
+        "workspace_distance_m": 0.2180049694384992,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 4400,
       "pixels": 4400,
+      "visible_pixels_check": {
+        "valid_pixels": 4400,
+        "true_positive": 0,
+        "true_negative": 4400,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.15813535685628843,
       "visible_median_radial_margin_m": -0.12312127031173303,
       "origin_workspace_distance_m": 0.25870504003316824,
@@ -553,20 +2045,52 @@
     {
       "id": "PANDA-25-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 419,
+        "y": 165,
+        "workspace_distance_m": 0.03250862448477777,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 547,
       "pixels": 547,
+      "visible_pixels_check": {
+        "valid_pixels": 547,
+        "true_positive": 391,
+        "true_negative": 149,
+        "false_positive": 7,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.1349609004213539,
-      "visible_median_radial_margin_m": 0.08756468514022997,
+      "visible_median_radial_margin_m": 0.08756468514022986,
       "origin_workspace_distance_m": 0.03660855265852936,
-      "closest_visible_workspace_distance_m": 0.005098519251877114,
+      "closest_visible_workspace_distance_m": 0.0050985192518771035,
       "visible_in_workspace_fraction": 0.7148080438756855,
       "visible_median_chroma": 242.0
     },
     {
       "id": "PANDA-26-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 281,
+        "y": 253,
+        "workspace_distance_m": 0.19946676904378477,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1084,
       "pixels": 1084,
+      "visible_pixels_check": {
+        "valid_pixels": 1084,
+        "true_positive": 0,
+        "true_negative": 1084,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.13646609654217245,
-      "visible_median_radial_margin_m": -0.10304852068416093,
+      "visible_median_radial_margin_m": -0.1030485206841607,
       "origin_workspace_distance_m": 0.23725004636121982,
       "closest_visible_workspace_distance_m": 0.1534647813580864,
       "visible_in_workspace_fraction": 0.0,
@@ -575,7 +2099,23 @@
     {
       "id": "PANDA-26-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 418,
+        "y": 207,
+        "workspace_distance_m": 0.013517006117684036,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 323,
       "pixels": 323,
+      "visible_pixels_check": {
+        "valid_pixels": 323,
+        "true_positive": 323,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.3625720144601846,
       "visible_median_radial_margin_m": 0.3313002507721994,
       "origin_workspace_distance_m": 0.03712660675994719,
@@ -586,7 +2126,23 @@
     {
       "id": "PANDA-27-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 305,
+        "y": 188,
+        "workspace_distance_m": 0.20071982927291854,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 569,
       "pixels": 569,
+      "visible_pixels_check": {
+        "valid_pixels": 569,
+        "true_positive": 0,
+        "true_negative": 569,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.16052851453350492,
       "visible_median_radial_margin_m": -0.10131790338820124,
       "origin_workspace_distance_m": 0.2608124299554656,
@@ -597,7 +2153,23 @@
     {
       "id": "PANDA-27-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 425,
+        "y": 289,
+        "workspace_distance_m": 0.025385599332466986,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1568,
       "pixels": 1568,
+      "visible_pixels_check": {
+        "valid_pixels": 1568,
+        "true_positive": 1568,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.5445544727431064,
       "visible_median_radial_margin_m": 0.524070816181142,
       "origin_workspace_distance_m": 0.029936879696930478,
@@ -608,7 +2180,23 @@
     {
       "id": "PANDA-28-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 392,
+        "y": 176,
+        "workspace_distance_m": 0.3241003599602283,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 490,
       "pixels": 490,
+      "visible_pixels_check": {
+        "valid_pixels": 490,
+        "true_positive": 0,
+        "true_negative": 490,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.23673184375982603,
       "visible_median_radial_margin_m": -0.21018271512253395,
       "origin_workspace_distance_m": 0.33835516761428003,
@@ -619,7 +2207,23 @@
     {
       "id": "PANDA-28-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 401,
+        "y": 318,
+        "workspace_distance_m": 0.08005701793064265,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 434,
       "pixels": 434,
+      "visible_pixels_check": {
+        "valid_pixels": 434,
+        "true_positive": 0,
+        "true_negative": 434,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.031581272550825545,
       "visible_median_radial_margin_m": 0.009392498236097446,
       "origin_workspace_distance_m": 0.08311203636641214,
@@ -630,7 +2234,23 @@
     {
       "id": "PANDA-29-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 107,
+        "y": 252,
+        "workspace_distance_m": 0.5138738437269355,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 194,
       "pixels": 194,
+      "visible_pixels_check": {
+        "valid_pixels": 194,
+        "true_positive": 0,
+        "true_negative": 194,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.44112759305750116,
       "visible_median_radial_margin_m": -0.44000044899748425,
       "origin_workspace_distance_m": 0.5201977199249307,
@@ -641,7 +2261,23 @@
     {
       "id": "PANDA-29-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 317,
+        "y": 277,
+        "workspace_distance_m": 0.011878301863913185,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 506,
       "pixels": 506,
+      "visible_pixels_check": {
+        "valid_pixels": 506,
+        "true_positive": 506,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.17005401133167541,
       "visible_median_radial_margin_m": 0.15647847420859606,
       "origin_workspace_distance_m": 0.03104241128242011,
@@ -652,29 +2288,77 @@
     {
       "id": "PANDA-30-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 192,
+        "y": 260,
+        "workspace_distance_m": 0.20624154837020367,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 355,
       "pixels": 355,
+      "visible_pixels_check": {
+        "valid_pixels": 355,
+        "true_positive": 0,
+        "true_negative": 346,
+        "false_positive": 9,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.1295340800224971,
       "visible_median_radial_margin_m": -0.11150875221792056,
       "origin_workspace_distance_m": 0.23812041263332037,
-      "closest_visible_workspace_distance_m": 0.18346479851310807,
+      "closest_visible_workspace_distance_m": 0.1834647985131081,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 75.0
     },
     {
       "id": "PANDA-30-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 186,
+        "y": 208,
+        "workspace_distance_m": 0.09472905840399204,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 485,
       "pixels": 485,
+      "visible_pixels_check": {
+        "valid_pixels": 485,
+        "true_positive": 0,
+        "true_negative": 483,
+        "false_positive": 2,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.0349417528019248,
       "visible_median_radial_margin_m": 0.011848889587004585,
       "origin_workspace_distance_m": 0.0680143370504056,
-      "closest_visible_workspace_distance_m": 0.06192531200934744,
+      "closest_visible_workspace_distance_m": 0.06192531200934734,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 74.0
     },
     {
       "id": "PANDA-31-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 309,
+        "y": 159,
+        "workspace_distance_m": 0.3403144452036391,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 796,
       "pixels": 796,
+      "visible_pixels_check": {
+        "valid_pixels": 796,
+        "true_positive": 0,
+        "true_negative": 796,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.28462310149455816,
       "visible_median_radial_margin_m": -0.22517729286808863,
       "origin_workspace_distance_m": 0.3863307107410443,
@@ -685,7 +2369,23 @@
     {
       "id": "PANDA-31-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 184,
+        "y": 264,
+        "workspace_distance_m": 0.021276038115490895,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 583,
       "pixels": 583,
+      "visible_pixels_check": {
+        "valid_pixels": 583,
+        "true_positive": 583,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.26941402710922147,
       "visible_median_radial_margin_m": 0.2628947936331889,
       "origin_workspace_distance_m": 0.02807607396147023,
@@ -696,18 +2396,50 @@
     {
       "id": "PANDA-32-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 413,
+        "y": 293,
+        "workspace_distance_m": 0.18548297995363464,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 221,
       "pixels": 221,
+      "visible_pixels_check": {
+        "valid_pixels": 221,
+        "true_positive": 0,
+        "true_negative": 221,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.1422579572921694,
-      "visible_median_radial_margin_m": -0.10086872124068291,
+      "visible_median_radial_margin_m": -0.10086872124068313,
       "origin_workspace_distance_m": 0.22634744353807895,
-      "closest_visible_workspace_distance_m": 0.16274577004234284,
+      "closest_visible_workspace_distance_m": 0.1627457700423428,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 76.0
     },
     {
       "id": "PANDA-32-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 333,
+        "y": 231,
+        "workspace_distance_m": 0.042407523991994045,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1699,
       "pixels": 1699,
+      "visible_pixels_check": {
+        "valid_pixels": 1699,
+        "true_positive": 974,
+        "true_negative": 680,
+        "false_positive": 45,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.08243151098262447,
       "visible_median_radial_margin_m": 0.08075832777461378,
       "origin_workspace_distance_m": 0.036750543089032174,
@@ -718,7 +2450,23 @@
     {
       "id": "PANDA-33-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 281,
+        "y": 124,
+        "workspace_distance_m": 0.38075026668036144,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1096,
       "pixels": 1096,
+      "visible_pixels_check": {
+        "valid_pixels": 1096,
+        "true_positive": 0,
+        "true_negative": 1096,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.34569108925699665,
       "visible_median_radial_margin_m": -0.2670518157530124,
       "origin_workspace_distance_m": 0.4437923456594847,
@@ -729,7 +2477,23 @@
     {
       "id": "PANDA-33-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 398,
+        "y": 174,
+        "workspace_distance_m": 0.021886857684521033,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 665,
       "pixels": 665,
+      "visible_pixels_check": {
+        "valid_pixels": 665,
+        "true_positive": 632,
+        "true_negative": 29,
+        "false_positive": 0,
+        "false_negative": 4
+      },
       "radial_margin_m": 0.07164927375671948,
       "visible_median_radial_margin_m": 0.13196254831796506,
       "origin_workspace_distance_m": 0.062183543835520945,
@@ -740,7 +2504,23 @@
     {
       "id": "PANDA-34-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 482,
+        "y": 316,
+        "workspace_distance_m": 0.4767908242785728,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 671,
       "pixels": 671,
+      "visible_pixels_check": {
+        "valid_pixels": 671,
+        "true_positive": 0,
+        "true_negative": 671,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.42691713900372297,
       "visible_median_radial_margin_m": -0.41912472825590963,
       "origin_workspace_distance_m": 0.5265210710471024,
@@ -751,9 +2531,25 @@
     {
       "id": "PANDA-34-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 128,
+        "y": 287,
+        "workspace_distance_m": 0.020981019536833612,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1923,
       "pixels": 1923,
+      "visible_pixels_check": {
+        "valid_pixels": 1923,
+        "true_positive": 1923,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.2826486142069423,
-      "visible_median_radial_margin_m": 0.29497802085145053,
+      "visible_median_radial_margin_m": 0.2949780208514504,
       "origin_workspace_distance_m": 0.029006151607964083,
       "closest_visible_workspace_distance_m": 0.004047633176704155,
       "visible_in_workspace_fraction": 1.0,
@@ -762,7 +2558,23 @@
     {
       "id": "PANDA-35-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 347,
+        "y": 333,
+        "workspace_distance_m": 0.35533674815843724,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 495,
       "pixels": 495,
+      "visible_pixels_check": {
+        "valid_pixels": 495,
+        "true_positive": 0,
+        "true_negative": 495,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.3606557793167704,
       "visible_median_radial_margin_m": -0.3011417659260247,
       "origin_workspace_distance_m": 0.44925293638632313,
@@ -773,18 +2585,50 @@
     {
       "id": "PANDA-35-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 317,
+        "y": 223,
+        "workspace_distance_m": 0.029798568602136016,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 2951,
       "pixels": 2951,
+      "visible_pixels_check": {
+        "valid_pixels": 2951,
+        "true_positive": 1857,
+        "true_negative": 1042,
+        "false_positive": 52,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.08272411523504597,
       "visible_median_radial_margin_m": 0.07877936695640475,
       "origin_workspace_distance_m": 0.03568555470482394,
-      "closest_visible_workspace_distance_m": 0.004307247149509959,
+      "closest_visible_workspace_distance_m": 0.004307247149509936,
       "visible_in_workspace_fraction": 0.6292782107760081,
       "visible_median_chroma": 251.0
     },
     {
       "id": "PANDA-36-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 216,
+        "y": 287,
+        "workspace_distance_m": 0.25807499852140875,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 308,
       "pixels": 308,
+      "visible_pixels_check": {
+        "valid_pixels": 308,
+        "true_positive": 0,
+        "true_negative": 303,
+        "false_positive": 5,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2224010649581878,
       "visible_median_radial_margin_m": -0.1821490751695347,
       "origin_workspace_distance_m": 0.3197901860203851,
@@ -795,18 +2639,50 @@
     {
       "id": "PANDA-36-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 471,
+        "y": 280,
+        "workspace_distance_m": 0.1272464153948446,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 5259,
       "pixels": 5259,
+      "visible_pixels_check": {
+        "valid_pixels": 5259,
+        "true_positive": 518,
+        "true_negative": 4706,
+        "false_positive": 31,
+        "false_negative": 4
+      },
       "radial_margin_m": 0.0008515708475121953,
       "visible_median_radial_margin_m": -0.07686129539576358,
       "origin_workspace_distance_m": 0.11761690973636636,
-      "closest_visible_workspace_distance_m": 0.008314683874282988,
+      "closest_visible_workspace_distance_m": 0.008314683874282984,
       "visible_in_workspace_fraction": 0.09925841414717627,
       "visible_median_chroma": 71.0
     },
     {
       "id": "PANDA-37-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 288,
+        "y": 148,
+        "workspace_distance_m": 0.2869442175639546,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 256,
       "pixels": 256,
+      "visible_pixels_check": {
+        "valid_pixels": 256,
+        "true_positive": 0,
+        "true_negative": 256,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2526915442090576,
       "visible_median_radial_margin_m": -0.18931838822596814,
       "origin_workspace_distance_m": 0.3427653488198161,
@@ -817,7 +2693,23 @@
     {
       "id": "PANDA-37-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 172,
+        "y": 208,
+        "workspace_distance_m": 0.03039831014812578,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 138,
       "pixels": 138,
+      "visible_pixels_check": {
+        "valid_pixels": 138,
+        "true_positive": 131,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 7
+      },
       "radial_margin_m": 0.19873747026513644,
       "visible_median_radial_margin_m": 0.21993647003104078,
       "origin_workspace_distance_m": 0.03078670394358185,
@@ -828,7 +2720,23 @@
     {
       "id": "PANDA-38-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 269,
+        "y": 235,
+        "workspace_distance_m": 0.16475773674480357,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 589,
       "pixels": 589,
+      "visible_pixels_check": {
+        "valid_pixels": 589,
+        "true_positive": 0,
+        "true_negative": 585,
+        "false_positive": 4,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.06526833719543823,
       "visible_median_radial_margin_m": -0.06498522161301157,
       "origin_workspace_distance_m": 0.16829685554925206,
@@ -839,9 +2747,25 @@
     {
       "id": "PANDA-38-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 449,
+        "y": 222,
+        "workspace_distance_m": 0.027366412617870227,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 740,
       "pixels": 740,
+      "visible_pixels_check": {
+        "valid_pixels": 740,
+        "true_positive": 740,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.3597659024406845,
-      "visible_median_radial_margin_m": 0.34988559914043604,
+      "visible_median_radial_margin_m": 0.34988559914043615,
       "origin_workspace_distance_m": 0.02575755514622548,
       "closest_visible_workspace_distance_m": 0.0018157967174283168,
       "visible_in_workspace_fraction": 1.0,
@@ -850,7 +2774,23 @@
     {
       "id": "PANDA-39-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 423,
+        "y": 256,
+        "workspace_distance_m": 0.32402905050043335,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 4743,
       "pixels": 4743,
+      "visible_pixels_check": {
+        "valid_pixels": 4743,
+        "true_positive": 0,
+        "true_negative": 4743,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.23753664571694322,
       "visible_median_radial_margin_m": -0.2239165771320233,
       "origin_workspace_distance_m": 0.33855721052203347,
@@ -861,18 +2801,50 @@
     {
       "id": "PANDA-39-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 198,
+        "y": 154,
+        "workspace_distance_m": 0.035032681014803245,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1014,
       "pixels": 1014,
+      "visible_pixels_check": {
+        "valid_pixels": 1014,
+        "true_positive": 1014,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.5042977440092629,
       "visible_median_radial_margin_m": 0.5186311239385056,
       "origin_workspace_distance_m": 0.02749455927026668,
-      "closest_visible_workspace_distance_m": 0.0028375861674954177,
+      "closest_visible_workspace_distance_m": 0.002837586167495378,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 197.0
     },
     {
       "id": "PANDA-40-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 257,
+        "y": 118,
+        "workspace_distance_m": 0.29701525114043464,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 3885,
       "pixels": 3885,
+      "visible_pixels_check": {
+        "valid_pixels": 3885,
+        "true_positive": 0,
+        "true_negative": 3885,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.3463002607039982,
       "visible_median_radial_margin_m": -0.22158184445028173,
       "origin_workspace_distance_m": 0.42553608380916796,
@@ -883,7 +2855,23 @@
     {
       "id": "PANDA-41-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 327,
+        "y": 329,
+        "workspace_distance_m": 0.3375891198177321,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 812,
       "pixels": 812,
+      "visible_pixels_check": {
+        "valid_pixels": 812,
+        "true_positive": 0,
+        "true_negative": 812,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.31602029811277177,
       "visible_median_radial_margin_m": -0.26383006177937385,
       "origin_workspace_distance_m": 0.41784997817327374,
@@ -894,18 +2882,50 @@
     {
       "id": "PANDA-41-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 245,
+        "y": 123,
+        "workspace_distance_m": 0.021006095175026062,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 4777,
       "pixels": 4777,
+      "visible_pixels_check": {
+        "valid_pixels": 4777,
+        "true_positive": 4732,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 45
+      },
       "radial_margin_m": 0.46007345881965384,
-      "visible_median_radial_margin_m": 0.31949678345662713,
+      "visible_median_radial_margin_m": 0.31949678345662724,
       "origin_workspace_distance_m": 0.026372745363294613,
-      "closest_visible_workspace_distance_m": 0.0019003605677956042,
+      "closest_visible_workspace_distance_m": 0.001900360567795622,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 253.0
     },
     {
       "id": "PANDA-42-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 418,
+        "y": 255,
+        "workspace_distance_m": 0.3677785058445794,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1416,
       "pixels": 1416,
+      "visible_pixels_check": {
+        "valid_pixels": 1416,
+        "true_positive": 0,
+        "true_negative": 1416,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.28233938063124153,
       "visible_median_radial_margin_m": -0.2698894888038452,
       "origin_workspace_distance_m": 0.3825544292089708,
@@ -916,7 +2936,23 @@
     {
       "id": "PANDA-42-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 398,
+        "y": 179,
+        "workspace_distance_m": 0.044078375833903664,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 504,
       "pixels": 504,
+      "visible_pixels_check": {
+        "valid_pixels": 504,
+        "true_positive": 304,
+        "true_negative": 189,
+        "false_positive": 0,
+        "false_negative": 11
+      },
       "radial_margin_m": 0.13467195010899857,
       "visible_median_radial_margin_m": 0.10676296509924366,
       "origin_workspace_distance_m": 0.03351726087478211,
@@ -927,18 +2963,50 @@
     {
       "id": "PANDA-43-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 462,
+        "y": 212,
+        "workspace_distance_m": 0.3404916283182087,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 365,
       "pixels": 365,
+      "visible_pixels_check": {
+        "valid_pixels": 365,
+        "true_positive": 0,
+        "true_negative": 365,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.26080738187788133,
       "visible_median_radial_margin_m": -0.26444212032365155,
       "origin_workspace_distance_m": 0.3403605255807085,
-      "closest_visible_workspace_distance_m": 0.3009326203308799,
+      "closest_visible_workspace_distance_m": 0.30093262033088014,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 75.0
     },
     {
       "id": "PANDA-43-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 236,
+        "y": 180,
+        "workspace_distance_m": 0.018360904648478404,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 195,
       "pixels": 195,
+      "visible_pixels_check": {
+        "valid_pixels": 195,
+        "true_positive": 194,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
       "radial_margin_m": 0.44786841503565494,
       "visible_median_radial_margin_m": 0.45262522316083187,
       "origin_workspace_distance_m": 0.022466357444932306,
@@ -949,7 +3017,23 @@
     {
       "id": "PANDA-44-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 381,
+        "y": 160,
+        "workspace_distance_m": 0.0701836161120812,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 535,
       "pixels": 535,
+      "visible_pixels_check": {
+        "valid_pixels": 535,
+        "true_positive": 185,
+        "true_negative": 347,
+        "false_positive": 0,
+        "false_negative": 3
+      },
       "radial_margin_m": 0.10112243166495094,
       "visible_median_radial_margin_m": 0.06938887218682921,
       "origin_workspace_distance_m": 0.028427476259278096,
@@ -960,18 +3044,50 @@
     {
       "id": "PANDA-45-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 429,
+        "y": 258,
+        "workspace_distance_m": 0.2652589842445349,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1139,
       "pixels": 1139,
+      "visible_pixels_check": {
+        "valid_pixels": 1139,
+        "true_positive": 0,
+        "true_negative": 1139,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.22742759480081065,
       "visible_median_radial_margin_m": -0.2018807209349811,
       "origin_workspace_distance_m": 0.30448555758345197,
-      "closest_visible_workspace_distance_m": 0.2336157593817716,
+      "closest_visible_workspace_distance_m": 0.23361575938177156,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 76.0
     },
     {
       "id": "PANDA-45-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 409,
+        "y": 182,
+        "workspace_distance_m": 0.005579995781541762,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1601,
       "pixels": 1601,
+      "visible_pixels_check": {
+        "valid_pixels": 1601,
+        "true_positive": 1547,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 54
+      },
       "radial_margin_m": 0.323511441816984,
       "visible_median_radial_margin_m": 0.2414029229528385,
       "origin_workspace_distance_m": 0.027535437958869882,
@@ -982,7 +3098,23 @@
     {
       "id": "PANDA-46-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 211,
+        "y": 267,
+        "workspace_distance_m": 0.20701310535749565,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 374,
       "pixels": 374,
+      "visible_pixels_check": {
+        "valid_pixels": 374,
+        "true_positive": 0,
+        "true_negative": 374,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.11669424917424398,
       "visible_median_radial_margin_m": -0.1245065628846691,
       "origin_workspace_distance_m": 0.20870844886424264,
@@ -993,18 +3125,50 @@
     {
       "id": "PANDA-46-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 516,
+        "y": 223,
+        "workspace_distance_m": 0.03309361073450327,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 249,
       "pixels": 249,
+      "visible_pixels_check": {
+        "valid_pixels": 249,
+        "true_positive": 249,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.4144415317145226,
       "visible_median_radial_margin_m": 0.4367908971770212,
       "origin_workspace_distance_m": 0.02523198946130272,
-      "closest_visible_workspace_distance_m": 0.016256991821558264,
+      "closest_visible_workspace_distance_m": 0.016256991821558386,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 240.0
     },
     {
       "id": "PANDA-47-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 239,
+        "y": 150,
+        "workspace_distance_m": 0.027025752845576793,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 3399,
       "pixels": 3399,
+      "visible_pixels_check": {
+        "valid_pixels": 3399,
+        "true_positive": 3399,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.398238366124988,
       "visible_median_radial_margin_m": 0.30631111929689914,
       "origin_workspace_distance_m": 0.031748711696151614,
@@ -1015,7 +3179,23 @@
     {
       "id": "PANDA-48-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 255,
+        "y": 238,
+        "workspace_distance_m": 0.2017550988763041,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1680,
       "pixels": 1680,
+      "visible_pixels_check": {
+        "valid_pixels": 1680,
+        "true_positive": 0,
+        "true_negative": 1680,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.11410684058837073,
       "visible_median_radial_margin_m": -0.1054394151918907,
       "origin_workspace_distance_m": 0.21078504958760783,
@@ -1026,7 +3206,23 @@
     {
       "id": "PANDA-48-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 328,
+        "y": 164,
+        "workspace_distance_m": 0.023141255564638263,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 650,
       "pixels": 650,
+      "visible_pixels_check": {
+        "valid_pixels": 650,
+        "true_positive": 650,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.47749431017957306,
       "visible_median_radial_margin_m": 0.4457889240000481,
       "origin_workspace_distance_m": 0.02669796946230569,
@@ -1037,7 +3233,23 @@
     {
       "id": "PANDA-49-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 165,
+        "y": 177,
+        "workspace_distance_m": 0.4684033374505544,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 541,
       "pixels": 541,
+      "visible_pixels_check": {
+        "valid_pixels": 541,
+        "true_positive": 0,
+        "true_negative": 541,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.4061533264693544,
       "visible_median_radial_margin_m": -0.38066286986803344,
       "origin_workspace_distance_m": 0.48919434826266167,
@@ -1048,20 +3260,52 @@
     {
       "id": "PANDA-49-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 296,
+        "y": 395,
+        "workspace_distance_m": 0.02490605646189583,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 617,
       "pixels": 617,
+      "visible_pixels_check": {
+        "valid_pixels": 617,
+        "true_positive": 617,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.3249679041489707,
-      "visible_median_radial_margin_m": 0.2868447332122187,
+      "visible_median_radial_margin_m": 0.2868447332122188,
       "origin_workspace_distance_m": 0.029212446354152943,
-      "closest_visible_workspace_distance_m": 0.002305810878638199,
+      "closest_visible_workspace_distance_m": 0.002305810878638154,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 133.0
     },
     {
       "id": "PANDA-50-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 383,
+        "y": 203,
+        "workspace_distance_m": 0.18511487145516362,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 115,
       "pixels": 115,
+      "visible_pixels_check": {
+        "valid_pixels": 115,
+        "true_positive": 0,
+        "true_negative": 115,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.06879512727350279,
-      "visible_median_radial_margin_m": -0.08358329738457648,
+      "visible_median_radial_margin_m": -0.08358329738457637,
       "origin_workspace_distance_m": 0.17192934880059016,
       "closest_visible_workspace_distance_m": 0.15698145687739745,
       "visible_in_workspace_fraction": 0.0,
@@ -1070,7 +3314,23 @@
     {
       "id": "PANDA-50-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 350,
+        "y": 212,
+        "workspace_distance_m": 0.1250502374064777,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 2450,
       "pixels": 2450,
+      "visible_pixels_check": {
+        "valid_pixels": 2450,
+        "true_positive": 535,
+        "true_negative": 1913,
+        "false_positive": 0,
+        "false_negative": 2
+      },
       "radial_margin_m": 0.00928557278715636,
       "visible_median_radial_margin_m": -0.016137463504015903,
       "origin_workspace_distance_m": 0.09408081576161563,
@@ -1081,7 +3341,23 @@
     {
       "id": "PANDA-51-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 397,
+        "y": 212,
+        "workspace_distance_m": 0.12706543953747143,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 131,
       "pixels": 131,
+      "visible_pixels_check": {
+        "valid_pixels": 131,
+        "true_positive": 0,
+        "true_negative": 131,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.0234510493013248,
       "visible_median_radial_margin_m": -0.03944432033630407,
       "origin_workspace_distance_m": 0.10319296578156559,
@@ -1092,18 +3368,50 @@
     {
       "id": "PANDA-51-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 298,
+        "y": 224,
+        "workspace_distance_m": 0.06857777411409824,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 289,
       "pixels": 289,
+      "visible_pixels_check": {
+        "valid_pixels": 289,
+        "true_positive": 114,
+        "true_negative": 155,
+        "false_positive": 20,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.06371166552850238,
       "visible_median_radial_margin_m": 0.03891045429218887,
       "origin_workspace_distance_m": 0.04398909427691216,
-      "closest_visible_workspace_distance_m": 0.005396434556402769,
+      "closest_visible_workspace_distance_m": 0.0053964345564027835,
       "visible_in_workspace_fraction": 0.3944636678200692,
       "visible_median_chroma": 80.0
     },
     {
       "id": "PANDA-52-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 310,
+        "y": 119,
+        "workspace_distance_m": 0.37231853609385596,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 4076,
       "pixels": 4076,
+      "visible_pixels_check": {
+        "valid_pixels": 4076,
+        "true_positive": 0,
+        "true_negative": 4068,
+        "false_positive": 8,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.3482348056786535,
       "visible_median_radial_margin_m": -0.2738464561188414,
       "origin_workspace_distance_m": 0.44848626037938133,
@@ -1114,18 +3422,50 @@
     {
       "id": "PANDA-52-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 307,
+        "y": 252,
+        "workspace_distance_m": 0.029654757249746845,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 334,
       "pixels": 334,
+      "visible_pixels_check": {
+        "valid_pixels": 334,
+        "true_positive": 290,
+        "true_negative": 44,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.09043593369036629,
       "visible_median_radial_margin_m": 0.11736202744913338,
       "origin_workspace_distance_m": 0.035557879034261504,
-      "closest_visible_workspace_distance_m": 0.016243046470738987,
+      "closest_visible_workspace_distance_m": 0.016243046470738993,
       "visible_in_workspace_fraction": 0.8682634730538922,
       "visible_median_chroma": 250.0
     },
     {
       "id": "PANDA-53-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 435,
+        "y": 293,
+        "workspace_distance_m": 0.3649135942431138,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1686,
       "pixels": 1686,
+      "visible_pixels_check": {
+        "valid_pixels": 1686,
+        "true_positive": 0,
+        "true_negative": 1686,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.30768036160057277,
       "visible_median_radial_margin_m": -0.27151405119466654,
       "origin_workspace_distance_m": 0.4092137361284917,
@@ -1136,7 +3476,23 @@
     {
       "id": "PANDA-53-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 422,
+        "y": 170,
+        "workspace_distance_m": 0.11212366246010463,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 5104,
       "pixels": 5104,
+      "visible_pixels_check": {
+        "valid_pixels": 5104,
+        "true_positive": 755,
+        "true_negative": 4310,
+        "false_positive": 28,
+        "false_negative": 11
+      },
       "radial_margin_m": 0.012147094899465749,
       "visible_median_radial_margin_m": -0.03531404909080327,
       "origin_workspace_distance_m": 0.09268204142202269,
@@ -1147,7 +3503,23 @@
     {
       "id": "PANDA-54-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 238,
+        "y": 297,
+        "workspace_distance_m": 0.028661274383836713,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 5018,
       "pixels": 5018,
+      "visible_pixels_check": {
+        "valid_pixels": 5018,
+        "true_positive": 3264,
+        "true_negative": 1717,
+        "false_positive": 37,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.0669377940865965,
       "visible_median_radial_margin_m": 0.08856613279395986,
       "origin_workspace_distance_m": 0.060742265443527926,
@@ -1158,7 +3530,23 @@
     {
       "id": "PANDA-55-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 108,
+        "y": 234,
+        "workspace_distance_m": 0.5017411126546837,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 345,
       "pixels": 345,
+      "visible_pixels_check": {
+        "valid_pixels": 345,
+        "true_positive": 0,
+        "true_negative": 344,
+        "false_positive": 1,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.43430944037735375,
       "visible_median_radial_margin_m": -0.40013540110463475,
       "origin_workspace_distance_m": 0.5334493314956128,
@@ -1169,9 +3557,25 @@
     {
       "id": "PANDA-55-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 471,
+        "y": 209,
+        "workspace_distance_m": 0.02786594836052408,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 355,
       "pixels": 355,
+      "visible_pixels_check": {
+        "valid_pixels": 355,
+        "true_positive": 355,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.22709058141676852,
-      "visible_median_radial_margin_m": 0.21554665913289517,
+      "visible_median_radial_margin_m": 0.21554665913289528,
       "origin_workspace_distance_m": 0.02420483271521027,
       "closest_visible_workspace_distance_m": 0.0036047356936362296,
       "visible_in_workspace_fraction": 1.0,
@@ -1180,7 +3584,23 @@
     {
       "id": "PANDA-56-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 419,
+        "y": 329,
+        "workspace_distance_m": 0.38712315476696496,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 203,
       "pixels": 203,
+      "visible_pixels_check": {
+        "valid_pixels": 203,
+        "true_positive": 0,
+        "true_negative": 203,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.3617679690248261,
       "visible_median_radial_margin_m": -0.3107593425183668,
       "origin_workspace_distance_m": 0.44455477907401164,
@@ -1191,20 +3611,52 @@
     {
       "id": "PANDA-56-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 252,
+        "y": 202,
+        "workspace_distance_m": 0.0185491017080304,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 556,
       "pixels": 556,
+      "visible_pixels_check": {
+        "valid_pixels": 556,
+        "true_positive": 556,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.3189541120983569,
       "visible_median_radial_margin_m": 0.2878343882992437,
       "origin_workspace_distance_m": 0.028761511803861276,
-      "closest_visible_workspace_distance_m": 0.0050773740891036714,
+      "closest_visible_workspace_distance_m": 0.005077374089103716,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 143.0
     },
     {
       "id": "PANDA-57-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 99,
+        "y": 246,
+        "workspace_distance_m": 0.49618897597764006,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 610,
       "pixels": 610,
+      "visible_pixels_check": {
+        "valid_pixels": 610,
+        "true_positive": 0,
+        "true_negative": 610,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.4371863498538082,
-      "visible_median_radial_margin_m": -0.4281842684044235,
+      "visible_median_radial_margin_m": -0.42818426840442325,
       "origin_workspace_distance_m": 0.5149601088415223,
       "closest_visible_workspace_distance_m": 0.4674095724987347,
       "visible_in_workspace_fraction": 0.0,
@@ -1213,18 +3665,50 @@
     {
       "id": "PANDA-57-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 285,
+        "y": 225,
+        "workspace_distance_m": 0.08967966228053072,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1426,
       "pixels": 1426,
+      "visible_pixels_check": {
+        "valid_pixels": 1426,
+        "true_positive": 113,
+        "true_negative": 1285,
+        "false_positive": 28,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.007222122514019991,
       "visible_median_radial_margin_m": 0.02189485391673629,
       "origin_workspace_distance_m": 0.10106517512662483,
-      "closest_visible_workspace_distance_m": 0.01895143570641794,
+      "closest_visible_workspace_distance_m": 0.018951435706417954,
       "visible_in_workspace_fraction": 0.07924263674614306,
       "visible_median_chroma": 76.0
     },
     {
       "id": "PANDA-58-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 381,
+        "y": 180,
+        "workspace_distance_m": 0.3285908584778296,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 119,
       "pixels": 119,
+      "visible_pixels_check": {
+        "valid_pixels": 119,
+        "true_positive": 0,
+        "true_negative": 119,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2650120686673565,
       "visible_median_radial_margin_m": -0.22268316610854755,
       "origin_workspace_distance_m": 0.3673866412925188,
@@ -1235,7 +3719,23 @@
     {
       "id": "PANDA-58-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 383,
+        "y": 256,
+        "workspace_distance_m": 0.019926641612264078,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 452,
       "pixels": 452,
+      "visible_pixels_check": {
+        "valid_pixels": 452,
+        "true_positive": 452,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.055675734465997495,
       "visible_median_radial_margin_m": 0.09029580453276997,
       "origin_workspace_distance_m": 0.06257103665924607,
@@ -1246,7 +3746,23 @@
     {
       "id": "PANDA-59-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 250,
+        "y": 190,
+        "workspace_distance_m": 0.26141808656491006,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 180,
       "pixels": 180,
+      "visible_pixels_check": {
+        "valid_pixels": 180,
+        "true_positive": 0,
+        "true_negative": 180,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.17642829558566486,
       "visible_median_radial_margin_m": -0.15925965753290305,
       "origin_workspace_distance_m": 0.2728060770384658,
@@ -1257,29 +3773,77 @@
     {
       "id": "PANDA-59-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 469,
+        "y": 293,
+        "workspace_distance_m": 0.034489275598496565,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 413,
       "pixels": 413,
+      "visible_pixels_check": {
+        "valid_pixels": 413,
+        "true_positive": 413,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.5154718480187487,
       "visible_median_radial_margin_m": 0.5040453716676747,
       "origin_workspace_distance_m": 0.026795071089027542,
-      "closest_visible_workspace_distance_m": 0.004761258720878093,
+      "closest_visible_workspace_distance_m": 0.004761258720878085,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 184.0
     },
     {
       "id": "PANDA-60-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 394,
+        "y": 246,
+        "workspace_distance_m": 0.1963927978968882,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 336,
       "pixels": 336,
+      "visible_pixels_check": {
+        "valid_pixels": 336,
+        "true_positive": 0,
+        "true_negative": 336,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.14585783175540645,
       "visible_median_radial_margin_m": -0.09559014499646534,
       "origin_workspace_distance_m": 0.24714145595113995,
-      "closest_visible_workspace_distance_m": 0.1501483696911666,
+      "closest_visible_workspace_distance_m": 0.15014836969116663,
       "visible_in_workspace_fraction": 0.0,
       "visible_median_chroma": 76.0
     },
     {
       "id": "PANDA-60-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 188,
+        "y": 171,
+        "workspace_distance_m": 0.026833160739957226,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 10659,
       "pixels": 10659,
+      "visible_pixels_check": {
+        "valid_pixels": 10659,
+        "true_positive": 10659,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.508488702127062,
       "visible_median_radial_margin_m": 0.4548029854170058,
       "origin_workspace_distance_m": 0.03821566658542028,
@@ -1290,7 +3854,23 @@
     {
       "id": "PANDA-61-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 398,
+        "y": 304,
+        "workspace_distance_m": 0.1218985421279873,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 575,
       "pixels": 575,
+      "visible_pixels_check": {
+        "valid_pixels": 575,
+        "true_positive": 0,
+        "true_negative": 575,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.09746593282197624,
       "visible_median_radial_margin_m": -0.04187665581027866,
       "origin_workspace_distance_m": 0.18953232888063076,
@@ -1301,18 +3881,50 @@
     {
       "id": "PANDA-61-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 489,
+        "y": 169,
+        "workspace_distance_m": 0.026333689862090708,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 179,
       "pixels": 179,
+      "visible_pixels_check": {
+        "valid_pixels": 179,
+        "true_positive": 179,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.42505475760968225,
-      "visible_median_radial_margin_m": 0.3627637782631489,
+      "visible_median_radial_margin_m": 0.36276377826314876,
       "origin_workspace_distance_m": 0.027541474688173265,
-      "closest_visible_workspace_distance_m": 0.01573540250332242,
+      "closest_visible_workspace_distance_m": 0.015735402503322414,
       "visible_in_workspace_fraction": 1.0,
       "visible_median_chroma": 185.0
     },
     {
       "id": "PANDA-62-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 208,
+        "y": 211,
+        "workspace_distance_m": 0.35960848545100166,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 629,
       "pixels": 629,
+      "visible_pixels_check": {
+        "valid_pixels": 629,
+        "true_positive": 0,
+        "true_negative": 629,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2671711238679615,
       "visible_median_radial_margin_m": -0.26040237893259865,
       "origin_workspace_distance_m": 0.36862404199390203,
@@ -1323,7 +3935,23 @@
     {
       "id": "PANDA-62-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 407,
+        "y": 326,
+        "workspace_distance_m": 0.015186206131910096,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1423,
       "pixels": 1423,
+      "visible_pixels_check": {
+        "valid_pixels": 1423,
+        "true_positive": 1423,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.2847408036852901,
       "visible_median_radial_margin_m": 0.2841342281541227,
       "origin_workspace_distance_m": 0.03414658407435746,
@@ -1334,7 +3962,23 @@
     {
       "id": "PANDA-63-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 135,
+        "y": 139,
+        "workspace_distance_m": 0.5688363694689935,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 420,
       "pixels": 420,
+      "visible_pixels_check": {
+        "valid_pixels": 420,
+        "true_positive": 0,
+        "true_negative": 420,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.4961741545652627,
       "visible_median_radial_margin_m": -0.4732766685991916,
       "origin_workspace_distance_m": 0.5897653833889349,
@@ -1345,7 +3989,23 @@
     {
       "id": "PANDA-63-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 370,
+        "y": 180,
+        "workspace_distance_m": 0.014934146163499584,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 1516,
       "pixels": 1516,
+      "visible_pixels_check": {
+        "valid_pixels": 1516,
+        "true_positive": 1516,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.23708529655459487,
       "visible_median_radial_margin_m": 0.24149595169750926,
       "origin_workspace_distance_m": 0.026978602376471223,
@@ -1356,7 +4016,23 @@
     {
       "id": "PANDA-64-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 482,
+        "y": 213,
+        "workspace_distance_m": 0.5300457718286197,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 896,
       "pixels": 896,
+      "visible_pixels_check": {
+        "valid_pixels": 896,
+        "true_positive": 0,
+        "true_negative": 896,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.39719873714754317,
       "visible_median_radial_margin_m": -0.42195606569128663,
       "origin_workspace_distance_m": 0.48764970248144424,
@@ -1367,7 +4043,23 @@
     {
       "id": "PANDA-64-Y",
       "truth": "Y",
+      "radial_label": "Y",
+      "point": {
+        "x": 226,
+        "y": 169,
+        "workspace_distance_m": 0.018758043200571603,
+        "sampled_workspace_label": "Y",
+        "jpeg_chroma_label": "Y"
+      },
+      "instance_pixels": 2167,
       "pixels": 2167,
+      "visible_pixels_check": {
+        "valid_pixels": 2167,
+        "true_positive": 2167,
+        "true_negative": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": 0.2013149154597903,
       "visible_median_radial_margin_m": 0.2431492863711484,
       "origin_workspace_distance_m": 0.036288628083269,
@@ -1378,7 +4070,23 @@
     {
       "id": "PANDA-65-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 294,
+        "y": 286,
+        "workspace_distance_m": 0.1952232747557559,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 544,
       "pixels": 544,
+      "visible_pixels_check": {
+        "valid_pixels": 544,
+        "true_positive": 0,
+        "true_negative": 544,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.14411309876146494,
       "visible_median_radial_margin_m": -0.09477527927439877,
       "origin_workspace_distance_m": 0.24508986162611418,
@@ -1389,7 +4097,23 @@
     {
       "id": "PANDA-66-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 428,
+        "y": 197,
+        "workspace_distance_m": 0.3101079808265564,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1392,
       "pixels": 1392,
+      "visible_pixels_check": {
+        "valid_pixels": 1392,
+        "true_positive": 0,
+        "true_negative": 1392,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.23273086509701568,
       "visible_median_radial_margin_m": -0.20800513103936225,
       "origin_workspace_distance_m": 0.32947915722605897,
@@ -1400,9 +4124,25 @@
     {
       "id": "PANDA-67-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 474,
+        "y": 229,
+        "workspace_distance_m": 0.4254901359890258,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 1636,
       "pixels": 1636,
+      "visible_pixels_check": {
+        "valid_pixels": 1636,
+        "true_positive": 0,
+        "true_negative": 1636,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.32338014699038253,
-      "visible_median_radial_margin_m": -0.3268234312086544,
+      "visible_median_radial_margin_m": -0.32682343120865465,
       "origin_workspace_distance_m": 0.4187995389517663,
       "closest_visible_workspace_distance_m": 0.33489556069859455,
       "visible_in_workspace_fraction": 0.0,
@@ -1411,7 +4151,23 @@
     {
       "id": "PANDA-69-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 298,
+        "y": 334,
+        "workspace_distance_m": 0.2587582647984376,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 765,
       "pixels": 765,
+      "visible_pixels_check": {
+        "valid_pixels": 765,
+        "true_positive": 0,
+        "true_negative": 765,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.2417902677088899,
       "visible_median_radial_margin_m": -0.17367314846286752,
       "origin_workspace_distance_m": 0.3202133830348635,
@@ -1422,9 +4178,25 @@
     {
       "id": "PANDA-70-N",
       "truth": "N",
+      "radial_label": "N",
+      "point": {
+        "x": 445,
+        "y": 160,
+        "workspace_distance_m": 0.3946798673379623,
+        "sampled_workspace_label": "N",
+        "jpeg_chroma_label": "N"
+      },
+      "instance_pixels": 184,
       "pixels": 184,
+      "visible_pixels_check": {
+        "valid_pixels": 184,
+        "true_positive": 0,
+        "true_negative": 184,
+        "false_positive": 0,
+        "false_negative": 0
+      },
       "radial_margin_m": -0.404973892745879,
-      "visible_median_radial_margin_m": -0.28195009388494086,
+      "visible_median_radial_margin_m": -0.2819500938849411,
       "origin_workspace_distance_m": 0.5054796908126759,
       "closest_visible_workspace_distance_m": 0.3631311203311065,
       "visible_in_workspace_fraction": 0.0,
