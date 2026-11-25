@@ -1,78 +1,54 @@
-# Workspace Reachability Pairs
+# GroundReach
 
-An experimental extension of PhysVLM for a concrete question: can a vision-language model use the region of a workspace map that corresponds to the object named in the question?
+**Counterfactual evaluation of language-conditioned robotic reachability**
 
-A simulated Panda scene contains two named targets and two workspace maps. Switching either the target or the workspace changes the certified answer. The same RGB is used across all four questions. A replayed joint-limited IK witness certifies reachable points, and a conservative URDF bound certifies clearly unreachable points.
+GroundReach asks whether a vision-language model reads the region of a robot workspace map that corresponds to the object named in a question. It extends PhysVLM with paired Panda simulations, a learned region ranker, and independently replayed geometric certificates for specified surface points.
 
-![Crossed target and workspace evaluation](results/target-repair/crossed-example.png)
+The benchmark holds RGB fixed while crossing two named objects with two workspace maps. Each object carries the same visual marker, and the question selects the object whose marked point is queried. These interventions measure target selection and workspace sensitivity separately.
 
-## Findings
+## Main results
 
-On an initial dual-target test, the released model and the original projector adapters all scored **0/96** views with all four answers correct. The adapters sometimes switched answers in the wrong direction when the workspace changed. A simple target-region map rule scored **96/96**, which checks that the available input contains the necessary signal.
+The final held-out test contains **32 physical layouts, 64 views, and 256 questions**. Joint-limited inverse kinematics with forward-kinematics replay certifies 93 reachable cases. A conservative URDF bound certifies 138 unreachable cases. Another 25 questions retain an unknown certificate status. Four-answer accuracy uses the 44 views in which all four labels are certified.
 
-On a separate set of **24 physical layouts and 48 views**, a projector trained to read a target-local RGB and map crop scored **48/48** complete views for both seeds. A color localizer selects the crop in this benchmark. The same target-region map rule also solves this set.
+| Target localization and readout | Certified questions correct | All four correct | Both answers correct on map switches |
+| --- | ---: | ---: | ---: |
+| Frozen PhysVLM, full inputs | 93/231 | 0/44 | 0/93 |
+| Grounding DINO top box, center-region map rule | 171/231 | 11/44 | 48/93 |
+| Learned residual ranker, center-region map rule | 198/231 | 34/44 | 80/93 |
+| **Learned residual ranker, marked pixel** | **200/231** | **34/44** | **80/93** |
+| Learned residual ranker, local PhysVLM projector, seeds 17 / 29 | 187/231 · 122/231 | 29/44 · 1/44 | 75/93 · 6/93 |
+| Simulator-provided marker coordinate, map readout | 231/231 | 44/44 | 93/93 |
 
-| Training input | Inference input | Complete views, seeds 17 / 29 |
-| --- | --- | ---: |
-| Full images | Full images | 0/48 · 0/48 |
-| Full images | Target crop | 0/48 · 0/48 |
-| Target crop | Full images | 0/48 · 0/48 |
-| Target crop | Target crop | 48/48 · 48/48 |
+1. **Target selection accounts for the remaining errors of the marked-pixel rule.** The two ranker seeds produce the same final decisions. All 31 incorrect certified answers occur when the target's marker is missed. Given the simulator marker coordinate, the same map rule answers all 231 certified questions correctly. The marker rule gains two correct answers over the center-region rule on the same ranked boxes. [Specified-point study](study/marked-point-study.md) · [Scores](results/grounding-study/marked-point.json) · [Certificate replay](results/grounding-study/marked-point-certificate-audit.json)
+2. **Matching the training and inference view matters for the VLM.** In a separate controlled crop experiment, the local projector reaches 48/48 complete views for both seeds when trained and evaluated on target crops. The other three train–test crop combinations reach 0/48. With similar parameter counts and learning-rate search budgets, global LoRA is stronger on target switches and the projector is stronger on workspace switches. [Crossed crop experiment](results/target-repair/crossed-input-metrics.json) · [Capacity-matched comparison](results/capacity-comparison/held-out-metrics.json)
+3. **The original simulator labels and specified-point labels answer different questions.** On 128 upstream-recipe questions, learned ranking improves target identity from 73/128 to 90/128 and 89/128, while the corresponding map scores are 92/128 and 93/128 against 94/128 for frozen PhysVLM. The upstream label uses radial distance to an object's origin. The map depicts workspace membership of visible surface pixels, so better object localization need not improve agreement with the radial labels. [Upstream comparison](results/grounding-study/learned-reranker.json) · [Label and map audit](LABEL_SEMANTICS.md)
 
-The four-way comparison keeps training questions, labels, initial weights, and update count fixed. The full-image control was added after the target-crop results were inspected. The simulation covers free-orientation point reachability with clearly certified labels.
+## Method
 
-[Target-switch diagnostic and source-distribution control](results/target-alignment/metrics.json) · [Crop repair results](results/target-repair/metrics.json) · [Crossed input comparison](results/target-repair/crossed-input-metrics.json) · [Experiment report](study/后续实验报告.md)
+```mermaid
+flowchart TD
+    Q["Target phrase and unmarked RGB"] --> D["Grounding DINO proposals"]
+    Q --> C["Frozen CLIP text and crop features"]
+    D --> C
+    D --> R["Residual region ranking"]
+    C --> R
+    R --> M["Select marker inside the top box"]
+    I["Marked RGB"] --> M
+    M --> P["Read the selected pixel in the S-P Map"]
+    S["S-P Map"] --> P
 
-With similar parameter counts (8.92M projector versus 8.99M q/v LoRA) and the same learning-rate search, each adapter improves a different part of the full-image test. LoRA answers more target switches correctly, and the projector answers more workspace switches correctly. Both rarely get all four questions right. [Matched-capacity comparison](results/capacity-comparison/held-out-metrics.json)
+    G["Simulator point and robot geometry"] --> V["Independent IK/FK or URDF certificate"]
+    P --> T["Compare the prediction with the certificate"]
+    V --> T
+```
 
-## Transfer to the source simulation recipe
-
-On **96 questions from 52 new Panda scenes** generated by the upstream simulator, the frozen model scored **63/96**. Reading the map in the upstream object box, with the frozen model used for missing or ambiguous boxes, scored **86/96**. The improvement is concentrated on unreachable targets. Reachable accuracy drops from 48/48 to 40/48.
-
-The boxes come from simulator metadata, so this measures transfer **given a known target position**. The rule is a reference for evaluating target localization and map reasoning independently.
-
-[Source-transfer metrics](results/source-transfer/fresh-recipe-verifier.json) · [Box preparation](study/prepare_official_box_probe.py) · [Verifier and scoring](study/evaluate_local_verifier.py)
-
-On the earlier 62-query source set, the target-crop adapters given upstream boxes scored **44/62 and 42/62** versus **42/62** for the frozen model on full images. The paired intervals both include zero. [Source-distribution adaptation comparison](results/source-transfer/retrospective-box-probe.json)
-
-## Automatic target localization
-
-In 48 additional Panda layouts, two objects share a color and swap positions. Each of the 96 views is queried for both targets and both workspaces. Independent reachability certificates establish the labels.
-
-| Target region and readout | Correct questions | All four correct |
-| --- | ---: | ---: |
-| Frozen model on full inputs | 190/384 | 0/96 |
-| Detector top box and map rule | 260/384 | 12/96 |
-| Detector top box and local projector, two seeds | 259/384 · 235/384 | 12/96 · 7/96 |
-| Detector boxes reranked by RGB chroma and map rule | 316/384 | 64/96 |
-| Detector boxes reranked by RGB chroma and local projector | 316/384 · 270/384 | 64/96 · 34/96 |
-| Simulator box and map rule | 384/384 | 96/96 |
-
-The detector's top proposal overlaps the requested object at IoU 0.5 or higher for 88 of 192 distinct image–description pairs. The top three deduplicated proposals cover all 192. On 96 newly regenerated upstream recipe questions, selecting a proposal by annotated identity and reading its map region with the frozen model as a fallback yields 86/96. The same test yields 65/96 with the original full-image model, 62/96 with the detector top box and 57/96 after RGB-chroma reranking.
-
-An additional 94-question upstream-recipe test confirms that reducing the detector threshold improves Top-5 identity recall from 82 to 90. Combining detector scores and frozen CLIP crop scores increases the number of top boxes with IoU ≥ 0.5 from 30 to 37. The corresponding map readout changes from 63 to 64 correct answers, while the full-image model answers 67 correctly.
-
-[Grounding results](results/grounding-study/metrics.json) · [Frozen CLIP comparison](results/grounding-study/frozen-semantic.json) · [Setup and analysis](study/目标定位实验报告.md)
-
-### Learned ranking on new scenes
-
-A small residual ranker learns to select the named object from the detector's five deduplicated proposals. It uses frozen crop and query embeddings and box supervision. On 24 held-out layouts, both seeds take four-question accuracy from **6/48** with detector ranking to **39/48** with the same map rule.
-
-On 128 questions from 70 new upstream-recipe scenes, the ranker raises target identity accuracy from **73/128** to **90/128 and 89/128**. With the map rule, the same boxes yield **92/128 and 93/128** correct reachability answers. The frozen full-image model scores **94/128**, and the center rule with annotated boxes scores **115/128**. Applying the trained local projectors to the same automatic boxes yields **85/128 and 80/128**. These controls give separate measurements of target selection and map interpretation under the source simulation recipe.
-
-The source recipe labels the object's origin by its distance from the robot base. The map colors visible depth points by their distance to a sampled workspace. In the 70 replayed scenes, only 50 of the 64 positively labeled targets have a majority of visible pixels inside the sampled workspace threshold. Three have zero such pixels.
-
-[Learned ranking results](results/grounding-study/learned-reranker.json) · [Reachability labels and geometry audit](LABEL_SEMANTICS.md) · [Training and evaluation](study/目标定位实验报告.md)
-
-### Specified-point evaluation
-
-An independent test marks two visible surface points in each image and asks about the mark on the named object. Among 231 questions with independently replayed certificates, frozen PhysVLM scores **93**, detector boxes with the center rule score **171**, and the learned ranker with the same rule scores **198**. The score rises to **200** when the rule reads the marker pixel selected inside each ranked box. It answers all four questions correctly in **34/44** fully certified views. Reading the simulator marker reaches **231/231**. All errors of automatic marker-pixel readout are associated with target selection on this test. The remaining 25 questions carry an unknown certificate status.
-
-[Specified-point study and reproduction](study/marked-point-study.md)
+- **Region ranking.** Grounding DINO provides up to five deduplicated candidates. For each query, the detector score and frozen CLIP cosine similarity are separately standardized across candidates. The score is their mean plus a learned residual, `score = 0.5 × (z_detector + z_CLIP) + MLP(features)`. The 32-unit MLP uses the frozen crop embedding, the text embedding, and their elementwise interaction. A listwise loss rewards the total probability assigned to boxes with IoU ≥ 0.5 against the annotated target. [Ranker implementation](study/train_region_reranker.py) · [Training and transfer protocol](study/目标定位实验报告.md)
+- **Workspace readout.** The rule takes the visible marker nearest the center of the highest ranked box, considering only markers inside that box. It classifies the selected pixel by chroma in the unmarked S-P Map. The local projectors and learned readouts were fit on earlier protocols, so this comparison measures their zero-shot transfer to specified points. Projector seed 29 produces 89 ambiguous or unrecognized answers with automatic boxes and 85 with annotated boxes. Taking the first Yes/No raises its scores from 122/231 to 194/231 and from 139/231 to 222/231, respectively. The main results require an unambiguous answer. [Readout implementation](study/evaluate_marked_points.py) · [Scoring details](study/marked-point-study.md)
+- **Independent labels.** The certificate replay uses the simulator point and robot geometry. It checks free-orientation tool-link position reachability in the Panda simulation. The main scores cover certified cases and measure point reachability under this protocol. [Certificate audit implementation](study/audit_fixtures.py) · [Geometry definitions](LABEL_SEMANTICS.md)
 
 ## Reproduce
 
-The CPU generator and GPU inference use the same pinned upstream assets.
+The simulator commands below regenerate the specified-point split on Ubuntu x86-64 using pinned upstream assets. Run from the repository root.
 
 ```bash
 git clone https://github.com/jetteezhou/PhysVLM.git upstream
@@ -85,38 +61,13 @@ export LD_LIBRARY_PATH="$pilot_env/native/usr/lib/x86_64-linux-gnu${LD_LIBRARY_P
 cpu_python="$pilot_env/venv/bin/python"
 root=study/outputs/reachability
 mkdir -p "$root"
-"$cpu_python" study/generate_target_alignment.py "$root/train" --seed 20261271 --repeats 3
-"$cpu_python" study/generate_target_alignment.py "$root/dev" --seed 20261272 --repeats 1
-"$cpu_python" study/generate_target_alignment.py "$root/test" --seed 20261274 --repeats 2 --yaws 0 -23
-for split in train dev test; do
-    "$cpu_python" study/prepare_target_repair.py "$root/$split" "$root/crop-$split"
-done
-"$cpu_python" study/generate_target_alignment.py "$root/test" --audit-only
+"$cpu_python" study/generate_grounding_study.py "$root/marked-point" \
+    --point-check --seed 563891 --count 32
 ```
 
-In a CUDA-enabled environment, install the model dependencies and download the PhysVLM checkpoint.
-
-```bash
-python -m pip install transformers==4.37.2 tokenizers==0.15.2 accelerate==0.27.2 \
-    safetensors==0.5.3 einops einops-exts shortuuid timm==0.6.13
-hf download JettZhou/PhysVLM-Qwen2.5-3B \
-    --revision 411280628b973db0c1e58d3e1a22c0dda90729d5 --local-dir model
-
-for seed in 17 29; do
-    python study/tune_reachability.py projector --model model --seed "$seed" \
-        --train "$root/crop-train" --dev "$root/crop-dev" --output "$root/tune-$seed"
-    python study/evaluate_target_alignment.py predict --free-only --model model \
-        --alignment "$root/crop-test/manifest.json" --checkpoint "$root/tune-$seed/best.pt" \
-        --output "$root/pred-$seed"
-done
-python study/evaluate_target_alignment.py score "$root/test/manifest.json" "$root/metrics.json" \
-    "projector17=$root/pred-17" "projector29=$root/pred-29"
-```
-
-For the full-image training control, add `--full-image` to the preparation step and use the unmodified test manifest for full-image inference.
-
-To regenerate the source-recipe test, pass `--seed-start 73100 --per-label 48 --max-scenes 128 --robot PANDA` to `study/prepare_official_control.py`. Use `study/prepare_official_box_probe.py` to join the generated questions with unique upstream boxes. Evaluate the frozen checkpoint with `study/evaluate_target_alignment.py predict --official`, then use `study/evaluate_local_verifier.py evaluate` with the [saved development configuration](results/source-transfer/calibration.json).
+The [specified-point protocol](study/marked-point-study.md) connects scene generation to candidate detection, frozen feature extraction, ranking, and final score calculation. The [ranking protocol](study/目标定位实验报告.md) documents the historical training and development splits used by the two checkpoints. The [full experiment report](study/后续实验报告.md) covers the earlier map-switch diagnostics, local projector training, and source-recipe controls.
 
 ## References
 
-The S-P Map encoding, checkpoint and source simulation are from [PhysVLM](https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability_CVPR_2025_paper.html). This study contributes the paired simulation, the certificate replay, and the adaptation experiments. [Upstream code](https://github.com/jetteezhou/PhysVLM) · [Checkpoint](https://huggingface.co/JettZhou/PhysVLM-Qwen2.5-3B)
+- PhysVLM provides the S-P Map formulation, source simulation, and pretrained checkpoint. [CVPR 2025 paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability_CVPR_2025_paper.html) · [Upstream code](https://github.com/jetteezhou/PhysVLM) · [Checkpoint](https://huggingface.co/JettZhou/PhysVLM-Qwen2.5-3B)
+- The ranking pipeline uses pretrained Grounding DINO and CLIP. [Grounding DINO](https://arxiv.org/abs/2303.05499) · [CLIP](https://proceedings.mlr.press/v139/radford21a.html)
