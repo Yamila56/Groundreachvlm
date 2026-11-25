@@ -54,6 +54,14 @@ An additional 94-question upstream-recipe test confirms that reducing the detect
 
 [Grounding results](results/grounding-study/metrics.json) · [Frozen CLIP comparison](results/grounding-study/frozen-semantic.json) · [Setup and analysis](study/目标定位实验报告.md)
 
+### Learned ranking on new scenes
+
+A small residual ranker learns to select the named object from the detector's five deduplicated proposals. It uses frozen crop and query embeddings and box supervision. On 24 held-out layouts, both seeds take four-question accuracy from **6/48** with detector ranking to **39/48** with the same map rule.
+
+On 128 questions from 70 new upstream-recipe scenes, the ranker raises target identity accuracy from **73/128** to **90/128 and 89/128**. With the map rule, the same boxes yield **92/128 and 93/128** correct reachability answers. The frozen full-image model scores **94/128**, and the center rule with annotated boxes scores **115/128**. Applying the trained local projectors to the same automatic boxes yields **85/128 and 80/128**. These controls give separate measurements of target selection and map interpretation under the source simulation recipe.
+
+[Learned ranking results](results/grounding-study/learned-reranker.json) · [Training and evaluation](study/目标定位实验报告.md)
+
 ## Reproduce
 
 The CPU generator and GPU inference use the same pinned upstream assets.
