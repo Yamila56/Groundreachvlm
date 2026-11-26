@@ -1,92 +1,65 @@
 # GroundReach
 
-**Counterfactual evaluation of language-conditioned robotic reachability**
+**Point-Conditioned Visual Adaptation for Robotic Spatial Reachability**
 
-GroundReach asks whether a vision-language model reads the region of a robot workspace map that corresponds to the object named in a question. It extends PhysVLM with paired Panda simulations, a learned region ranker, and independently replayed geometric certificates for specified surface points.
+GroundReach asks whether a vision-language model can use the part of a workspace map that corresponds to the point named in a question. The latest system trains a **133,152-parameter** residual adapter on a frozen Qwen3-VL-2B-Instruct backbone and tests whether its answers change correctly when either the queried point or the map changes.
 
-The benchmark holds RGB fixed while crossing two named objects with two workspace maps. Each object carries the same visual marker, and the question selects the object whose marked point is queried. These interventions measure target selection and workspace sensitivity separately.
+![Earlier Panda simulator example with one RGB scene, two workspace maps, and opposite certified answers](results/matched-v2/examples/correct-flip.png)
 
-## Main results
+*An example from the earlier PhysVLM study illustrates the map intervention. The scene and target stay fixed. The map changes, and the certified answer flips.*
 
-The final held-out test contains **32 physical layouts, 64 views, and 256 questions**. Joint-limited inverse kinematics with forward-kinematics replay certifies 93 reachable cases. A conservative URDF bound certifies 138 unreachable cases. Another 25 questions retain an unknown certificate status. Four-answer accuracy uses the 44 views in which all four labels are certified.
+[Method](#point-token-method) · [Main results](#counterfactual-results) · [Reproduce](#recompute-the-counterfactual-scores) · [Next experiments](study/NEXT_EXPERIMENTS.md)
 
-| Target localization and readout | Certified questions correct | All four correct | Both answers correct on map switches |
-| --- | ---: | ---: | ---: |
-| Frozen PhysVLM, full inputs | 93/231 | 0/44 | 0/93 |
-| Grounding DINO top box, center-region map rule | 171/231 | 11/44 | 48/93 |
-| Learned residual ranker, center-region map rule | 198/231 | 34/44 | 80/93 |
-| **Learned residual ranker, marked pixel** | **200/231** | **34/44** | **80/93** |
-| Learned residual ranker, local PhysVLM projector, seeds 17 / 29 | 187/231 · 122/231 | 29/44 · 1/44 | 75/93 · 6/93 |
-| Simulator-provided marker coordinate, map readout | 231/231 | 44/44 | 93/93 |
+## Point-token method
 
-1. **Target selection accounts for the remaining errors of the marked-pixel rule.** The two ranker seeds produce the same final decisions. All 31 incorrect certified answers occur when the target's marker is missed. Given the simulator marker coordinate, the same map rule answers all 231 certified questions correctly. The marker rule gains two correct answers over the center-region rule on the same ranked boxes. [Specified-point study](study/marked-point-study.md) · [Scores](results/grounding-study/marked-point.json) · [Certificate replay](results/grounding-study/marked-point-certificate-audit.json)
-2. **Matching the training and inference view matters for the VLM.** In a separate controlled crop experiment, the local projector reaches 48/48 complete views for both seeds when trained and evaluated on target crops. The other three train–test crop combinations reach 0/48. With similar parameter counts and learning-rate search budgets, global LoRA is stronger on target switches and the projector is stronger on workspace switches. [Crossed crop experiment](results/target-repair/crossed-input-metrics.json) · [Capacity-matched comparison](results/capacity-comparison/held-out-metrics.json)
-3. **The original simulator labels and specified-point labels answer different questions.** On 128 upstream-recipe questions, learned ranking improves target identity from 73/128 to 90/128 and 89/128, while the corresponding map scores are 92/128 and 93/128 against 94/128 for frozen PhysVLM. The upstream label uses radial distance to an object's origin. The map depicts workspace membership of visible surface pixels, so better object localization need not improve agreement with the radial labels. [Upstream comparison](results/grounding-study/learned-reranker.json) · [Label and map audit](LABEL_SEMANTICS.md)
+1. Resolve the target from RGB and the relational question, and read the visible marker on that target. Use the available automatic points to define a shared crop for the aligned RGB scene and workspace map.
+2. Select the merged map token covering the queried point from the frozen visual feature grid. Pass it through a residual MLP with a 32-dimensional bottleneck and inject the adapted vector into one additional embedding slot. The original visual inputs and the language model remain frozen.
+3. Score the next-token logits for **Yes** and **No**. Supervise the adapter with independently certified labels for tool-link position reachability in static Panda simulation. Reachable points have an IK/FK witness within joint limits. Certified unreachable points are outside a conservative URDF bound. [Implementation](study/train_physical_token.py) · [Label semantics](LABEL_SEMANTICS.md)
 
-## Anchor-switch follow-up
+The region-mean control uses the same automatic points, crops, frozen backbone, and adapter parameter count. Only the map feature supplied to its adapter changes. The interface check verified identical logits for the native and cached visual forward paths and after saving and reloading an adapter. [Interface check](results/grounding-study/point-token-pilot/point-token-interface) · [Full experiment protocol](study/关系指代与可达性实验报告.md#point-conditioned-token-训练小试)
 
-A separate simulator split holds the image and direction word fixed while changing the referenced anchor. The original two ranker seeds each localize 17/64 targets. Filtering out marked targets from the anchor candidates and ranking the remaining boxes by appearance improves localization to **62/64** and point reachability to **124/128**, compared with 25/64 and 81/128 for full-phrase detection. Both misses occur when the correct anchor box is absent from the candidate pool. [Relation study](study/关系指代与可达性实验报告.md) · [Confirmation scores](results/grounding-study/relation-study/anchor-confirmation/metrics.json)
+## Counterfactual results
 
-On 32 new layouts with both targets visible in the same crop, a linear probe using the frozen map token at the queried point passed **32/32** target switches and **32/32** map switches. Region-mean features passed **0/32** target switches. Frozen Qwen3-VL question answering with the same shared crop and ground-truth point passed **2/32** target switches and **1/32** map switches. [Physical-map probe](study/关系指代与可达性实验报告.md#冻结视觉特征探针结果) · [Paired results](results/grounding-study/relation-study/physical-map-probe-point-confirm/paired.json)
+Both heads train on **416 questions from 104 layouts**. There are 20 separate development layouts and two disjoint confirmation sets of 32 layouts each. Each confirmation layout crosses two targets with two workspace maps. The second set changes the association between relation direction and layout pattern. The table shows the range across two training seeds evaluated on both sets. A switch pair counts only when both answers are correct.
 
-## Point-conditioned physical token
+| Metric | Point-token adapter | Parameter-matched region-mean adapter |
+| --- | ---: | ---: |
+| Certified questions correct | **122–126/128** | 93–106/128 |
+| Same map, switch the target | **16/16 in all four evaluations** | 0/16 in all four |
+| Same target, switch the map | **31–32/32** | 14–18/32 |
 
-A 133K-parameter residual head adapts one frozen map token selected at the automatically localized point. Across two training seeds and two balanced 32-layout confirmation sets, point-token adaptation passed **16/16** same-map target switches in each evaluation, compared with **0/16** for a parameter-matched region-mean token. It passed **31–32/32** same-target map switches. Exchanging the point token with one from the alternate map reduced the two primary runs to **0/32** map-switch pairs. [Pilot protocol and results](study/关系指代与可达性实验报告.md#point-conditioned-token-训练小试) · [Predictions and residual heads](results/grounding-study/point-token-pilot)
+- **Feature intervention.** Replacing only the additional point token with the same target’s token from the alternate map dropped map-switch accuracy to **0/32** in each of the two primary evaluations. Direct injection without a learned adapter was also weak. [Primary confirmation](results/grounding-study/point-token-pilot/point-token-automatic) · [Counterbalanced confirmation](results/grounding-study/point-token-pilot/point-token-automatic-permuted) · [Seed 17 cross-check](results/grounding-study/point-token-pilot/point-token-cross-check-17) · [Seed 29 cross-check](results/grounding-study/point-token-pilot/point-token-cross-check-29)
+- **Pixel-rule comparison.** The deterministic pixel rule matched point-adapter scores in the clean evaluations. In one paired stress test, an 8-pixel point shift reduced the point adapter from **126/128 to 116/128**, while the pixel rule remained at **126/128**. [Shifted-point predictions and statistics](results/grounding-study/point-token-pilot/point-token-jitter)
+- **Scope.** Automatic points covered **122/128** and **126/128** questions across the two sets. Missing points count as unanswered. The protocol uses visible markers, aligned maps, static simulation, and forced Yes/No scoring. Its labels certify position reachability. Pose-constrained grasping, collision-free trajectories, and physical robot performance require separate evaluation. [Certificate protocol](study/关系指代与可达性实验报告.md#实验怎样区分目标锚点和地图)
 
-## Method
+## Recompute the counterfactual scores
 
-```mermaid
-flowchart TD
-    Q["Target phrase and unmarked RGB"] --> D["Grounding DINO proposals"]
-    Q --> C["Frozen CLIP text and crop features"]
-    D --> C
-    D --> R["Residual region ranking"]
-    C --> R
-    R --> M["Select marker inside the top box"]
-    I["Marked RGB"] --> M
-    M --> P["Read the selected pixel in the S-P Map"]
-    S["S-P Map"] --> P
-
-    G["Simulator point and robot geometry"] --> V["Independent IK/FK or URDF certificate"]
-    P --> T["Compare the prediction with the certificate"]
-    V --> T
-```
-
-- **Region ranking.** Grounding DINO provides up to five deduplicated candidates. For each query, the detector score and frozen CLIP cosine similarity are separately standardized across candidates. The score is their mean plus a learned residual, `score = 0.5 × (z_detector + z_CLIP) + MLP(features)`. The 32-unit MLP uses the frozen crop embedding, the text embedding, and their elementwise interaction. A listwise loss rewards the total probability assigned to boxes with IoU ≥ 0.5 against the annotated target. [Ranker implementation](study/train_region_reranker.py) · [Training and transfer protocol](study/目标定位实验报告.md)
-- **Workspace readout.** The rule takes the visible marker nearest the center of the highest ranked box, considering only markers inside that box. It classifies the selected pixel by chroma in the unmarked S-P Map. The local projectors and learned readouts were fit on earlier protocols, so this comparison measures their zero-shot transfer to specified points. Projector seed 29 produces 89 ambiguous or unrecognized answers with automatic boxes and 85 with annotated boxes. Taking the first Yes/No raises its scores from 122/231 to 194/231 and from 139/231 to 222/231, respectively. The main results require an unambiguous answer. [Readout implementation](study/evaluate_marked_points.py) · [Scoring details](study/marked-point-study.md)
-- **Independent labels.** The certificate replay uses the simulator point and robot geometry. It checks free-orientation tool-link position reachability in the Panda simulation. The main scores cover certified cases and measure point reachability under this protocol. [Certificate audit implementation](study/audit_fixtures.py) · [Geometry definitions](LABEL_SEMANTICS.md)
-
-## Reproduce
-
-Replay the published counts from per-question predictions with Python 3 and its standard library.
+From the repository root, use Python with NumPy and Pillow. This replays published predictions and computes uncertainty by resampling layouts.
 
 ```bash
-bash study/run_marked_point_study.sh replay --output replayed-metrics.json
+pilot=results/grounding-study/point-token-pilot
+
+python study/summarize_physical_tokens.py \
+    --manifest "$pilot/point-token-confirm/manifest.json" \
+    --predictions "$pilot/point-token-automatic/predictions.json" \
+    --output point-token-confirm-paired.json
+
+python study/summarize_physical_tokens.py \
+    --manifest "$pilot/point-token-permuted/manifest.json" \
+    --predictions "$pilot/point-token-automatic-permuted/predictions.json" \
+    --output point-token-permuted-paired.json
 ```
 
-To regenerate scenes and reproduce inference on Ubuntu x86-64, prepare the pinned simulator and checkpoints. Set `GROUNDING_PYTHON` to a CUDA environment with Transformers 4.57.1, PyTorch, OpenCV and Pillow. Set `VLM_PYTHON` to a CUDA environment with Transformers 4.37.2, tokenizers 0.15.2, Accelerate 0.27.2, safetensors 0.5.3, timm 0.6.13, einops, einops-exts, shortuuid and OpenCV.
+For fresh model inference or training, the [full protocol](study/关系指代与可达性实验报告.md#point-conditioned-token-训练小试) documents the split seeds, rendering flags, localization predictions, and published heads. The existing trainer accepts `--load-heads` for inference with saved adapters. Rendering the raw inputs requires the simulator and model dependencies. [Training entry point](study/train_physical_token.py) · [Manifests and head checkpoints](results/grounding-study/point-token-pilot)
 
-```bash
-git clone https://github.com/jetteezhou/PhysVLM.git upstream
-git -C upstream checkout 37e25fd83d8b9f0bdb425661e2dcdffa674a79c7
-export PHYSVLM_UPSTREAM="$PWD/upstream"
+## Earlier studies
 
-bash study/setup_cpu_env.sh
-hf download IDEA-Research/grounding-dino-tiny \
-    --revision a2bb814dd30d776dcf7e30523b00659f4f141c71 --local-dir models/dino
-hf download openai/clip-vit-base-patch32 \
-    --revision 3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268 --local-dir models/clip
-hf download JettZhou/PhysVLM-Qwen2.5-3B \
-    --revision 411280628b973db0c1e58d3e1a22c0dda90729d5 --local-dir models/physvlm
-bash study/run_marked_point_study.sh run study/outputs/point-reproduction \
-    models/dino models/clip models/physvlm
-```
-
-The entry point writes regenerated certificates, model predictions and counts. The two bundled rankers contain the learned residual parameters and split metadata. The simulator, pretrained models, RGB files, workspace files and frozen embedding caches are obtained from the source dependencies or regenerated with the study code. [Specified-point protocol](study/marked-point-study.md) · [Artifact hashes](results/grounding-study/reproduction/sha256.json) · [Split provenance](results/grounding-study/reproduction/split-manifest.json)
-
-In a CPU ablation with frozen candidate boxes, the linear residual reaches 198/231 for both seeds, the MLP without explicit interaction reaches 200/231 and 203/231, and the full MLP reaches 200/231 for both seeds. Uncertainty intervals overlap zero for the interaction ablation. [Ranker ablation](study/ranker-ablation.md) · [Earlier experiments](study/后续实验报告.md)
+| Study | Result |
+| --- | --- |
+| [Anchor binding](study/关系指代与可达性实验报告.md) | On 32 held-out layouts, explicit anchor selection improved joint target localization from **8/32 to 30/32** and certified reachability from **87/128 to 124/128** against the earlier box-center relation rule. Both remaining localization misses lacked the correct anchor proposal. |
+| [Specified-point PhysVLM study](study/marked-point-study.md) | In the earlier PhysVLM setup, ranking followed by a marked-pixel rule answered **200/231** certified questions. Simulator point coordinates increased that to **231/231**. [Original marked-point reproduction](https://github.com/Yamila56/Groundreachvlm/blob/272a98a3970e1210a87bc1a010e5bf730a9af584/README.md#reproduce) |
+| [Frozen feature probe](study/关系指代与可达性实验报告.md#冻结视觉特征探针结果) | A linear probe on frozen map tokens selected at the query point passed **32/32** target switches and **32/32** map switches under a separate probe protocol. |
 
 ## References
 
-- PhysVLM provides the S-P Map formulation, source simulation, and pretrained checkpoint. [CVPR 2025 paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability_CVPR_2025_paper.html) · [Upstream code](https://github.com/jetteezhou/PhysVLM) · [Checkpoint](https://huggingface.co/JettZhou/PhysVLM-Qwen2.5-3B)
-- The ranking pipeline uses pretrained Grounding DINO and CLIP. [Grounding DINO](https://arxiv.org/abs/2303.05499) · [CLIP](https://proceedings.mlr.press/v139/radford21a.html)
+GroundReach uses [PhysVLM’s S-P Maps and Panda simulator](https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability_CVPR_2025_paper.html). The locator uses [Grounding DINO](https://arxiv.org/abs/2303.05499) and [CLIP](https://proceedings.mlr.press/v139/radford21a.html). The point adapter uses the [Qwen3-VL-2B-Instruct checkpoint](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct).
