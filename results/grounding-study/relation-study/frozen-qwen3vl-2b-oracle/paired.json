@@ -1,0 +1,58 @@
+{
+  "oracle_box_vs_with_auto_box": {
+    "accuracy": {
+      "delta": 0.09375,
+      "interval": [
+        0.046875,
+        0.1484375
+      ]
+    },
+    "map_pair_delta": 0.0625,
+    "map_pair_ci": [
+      -0.09375,
+      0.21875
+    ]
+  },
+  "oracle_point_vs_without_box": {
+    "accuracy": {
+      "delta": 0.0234375,
+      "interval": [
+        -0.0234375,
+        0.0703125
+      ]
+    },
+    "map_pair_delta": 0.0,
+    "map_pair_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "oracle_crop_vs_oracle_point": {
+    "accuracy": {
+      "delta": -0.09375,
+      "interval": [
+        -0.234375,
+        0.03125
+      ]
+    },
+    "map_pair_delta": 0.3125,
+    "map_pair_ci": [
+      0.15625,
+      0.46875
+    ]
+  },
+  "binary_crop_vs_oracle_crop": {
+    "accuracy": {
+      "delta": -0.25,
+      "interval": [
+        -0.34375,
+        -0.15625
+      ]
+    },
+    "map_pair_delta": -0.3125,
+    "map_pair_ci": [
+      -0.46875,
+      -0.15625
+    ]
+  }
+}

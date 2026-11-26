@@ -1,0 +1,57 @@
+{
+  "oracle_box": {
+    "n": 32,
+    "positive_direction": 14,
+    "ties": 12,
+    "mean_yes_logit_margin": -0.2724609375,
+    "mean_pair_effect": 0.03515625,
+    "layout_cluster_ci": [
+      -0.01171875,
+      0.08203125
+    ]
+  },
+  "oracle_point": {
+    "n": 32,
+    "positive_direction": 10,
+    "ties": 9,
+    "mean_yes_logit_margin": 0.091796875,
+    "mean_pair_effect": -0.0078125,
+    "layout_cluster_ci": [
+      -0.05859375,
+      0.046875
+    ]
+  },
+  "oracle_crop": {
+    "n": 32,
+    "positive_direction": 18,
+    "ties": 10,
+    "mean_yes_logit_margin": -0.111328125,
+    "mean_pair_effect": 0.08203125,
+    "layout_cluster_ci": [
+      0.03515625,
+      0.125
+    ]
+  },
+  "binary_crop": {
+    "n": 32,
+    "positive_direction": 11,
+    "ties": 7,
+    "mean_yes_logit_margin": -0.412109375,
+    "mean_pair_effect": -0.046875,
+    "layout_cluster_ci": [
+      -0.1328125,
+      0.03515625
+    ]
+  },
+  "without_box": {
+    "n": 32,
+    "positive_direction": 11,
+    "ties": 10,
+    "mean_yes_logit_margin": 0.2099609375,
+    "mean_pair_effect": 0.01953125,
+    "layout_cluster_ci": [
+      -0.04296875,
+      0.0859375
+    ]
+  }
+}

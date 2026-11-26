@@ -1,0 +1,11 @@
+{
+  "n": 64,
+  "iou50": {
+    "detector": 25,
+    "clip": 28,
+    "color": 32,
+    "appearance": 41,
+    "unmarked_detector": 58,
+    "unmarked_appearance": 62
+  }
+}

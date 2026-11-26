@@ -1,0 +1,23 @@
+{
+  "GPU": "RTX 4050 Laptop",
+  "device": "Windows CUDA",
+  "images": 32,
+  "detector_queries": 96,
+  "batch_size": 2,
+  "detector_cli_wall_seconds": 57.21973,
+  "clip_cli_wall_seconds": 20.776303,
+  "includes_process_model_load": true,
+  "new_trainable_parameters": 0,
+  "binding_and_map_wall_seconds": 0.5741674000018975,
+  "localized": 62,
+  "certified_correct": 124,
+  "physical_queries": 128,
+  "frozen_pretrained_models": [
+    "Grounding DINO Tiny",
+    "CLIP ViT-B/32"
+  ],
+  "frozen_parameters": {
+    "Grounding DINO Tiny": 172249090,
+    "CLIP ViT-B/32": 151277313
+  }
+}

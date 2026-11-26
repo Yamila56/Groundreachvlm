@@ -1,0 +1,203 @@
+{
+  "pixel_readout": {
+    "certified": 128,
+    "correct": 128,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-Y": 96
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 32
+    }
+  },
+  "original_point": {
+    "certified": 128,
+    "correct": 128,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-Y": 96
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 32
+    }
+  },
+  "original_global": {
+    "certified": 128,
+    "correct": 96,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-Y": 64,
+      "Y-N": 32
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    }
+  },
+  "two_color_point": {
+    "certified": 128,
+    "correct": 96,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 10,
+      "Y-N": 22,
+      "Y-Y": 74,
+      "N-N": 22
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 15
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 19
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 12
+    }
+  },
+  "two_color_global": {
+    "certified": 128,
+    "correct": 96,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-Y": 64,
+      "Y-N": 32
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    }
+  },
+  "binary_point": {
+    "certified": 128,
+    "correct": 76,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 23,
+      "Y-Y": 53,
+      "Y-N": 43,
+      "N-Y": 9
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 10
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 10
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 2
+    }
+  },
+  "binary_global": {
+    "certified": 128,
+    "correct": 96,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-Y": 64,
+      "Y-N": 32
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 32
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    }
+  },
+  "coordinate": {
+    "certified": 128,
+    "correct": 64,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 17,
+      "Y-Y": 49,
+      "Y-N": 47,
+      "N-N": 15
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 14
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    }
+  }
+}

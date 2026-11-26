@@ -1,0 +1,14 @@
+{
+  "manifest": "PhysVLMReachability-GitHub\\study\\outputs\\anchor-confirm-20261126\\manifest.json",
+  "model": "D:\\pip-cache\\qwen3-vl-2b-89644892",
+  "model_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+  "cases": 128,
+  "dtype": "bfloat16",
+  "cap": 8,
+  "legend": "Image 1 is the RGB scene. Image 2 is a spatial map aligned pixel-for-pixel with it. Small black marks in image 1 identify the points to check on the object surfaces. A point is reachable if its map color is strongly saturated (largest minus smallest RGB component is at least 83 on the 0–255 scale). Check the point on the object named by the question. Respond with exactly Yes or No.",
+  "answer_mode": "choice",
+  "conditions": [
+    "binary_crop"
+  ],
+  "manifest_sha256": "b7344d3fe63082f1c0ac927465b112e288309afcd4fd1f32fd180810755fb9cd"
+}

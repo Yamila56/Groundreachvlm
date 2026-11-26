@@ -1,0 +1,18 @@
+[
+  {
+    "selection_sha256": "d096ee00b2c5752ce88127ff28218c97ded31ea531a900b6ef4ee52c86912e20",
+    "pairs": 32,
+    "reachable_witnesses": 48,
+    "max_fk_error_m": 0.0015704332482030122,
+    "unreachable_bounds": 16,
+    "minimum_bound_margin_m": 0.19210804977127993
+  },
+  {
+    "selection_sha256": "2037d69cbf9a58169c07a9a4c233890567c8a7816faf39233f9f9da4eb73fa5c",
+    "pairs": 32,
+    "reachable_witnesses": 48,
+    "max_fk_error_m": 0.0016492896986111656,
+    "unreachable_bounds": 16,
+    "minimum_bound_margin_m": 0.16986291195961378
+  }
+]

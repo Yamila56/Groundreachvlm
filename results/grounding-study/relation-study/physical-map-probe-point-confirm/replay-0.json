@@ -1,0 +1,8 @@
+{
+  "selection_sha256": "771cf761ac727aac9cbdc38dd22fed91c85b9482e930806edef45e9ab5de5478",
+  "pairs": 32,
+  "reachable_witnesses": 48,
+  "max_fk_error_m": 0.0011768863135836849,
+  "unreachable_bounds": 16,
+  "minimum_bound_margin_m": 0.18931718361806027
+}

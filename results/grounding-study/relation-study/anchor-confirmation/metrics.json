@@ -1,0 +1,2829 @@
+{
+  "detector_full": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 25,
+      "binding_pairs": 32,
+      "both_markers": 3,
+      "certified": 128,
+      "correct": 81,
+      "unanswered": 8,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 73,
+        "Y-N": 18,
+        "N-Y": 21,
+        "N-U": 3,
+        "Y-U": 5
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 8
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 3
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 11,
+      "binding_pairs": 16,
+      "both_markers": 3,
+      "certified": 64,
+      "correct": 39,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 5,
+        "Y-Y": 34,
+        "Y-N": 12,
+        "N-Y": 11,
+        "Y-U": 2
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 3
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 14,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 42,
+      "unanswered": 6,
+      "confusion": {
+        "Y-Y": 39,
+        "N-N": 3,
+        "Y-N": 6,
+        "N-Y": 10,
+        "N-U": 3,
+        "Y-U": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 3
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 9,
+      "binding_pairs": 8,
+      "both_markers": 1,
+      "certified": 32,
+      "correct": 25,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 1,
+        "Y-Y": 24,
+        "N-Y": 7
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 1
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 11,
+      "binding_pairs": 16,
+      "both_markers": 1,
+      "certified": 64,
+      "correct": 39,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 6,
+        "Y-Y": 33,
+        "Y-N": 15,
+        "N-Y": 10
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 6
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 1
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 5,
+      "binding_pairs": 8,
+      "both_markers": 1,
+      "certified": 32,
+      "correct": 17,
+      "unanswered": 8,
+      "confusion": {
+        "Y-Y": 16,
+        "N-Y": 4,
+        "Y-N": 3,
+        "N-N": 1,
+        "N-U": 3,
+        "Y-U": 5
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 1
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0,
+      "interval": [
+        0,
+        0
+      ]
+    }
+  },
+  "detector_noun": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 25,
+      "binding_pairs": 32,
+      "both_markers": 0,
+      "certified": 128,
+      "correct": 82,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 74,
+        "Y-N": 22,
+        "N-Y": 24
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 8
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 0
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 13,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 42,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 4,
+        "Y-Y": 38,
+        "Y-N": 10,
+        "N-Y": 12
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 4
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 12,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 40,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 36,
+        "N-Y": 12,
+        "N-N": 4,
+        "Y-N": 12
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 4
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 5,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 18,
+      "unanswered": 0,
+      "confusion": {
+        "N-Y": 5,
+        "Y-Y": 15,
+        "N-N": 3,
+        "Y-N": 9
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 15,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 46,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 2,
+        "Y-Y": 44,
+        "Y-N": 4,
+        "N-Y": 14
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 2
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 5,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 18,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 15,
+        "N-N": 3,
+        "Y-N": 9,
+        "N-Y": 5
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.0078125,
+      "interval": [
+        -0.1015625,
+        0.109375
+      ]
+    }
+  },
+  "relation_rule": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 36,
+      "binding_pairs": 32,
+      "both_markers": 8,
+      "certified": 128,
+      "correct": 87,
+      "unanswered": 26,
+      "confusion": {
+        "N-U": 9,
+        "Y-U": 17,
+        "Y-Y": 73,
+        "N-N": 14,
+        "Y-N": 6,
+        "N-Y": 9
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 8
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 16,
+      "binding_pairs": 16,
+      "both_markers": 1,
+      "certified": 64,
+      "correct": 41,
+      "unanswered": 14,
+      "confusion": {
+        "N-U": 5,
+        "Y-U": 9,
+        "Y-Y": 36,
+        "Y-N": 3,
+        "N-N": 5,
+        "N-Y": 6
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 1
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 20,
+      "binding_pairs": 16,
+      "both_markers": 7,
+      "certified": 64,
+      "correct": 46,
+      "unanswered": 12,
+      "confusion": {
+        "Y-Y": 37,
+        "N-N": 9,
+        "Y-N": 3,
+        "N-U": 4,
+        "Y-U": 8,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 7
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 5,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 15,
+      "unanswered": 12,
+      "confusion": {
+        "N-U": 3,
+        "Y-U": 9,
+        "Y-Y": 14,
+        "N-Y": 4,
+        "Y-N": 1,
+        "N-N": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 20,
+      "binding_pairs": 16,
+      "both_markers": 5,
+      "certified": 64,
+      "correct": 48,
+      "unanswered": 8,
+      "confusion": {
+        "N-U": 4,
+        "Y-U": 4,
+        "Y-Y": 39,
+        "N-N": 9,
+        "Y-N": 5,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 5
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 11,
+      "binding_pairs": 8,
+      "both_markers": 3,
+      "certified": 32,
+      "correct": 24,
+      "unanswered": 6,
+      "confusion": {
+        "Y-U": 4,
+        "N-U": 2,
+        "Y-Y": 20,
+        "N-Y": 2,
+        "N-N": 4
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 4
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 3
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.046875,
+      "interval": [
+        -0.1015625,
+        0.1796875
+      ]
+    }
+  },
+  "rule_oracle_anchor": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 64,
+      "binding_pairs": 32,
+      "both_markers": 32,
+      "certified": 128,
+      "correct": 128,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 32,
+        "Y-Y": 96
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 32
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 48,
+        "N-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 24
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 24,
+        "N-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.3671875,
+      "interval": [
+        0.296875,
+        0.4453125
+      ]
+    }
+  },
+  "relation_marker_rule": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 45,
+      "binding_pairs": 32,
+      "both_markers": 14,
+      "certified": 128,
+      "correct": 109,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 23,
+        "Y-Y": 86,
+        "Y-N": 10,
+        "N-Y": 9
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 23
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 14
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 21,
+      "binding_pairs": 16,
+      "both_markers": 5,
+      "certified": 64,
+      "correct": 53,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 10,
+        "Y-Y": 43,
+        "Y-N": 5,
+        "N-Y": 6
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 10
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 5
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 24,
+      "binding_pairs": 16,
+      "both_markers": 9,
+      "certified": 64,
+      "correct": 56,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 43,
+        "N-N": 13,
+        "Y-N": 5,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 9
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 8,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 24,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 4,
+        "Y-Y": 20,
+        "Y-N": 4,
+        "N-Y": 4
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 4
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 24,
+      "binding_pairs": 16,
+      "both_markers": 9,
+      "certified": 64,
+      "correct": 56,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 13,
+        "Y-Y": 43,
+        "Y-N": 5,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 9
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 13,
+      "binding_pairs": 8,
+      "both_markers": 5,
+      "certified": 32,
+      "correct": 29,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 23,
+        "N-N": 6,
+        "N-Y": 2,
+        "Y-N": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 6
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 5
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.21875,
+      "interval": [
+        0.1171875,
+        0.3125
+      ]
+    }
+  },
+  "candidate_oracle": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 64,
+      "binding_pairs": 32,
+      "both_markers": 32,
+      "certified": 128,
+      "correct": 128,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 32,
+        "Y-Y": 96
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 32
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 48,
+        "N-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 24
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 24,
+        "N-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.3671875,
+      "interval": [
+        0.296875,
+        0.4453125
+      ]
+    }
+  },
+  "oracle_marker": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 64,
+      "binding_pairs": 32,
+      "both_markers": 32,
+      "certified": 128,
+      "correct": 128,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 32,
+        "Y-Y": 96
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 32
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 48,
+        "N-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 24
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 24,
+        "N-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.3671875,
+      "interval": [
+        0.296875,
+        0.4453125
+      ]
+    }
+  },
+  "anchor_ignored": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 32,
+      "binding_pairs": 32,
+      "both_markers": 0,
+      "certified": 128,
+      "correct": 96,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 32,
+        "Y-Y": 64,
+        "Y-N": 32
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 0
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 16,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 48,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 32,
+        "Y-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 16,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 48,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 32,
+        "N-N": 16,
+        "Y-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 8,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 24,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 8,
+        "Y-Y": 16,
+        "Y-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 16,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 48,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 32,
+        "Y-N": 16
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 8,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 24,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 16,
+        "N-N": 8,
+        "Y-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.1171875,
+      "interval": [
+        0.046875,
+        0.1953125
+      ]
+    }
+  },
+  "anchor_clip": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 46,
+      "binding_pairs": 32,
+      "both_markers": 14,
+      "certified": 128,
+      "correct": 110,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 23,
+        "Y-Y": 87,
+        "Y-N": 9,
+        "N-Y": 9
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 23
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 14
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 21,
+      "binding_pairs": 16,
+      "both_markers": 5,
+      "certified": 64,
+      "correct": 53,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 10,
+        "Y-Y": 43,
+        "Y-N": 5,
+        "N-Y": 6
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 10
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 5
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 25,
+      "binding_pairs": 16,
+      "both_markers": 9,
+      "certified": 64,
+      "correct": 57,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 44,
+        "N-N": 13,
+        "Y-N": 4,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 9
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 10,
+      "binding_pairs": 8,
+      "both_markers": 2,
+      "certified": 32,
+      "correct": 26,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 5,
+        "Y-Y": 21,
+        "Y-N": 3,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 2
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 2
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 23,
+      "binding_pairs": 16,
+      "both_markers": 7,
+      "certified": 64,
+      "correct": 55,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 12,
+        "Y-Y": 43,
+        "Y-N": 5,
+        "N-Y": 4
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 12
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 7
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 13,
+      "binding_pairs": 8,
+      "both_markers": 5,
+      "certified": 32,
+      "correct": 29,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 23,
+        "N-N": 6,
+        "N-Y": 2,
+        "Y-N": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 6
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 5
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.2265625,
+      "interval": [
+        0.140625,
+        0.3125
+      ]
+    }
+  },
+  "anchor_color": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 42,
+      "binding_pairs": 32,
+      "both_markers": 13,
+      "certified": 128,
+      "correct": 105,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 17,
+        "Y-Y": 88,
+        "N-Y": 14,
+        "Y-N": 7,
+        "N-U": 1,
+        "Y-U": 1
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 13
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 17
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 13
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 17,
+      "binding_pairs": 16,
+      "both_markers": 3,
+      "certified": 64,
+      "correct": 48,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 5,
+        "Y-Y": 43,
+        "N-Y": 10,
+        "Y-N": 4,
+        "N-U": 1,
+        "Y-U": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 5
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 3
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 25,
+      "binding_pairs": 16,
+      "both_markers": 10,
+      "certified": 64,
+      "correct": 57,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 45,
+        "N-N": 12,
+        "Y-N": 3,
+        "N-Y": 4
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 10
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 12
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 10
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 11,
+      "binding_pairs": 8,
+      "both_markers": 3,
+      "certified": 32,
+      "correct": 27,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 5,
+        "Y-Y": 22,
+        "Y-N": 2,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 3
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 19,
+      "binding_pairs": 16,
+      "both_markers": 6,
+      "certified": 64,
+      "correct": 51,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 7,
+        "Y-Y": 44,
+        "N-Y": 9,
+        "Y-N": 4
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 6
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 6
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 12,
+      "binding_pairs": 8,
+      "both_markers": 4,
+      "certified": 32,
+      "correct": 27,
+      "unanswered": 2,
+      "confusion": {
+        "Y-Y": 22,
+        "N-N": 5,
+        "N-Y": 2,
+        "Y-N": 1,
+        "N-U": 1,
+        "Y-U": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 4
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 4
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.1875,
+      "interval": [
+        0.1015625,
+        0.2578125
+      ]
+    }
+  },
+  "anchor_appearance": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 52,
+      "binding_pairs": 32,
+      "both_markers": 20,
+      "certified": 128,
+      "correct": 116,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 26,
+        "Y-Y": 90,
+        "Y-N": 6,
+        "N-Y": 6
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 20
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 26
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 20
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 23,
+      "binding_pairs": 16,
+      "both_markers": 7,
+      "certified": 64,
+      "correct": 55,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 11,
+        "Y-Y": 44,
+        "Y-N": 4,
+        "N-Y": 5
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 11
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 7
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 29,
+      "binding_pairs": 16,
+      "both_markers": 13,
+      "certified": 64,
+      "correct": 61,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 46,
+        "N-N": 15,
+        "Y-N": 2,
+        "N-Y": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 15
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 13
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 11,
+      "binding_pairs": 8,
+      "both_markers": 3,
+      "certified": 32,
+      "correct": 27,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 5,
+        "Y-Y": 22,
+        "Y-N": 2,
+        "N-Y": 3
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 3
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 28,
+      "binding_pairs": 16,
+      "both_markers": 12,
+      "certified": 64,
+      "correct": 60,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 15,
+        "Y-Y": 45,
+        "Y-N": 3,
+        "N-Y": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 12
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 15
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 12
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 13,
+      "binding_pairs": 8,
+      "both_markers": 5,
+      "certified": 32,
+      "correct": 29,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 23,
+        "N-N": 6,
+        "N-Y": 2,
+        "Y-N": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 5
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 6
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 5
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.2734375,
+      "interval": [
+        0.1796875,
+        0.359375
+      ]
+    }
+  },
+  "unmarked_detector": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 58,
+      "binding_pairs": 32,
+      "both_markers": 26,
+      "certified": 128,
+      "correct": 120,
+      "unanswered": 4,
+      "confusion": {
+        "N-N": 30,
+        "Y-Y": 90,
+        "N-Y": 1,
+        "Y-U": 3,
+        "Y-N": 3,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 26
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 30
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 26
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 29,
+      "binding_pairs": 16,
+      "both_markers": 13,
+      "certified": 64,
+      "correct": 61,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 15,
+        "Y-Y": 46,
+        "N-Y": 1,
+        "Y-N": 2
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 15
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 13
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 29,
+      "binding_pairs": 16,
+      "both_markers": 13,
+      "certified": 64,
+      "correct": 59,
+      "unanswered": 4,
+      "confusion": {
+        "Y-Y": 44,
+        "N-N": 15,
+        "Y-U": 3,
+        "Y-N": 1,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 13
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 15
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 13
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 10,
+      "binding_pairs": 8,
+      "both_markers": 2,
+      "certified": 32,
+      "correct": 24,
+      "unanswered": 4,
+      "confusion": {
+        "N-Y": 1,
+        "Y-Y": 18,
+        "N-N": 6,
+        "Y-U": 3,
+        "Y-N": 3,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 2
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 6
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 2
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 24,
+        "N-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.3046875,
+      "interval": [
+        0.203125,
+        0.40625
+      ]
+    }
+  },
+  "unmarked_appearance": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 62,
+      "binding_pairs": 32,
+      "both_markers": 30,
+      "certified": 128,
+      "correct": 124,
+      "unanswered": 4,
+      "confusion": {
+        "N-N": 31,
+        "Y-Y": 93,
+        "Y-U": 3,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 30
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 31
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 30
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 30,
+      "binding_pairs": 16,
+      "both_markers": 14,
+      "certified": 64,
+      "correct": 60,
+      "unanswered": 4,
+      "confusion": {
+        "Y-Y": 45,
+        "N-N": 15,
+        "Y-U": 3,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 14
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 15
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 14
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 14,
+      "binding_pairs": 8,
+      "both_markers": 6,
+      "certified": 32,
+      "correct": 28,
+      "unanswered": 4,
+      "confusion": {
+        "N-N": 7,
+        "Y-Y": 21,
+        "Y-U": 3,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 6
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 7
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 6
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 32,
+      "binding_pairs": 16,
+      "both_markers": 16,
+      "certified": 64,
+      "correct": 64,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 48
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 16
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 16
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 16,
+      "binding_pairs": 8,
+      "both_markers": 8,
+      "certified": 32,
+      "correct": 32,
+      "unanswered": 0,
+      "confusion": {
+        "Y-Y": 24,
+        "N-N": 8
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 8
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 8
+      }
+    },
+    "versus_detector_full": {
+      "delta": 0.3359375,
+      "interval": [
+        0.25,
+        0.421875
+      ]
+    }
+  },
+  "ranker_17": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 17,
+      "binding_pairs": 32,
+      "both_markers": 0,
+      "certified": 128,
+      "correct": 63,
+      "unanswered": 14,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 47,
+        "Y-N": 39,
+        "N-Y": 12,
+        "Y-U": 10,
+        "N-U": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 4
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 16
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 0
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 7,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 27,
+      "unanswered": 8,
+      "confusion": {
+        "N-N": 7,
+        "Y-Y": 20,
+        "Y-N": 21,
+        "N-Y": 8,
+        "Y-U": 7,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 10,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 36,
+      "unanswered": 6,
+      "confusion": {
+        "Y-Y": 27,
+        "N-N": 9,
+        "Y-N": 18,
+        "N-Y": 4,
+        "N-U": 3,
+        "Y-U": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 4
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 4,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 17,
+      "unanswered": 0,
+      "confusion": {
+        "N-Y": 4,
+        "Y-N": 11,
+        "Y-Y": 13,
+        "N-N": 4
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 4
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 9,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 34,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 9,
+        "Y-Y": 25,
+        "Y-N": 23,
+        "N-Y": 7
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 4,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 12,
+      "unanswered": 14,
+      "confusion": {
+        "Y-Y": 9,
+        "N-N": 3,
+        "Y-U": 10,
+        "Y-N": 5,
+        "N-U": 4,
+        "N-Y": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "versus_detector_full": {
+      "delta": -0.140625,
+      "interval": [
+        -0.234375,
+        -0.0546875
+      ]
+    }
+  },
+  "ranker_29": {
+    "all": {
+      "queries": 64,
+      "correct_marker": 17,
+      "binding_pairs": 32,
+      "both_markers": 0,
+      "certified": 128,
+      "correct": 63,
+      "unanswered": 14,
+      "confusion": {
+        "N-N": 16,
+        "Y-Y": 47,
+        "Y-N": 39,
+        "N-Y": 12,
+        "Y-U": 10,
+        "N-U": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 4
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 16
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 0
+      }
+    },
+    "horizontal": {
+      "queries": 32,
+      "correct_marker": 7,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 27,
+      "unanswered": 8,
+      "confusion": {
+        "N-N": 7,
+        "Y-Y": 20,
+        "Y-N": 21,
+        "N-Y": 8,
+        "Y-U": 7,
+        "N-U": 1
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 7
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "vertical": {
+      "queries": 32,
+      "correct_marker": 10,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 36,
+      "unanswered": 6,
+      "confusion": {
+        "Y-Y": 27,
+        "N-N": 9,
+        "Y-N": 18,
+        "N-Y": 4,
+        "N-U": 3,
+        "Y-U": 3
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 4
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "distinct-colors": {
+      "queries": 16,
+      "correct_marker": 4,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 17,
+      "unanswered": 0,
+      "confusion": {
+        "N-Y": 4,
+        "Y-N": 11,
+        "Y-Y": 13,
+        "N-N": 4
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 4
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "same-anchor-color": {
+      "queries": 32,
+      "correct_marker": 9,
+      "binding_pairs": 16,
+      "both_markers": 0,
+      "certified": 64,
+      "correct": 34,
+      "unanswered": 0,
+      "confusion": {
+        "N-N": 9,
+        "Y-Y": 25,
+        "Y-N": 23,
+        "N-Y": 7
+      },
+      "target_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 3
+      },
+      "workspace_flip": {
+        "total": 32,
+        "certified": 16,
+        "correct": 9
+      },
+      "four": {
+        "total": 16,
+        "certified": 16,
+        "correct": 0
+      }
+    },
+    "target-anchor-color-match": {
+      "queries": 16,
+      "correct_marker": 4,
+      "binding_pairs": 8,
+      "both_markers": 0,
+      "certified": 32,
+      "correct": 12,
+      "unanswered": 14,
+      "confusion": {
+        "Y-Y": 9,
+        "N-N": 3,
+        "Y-U": 10,
+        "Y-N": 5,
+        "N-U": 4,
+        "N-Y": 1
+      },
+      "target_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 16,
+        "certified": 8,
+        "correct": 3
+      },
+      "four": {
+        "total": 8,
+        "certified": 8,
+        "correct": 0
+      }
+    },
+    "versus_detector_full": {
+      "delta": -0.140625,
+      "interval": [
+        -0.234375,
+        -0.0546875
+      ]
+    }
+  }
+}

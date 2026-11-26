@@ -1,0 +1,122 @@
+{
+  "marker_vs_detector_full": {
+    "delta": 0.578125,
+    "ci95": [
+      0.453125,
+      0.6875
+    ],
+    "layouts": 32
+  },
+  "marker_vs_relation_rule": {
+    "delta": 0.40625,
+    "ci95": [
+      0.3125,
+      0.515625
+    ],
+    "layouts": 32
+  },
+  "marker_vs_relation_marker_rule": {
+    "delta": 0.265625,
+    "ci95": [
+      0.171875,
+      0.359375
+    ],
+    "layouts": 32
+  },
+  "marker_vs_unmarked_detector": {
+    "delta": 0.0625,
+    "ci95": [
+      0.015625,
+      0.125
+    ],
+    "layouts": 32
+  },
+  "marker_vs_rule_oracle_anchor": {
+    "delta": -0.03125,
+    "ci95": [
+      -0.078125,
+      0.0
+    ],
+    "layouts": 32
+  },
+  "physical_vs_detector_full": {
+    "delta": 0.3359375,
+    "ci95": [
+      0.2421875,
+      0.4296875
+    ],
+    "layouts": 32
+  },
+  "physical_vs_relation_rule": {
+    "delta": 0.2890625,
+    "ci95": [
+      0.1953125,
+      0.390625
+    ],
+    "layouts": 32
+  },
+  "physical_vs_relation_marker_rule": {
+    "delta": 0.1171875,
+    "ci95": [
+      0.0625,
+      0.171875
+    ],
+    "layouts": 32
+  },
+  "physical_vs_unmarked_detector": {
+    "delta": 0.03125,
+    "ci95": [
+      0.0078125,
+      0.0625
+    ],
+    "layouts": 32
+  },
+  "physical_vs_rule_oracle_anchor": {
+    "delta": -0.03125,
+    "ci95": [
+      -0.078125,
+      0.0
+    ],
+    "layouts": 32
+  },
+  "both_markers_vs_detector_full": {
+    "delta": 0.84375,
+    "ci95": [
+      0.71875,
+      0.96875
+    ],
+    "layouts": 32
+  },
+  "both_markers_vs_relation_rule": {
+    "delta": 0.6875,
+    "ci95": [
+      0.53125,
+      0.84375
+    ],
+    "layouts": 32
+  },
+  "both_markers_vs_relation_marker_rule": {
+    "delta": 0.5,
+    "ci95": [
+      0.3125,
+      0.6875
+    ],
+    "layouts": 32
+  },
+  "both_markers_vs_unmarked_detector": {
+    "delta": 0.125,
+    "ci95": [
+      0.03125,
+      0.25
+    ],
+    "layouts": 32
+  },
+  "both_markers_vs_rule_oracle_anchor": {
+    "delta": -0.0625,
+    "ci95": [
+      -0.15625,
+      0.0
+    ],
+    "layouts": 32
+  }
+}

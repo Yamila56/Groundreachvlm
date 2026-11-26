@@ -1,0 +1,61 @@
+{
+  "binary_crop": {
+    "certified": 128,
+    "correct": 32,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 32,
+      "Y-N": 96
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    },
+    "versus_geometric": {
+      "delta": -0.71875,
+      "interval": [
+        -0.75,
+        -0.671875
+      ]
+    }
+  },
+  "geometric": {
+    "certified": 128,
+    "correct": 124,
+    "unanswered": 4,
+    "confusion": {
+      "N-N": 31,
+      "Y-Y": 93,
+      "Y-U": 3,
+      "N-U": 1
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 30
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 31
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 30
+    }
+  },
+  "total_seconds": 28.68647499999497,
+  "peak_allocated_mib": 4102.6162109375
+}

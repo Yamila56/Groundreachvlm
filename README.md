@@ -23,6 +23,12 @@ The final held-out test contains **32 physical layouts, 64 views, and 256 questi
 2. **Matching the training and inference view matters for the VLM.** In a separate controlled crop experiment, the local projector reaches 48/48 complete views for both seeds when trained and evaluated on target crops. The other three train–test crop combinations reach 0/48. With similar parameter counts and learning-rate search budgets, global LoRA is stronger on target switches and the projector is stronger on workspace switches. [Crossed crop experiment](results/target-repair/crossed-input-metrics.json) · [Capacity-matched comparison](results/capacity-comparison/held-out-metrics.json)
 3. **The original simulator labels and specified-point labels answer different questions.** On 128 upstream-recipe questions, learned ranking improves target identity from 73/128 to 90/128 and 89/128, while the corresponding map scores are 92/128 and 93/128 against 94/128 for frozen PhysVLM. The upstream label uses radial distance to an object's origin. The map depicts workspace membership of visible surface pixels, so better object localization need not improve agreement with the radial labels. [Upstream comparison](results/grounding-study/learned-reranker.json) · [Label and map audit](LABEL_SEMANTICS.md)
 
+## Anchor-switch follow-up
+
+A separate simulator split holds the image and direction word fixed while changing the referenced anchor. The original two ranker seeds each localize 17/64 targets. Filtering out marked targets from the anchor candidates and ranking the remaining boxes by appearance improves localization to **62/64** and point reachability to **124/128**, compared with 25/64 and 81/128 for full-phrase detection. Both misses occur when the correct anchor box is absent from the candidate pool. [Relation study](study/关系指代与可达性实验报告.md) · [Confirmation scores](results/grounding-study/relation-study/anchor-confirmation/metrics.json)
+
+On 32 new layouts with both targets visible in the same crop, a linear probe using the frozen map token at the queried point passed **32/32** target switches and **32/32** map switches. Region-mean features passed **0/32** target switches. Frozen Qwen3-VL question answering with the same shared crop and ground-truth point passed **2/32** target switches and **1/32** map switches. [Physical-map probe](study/关系指代与可达性实验报告.md#冻结视觉特征探针结果) · [Paired results](results/grounding-study/relation-study/physical-map-probe-point-confirm/paired.json)
+
 ## Method
 
 ```mermaid

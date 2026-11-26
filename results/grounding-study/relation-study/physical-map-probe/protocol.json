@@ -1,0 +1,20 @@
+{
+  "train": {
+    "path": "PhysVLMReachability-GitHub\\study\\outputs\\anchor-holdout-20261126\\manifest.json",
+    "sha256": "93f6bd869569d67871d8a70d0cc5be0dde5cbf947edb7792469548b1336bc295",
+    "n": 128
+  },
+  "confirm": {
+    "path": "PhysVLMReachability-GitHub\\study\\outputs\\physical-probe-confirm-20261126\\manifest.json",
+    "sha256": "570a734697019507e2cc1274ab5e9a3b933a76a1dd84c422ccd1fa48db291cc3",
+    "n": 128
+  },
+  "model": "D:\\pip-cache\\qwen3-vl-2b-89644892",
+  "model_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+  "two_color": [
+    "#2266ad",
+    "#db4b52"
+  ],
+  "ridge": 1.0,
+  "balanced_training": true
+}

@@ -1,0 +1,129 @@
+{
+  "oracle_box": {
+    "certified": 128,
+    "correct": 52,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 28,
+      "Y-Y": 24,
+      "N-Y": 4,
+      "Y-N": 72
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 4
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 5
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 1
+    },
+    "versus_geometric": {
+      "delta": -0.5625,
+      "interval": [
+        -0.6484375,
+        -0.4765625
+      ]
+    }
+  },
+  "oracle_point": {
+    "certified": 128,
+    "correct": 76,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 22,
+      "Y-Y": 66,
+      "Y-N": 30,
+      "N-N": 10
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 4
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 0
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 0
+    },
+    "versus_geometric": {
+      "delta": -0.375,
+      "interval": [
+        -0.453125,
+        -0.296875
+      ]
+    }
+  },
+  "oracle_crop": {
+    "certified": 128,
+    "correct": 64,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 23,
+      "Y-Y": 41,
+      "Y-N": 55,
+      "N-Y": 9
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 9
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 10
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 3
+    },
+    "versus_geometric": {
+      "delta": -0.46875,
+      "interval": [
+        -0.5859375,
+        -0.3515625
+      ]
+    }
+  },
+  "geometric": {
+    "certified": 128,
+    "correct": 124,
+    "unanswered": 4,
+    "confusion": {
+      "N-N": 31,
+      "Y-Y": 93,
+      "Y-U": 3,
+      "N-U": 1
+    },
+    "target_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 30
+    },
+    "workspace_flip": {
+      "total": 64,
+      "certified": 32,
+      "correct": 31
+    },
+    "four": {
+      "total": 32,
+      "certified": 32,
+      "correct": 30
+    }
+  },
+  "total_seconds": 133.94468990000314,
+  "peak_allocated_mib": 4221.96630859375
+}
