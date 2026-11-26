@@ -1,0 +1,425 @@
+{
+  "labels": {
+    "Y": 64,
+    "N": 64,
+    "U": 0
+  },
+  "outcomes": {
+    "coordinates_crop": {
+      "certified": 128,
+      "correct": 82,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 21,
+        "Y-Y": 41,
+        "Y-N": 23,
+        "N-N": 41,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 2
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 8
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 11
+      }
+    },
+    "direct_point": {
+      "certified": 128,
+      "correct": 68,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 58,
+        "Y-Y": 64,
+        "N-U": 2,
+        "N-N": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 2
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 9
+      }
+    },
+    "direct_mean": {
+      "certified": 128,
+      "correct": 71,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 52,
+        "Y-Y": 61,
+        "N-N": 10,
+        "Y-N": 3,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 6
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 11
+      }
+    },
+    "pixel_readout": {
+      "certified": 128,
+      "correct": 126,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 62,
+        "Y-Y": 64,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 31
+      }
+    },
+    "adapted_mean": {
+      "certified": 128,
+      "correct": 93,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 20,
+        "Y-Y": 51,
+        "N-N": 42,
+        "Y-N": 13,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 18
+      }
+    },
+    "adapted_point": {
+      "certified": 128,
+      "correct": 126,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 62,
+        "Y-Y": 64,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 31
+      }
+    },
+    "adapted_point_swapped_map_token": {
+      "certified": 128,
+      "correct": 62,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 32,
+        "Y-N": 32,
+        "Y-Y": 32,
+        "N-N": 30,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 0
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 15
+      }
+    },
+    "adapted_point_swapped_target_token": {
+      "certified": 128,
+      "correct": 92,
+      "unanswered": 4,
+      "confusion": {
+        "N-Y": 16,
+        "Y-N": 16,
+        "Y-Y": 48,
+        "N-N": 44,
+        "N-U": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 16
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 23
+      }
+    }
+  },
+  "comparisons": {
+    "adapted_point_vs_coordinates_crop": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.75,
+        "interval95": [
+          0.5625,
+          0.90625
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 0.875,
+        "interval95": [
+          0.6875,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.3125,
+        "interval95": [
+          0.125,
+          0.53125
+        ]
+      }
+    },
+    "adapted_point_vs_direct_point": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.9375,
+        "interval95": [
+          0.8125,
+          1.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.4375,
+        "interval95": [
+          0.21875,
+          0.65625
+        ]
+      }
+    },
+    "adapted_point_vs_direct_mean": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.8125,
+        "interval95": [
+          0.625,
+          1.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.4375,
+        "interval95": [
+          0.21875,
+          0.65625
+        ]
+      }
+    },
+    "adapted_point_vs_pixel_readout": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_mean": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.5625,
+        "interval95": [
+          0.3125,
+          0.8125
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.25,
+        "interval95": [
+          0.0625,
+          0.5
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_point_swapped_map_token": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_point_swapped_target_token": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.5,
+        "interval95": [
+          0.25,
+          0.75
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.03125,
+        "interval95": [
+          0.0,
+          0.09375
+        ]
+      }
+    }
+  }
+}

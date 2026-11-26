@@ -1,0 +1,151 @@
+{
+  "coordinates_crop": {
+    "certified": 16,
+    "correct": 5,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 3,
+      "Y-N": 10,
+      "Y-Y": 2,
+      "N-Y": 1
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 0
+    }
+  },
+  "direct_point": {
+    "certified": 16,
+    "correct": 12,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 4,
+      "Y-Y": 12
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 0
+    }
+  },
+  "direct_mean": {
+    "certified": 16,
+    "correct": 12,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 4,
+      "Y-Y": 12
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 0
+    }
+  },
+  "pixel_readout": {
+    "certified": 16,
+    "correct": 16,
+    "unanswered": 0,
+    "confusion": {
+      "N-N": 4,
+      "Y-Y": 12
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 4
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 4
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 4
+    }
+  },
+  "adapted_mean": {
+    "certified": 16,
+    "correct": 12,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 4,
+      "Y-Y": 12
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 0
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 0
+    }
+  },
+  "adapted_point": {
+    "certified": 16,
+    "correct": 14,
+    "unanswered": 0,
+    "confusion": {
+      "N-Y": 2,
+      "Y-Y": 12,
+      "N-N": 2
+    },
+    "target_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 2
+    },
+    "workspace_flip": {
+      "total": 8,
+      "certified": 4,
+      "correct": 2
+    },
+    "four": {
+      "total": 4,
+      "certified": 4,
+      "correct": 2
+    }
+  },
+  "wall_seconds": 25.041177399994922,
+  "cuda_allocated_mib": 5044.31298828125
+}

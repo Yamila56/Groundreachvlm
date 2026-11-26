@@ -29,6 +29,10 @@ A separate simulator split holds the image and direction word fixed while changi
 
 On 32 new layouts with both targets visible in the same crop, a linear probe using the frozen map token at the queried point passed **32/32** target switches and **32/32** map switches. Region-mean features passed **0/32** target switches. Frozen Qwen3-VL question answering with the same shared crop and ground-truth point passed **2/32** target switches and **1/32** map switches. [Physical-map probe](study/关系指代与可达性实验报告.md#冻结视觉特征探针结果) · [Paired results](results/grounding-study/relation-study/physical-map-probe-point-confirm/paired.json)
 
+## Point-conditioned physical token
+
+A 133K-parameter residual head adapts one frozen map token selected at the automatically localized point. Across two training seeds and two balanced 32-layout confirmation sets, point-token adaptation passed **16/16** same-map target switches in each evaluation, compared with **0/16** for a parameter-matched region-mean token. It passed **31–32/32** same-target map switches. Exchanging the point token with one from the alternate map reduced the two primary runs to **0/32** map-switch pairs. [Pilot protocol and results](study/关系指代与可达性实验报告.md#point-conditioned-token-训练小试) · [Predictions and residual heads](results/grounding-study/point-token-pilot)
+
 ## Method
 
 ```mermaid

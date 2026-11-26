@@ -1,0 +1,1020 @@
+{
+  "anchor-911369-000-A-0": {
+    "marker": [
+      222,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-000-B-0": {
+    "marker": [
+      222,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-000-A-1": {
+    "marker": [
+      393,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-000-B-1": {
+    "marker": [
+      393,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-001-A-0": {
+    "marker": [
+      323,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-001-B-0": {
+    "marker": [
+      323,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-001-A-1": {
+    "marker": [
+      326,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-001-B-1": {
+    "marker": [
+      326,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-002-A-0": {
+    "marker": [
+      247,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-002-B-0": {
+    "marker": [
+      247,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-002-A-1": {
+    "marker": [
+      416,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-002-B-1": {
+    "marker": [
+      416,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-003-A-0": {
+    "marker": [
+      312,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-003-B-0": {
+    "marker": [
+      312,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-003-A-1": {
+    "marker": [
+      320,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-003-B-1": {
+    "marker": [
+      320,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-004-A-0": {
+    "marker": [
+      225,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-004-B-0": {
+    "marker": [
+      225,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-004-A-1": {
+    "marker": [
+      395,
+      251
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-004-B-1": {
+    "marker": [
+      395,
+      251
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-005-A-0": {
+    "marker": [
+      323,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-005-B-0": {
+    "marker": [
+      323,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-005-A-1": {
+    "marker": [
+      316,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-005-B-1": {
+    "marker": [
+      316,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-006-A-0": {
+    "marker": [
+      229,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-006-B-0": {
+    "marker": [
+      229,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-006-A-1": {
+    "marker": [
+      396,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-006-B-1": {
+    "marker": [
+      396,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-007-A-0": {
+    "marker": [
+      314,
+      146
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-007-B-0": {
+    "marker": [
+      314,
+      146
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-007-A-1": {
+    "marker": [
+      323,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-007-B-1": {
+    "marker": [
+      323,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-008-A-0": {
+    "marker": [
+      224,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-008-B-0": {
+    "marker": [
+      224,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-008-A-1": {
+    "marker": [
+      386,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-008-B-1": {
+    "marker": [
+      386,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-009-A-0": {
+    "marker": [
+      325,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-009-B-0": {
+    "marker": [
+      325,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-009-A-1": {
+    "marker": [
+      342,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-009-B-1": {
+    "marker": [
+      342,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-010-A-0": {
+    "marker": [
+      249,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-010-B-0": {
+    "marker": [
+      249,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-010-A-1": {
+    "marker": [
+      415,
+      262
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-010-B-1": {
+    "marker": [
+      415,
+      262
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-011-A-0": {
+    "marker": [
+      295,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-011-B-0": {
+    "marker": [
+      295,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-011-A-1": {
+    "marker": [
+      291,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-011-B-1": {
+    "marker": [
+      291,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-012-A-0": {
+    "marker": [
+      212,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-012-B-0": {
+    "marker": [
+      212,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-012-A-1": {
+    "marker": [
+      378,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-012-B-1": {
+    "marker": [
+      378,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-013-A-0": {
+    "marker": [
+      337,
+      167
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-013-B-0": {
+    "marker": [
+      337,
+      167
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-013-A-1": {
+    "marker": [
+      341,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-013-B-1": {
+    "marker": [
+      341,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-014-A-0": {
+    "marker": [
+      255,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-014-B-0": {
+    "marker": [
+      255,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-014-A-1": {
+    "marker": [
+      417,
+      219
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-014-B-1": {
+    "marker": [
+      417,
+      219
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-015-A-0": {
+    "marker": null,
+    "correct_marker": false,
+    "prediction": "U"
+  },
+  "anchor-911369-015-B-0": {
+    "marker": null,
+    "correct_marker": false,
+    "prediction": "U"
+  },
+  "anchor-911369-015-A-1": {
+    "marker": [
+      310,
+      326
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-015-B-1": {
+    "marker": [
+      310,
+      326
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-016-A-0": {
+    "marker": [
+      233,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-016-B-0": {
+    "marker": [
+      233,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-016-A-1": {
+    "marker": [
+      393,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-016-B-1": {
+    "marker": [
+      393,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-017-A-0": {
+    "marker": [
+      301,
+      161
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-017-B-0": {
+    "marker": [
+      301,
+      161
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-017-A-1": {
+    "marker": [
+      304,
+      320
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-017-B-1": {
+    "marker": [
+      304,
+      320
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-018-A-0": {
+    "marker": [
+      215,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-018-B-0": {
+    "marker": [
+      215,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-018-A-1": {
+    "marker": [
+      380,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-018-B-1": {
+    "marker": [
+      380,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-019-A-0": {
+    "marker": [
+      308,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-019-B-0": {
+    "marker": [
+      308,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-019-A-1": {
+    "marker": [
+      321,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-019-B-1": {
+    "marker": [
+      321,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-020-A-0": {
+    "marker": [
+      227,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-020-B-0": {
+    "marker": [
+      227,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-020-A-1": {
+    "marker": [
+      400,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-020-B-1": {
+    "marker": [
+      400,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-021-A-0": {
+    "marker": [
+      321,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-021-B-0": {
+    "marker": [
+      321,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-021-A-1": {
+    "marker": [
+      317,
+      306
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-021-B-1": {
+    "marker": [
+      317,
+      306
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-022-A-0": {
+    "marker": [
+      241,
+      254
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-022-B-0": {
+    "marker": [
+      241,
+      254
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-022-A-1": {
+    "marker": [
+      409,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-022-B-1": {
+    "marker": [
+      409,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-023-A-0": {
+    "marker": [
+      305,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-023-B-0": {
+    "marker": [
+      305,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-023-A-1": {
+    "marker": [
+      307,
+      320
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-023-B-1": {
+    "marker": [
+      307,
+      320
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-024-A-0": {
+    "marker": [
+      222,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-024-B-0": {
+    "marker": [
+      222,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-024-A-1": {
+    "marker": [
+      384,
+      214
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-024-B-1": {
+    "marker": [
+      384,
+      214
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-025-A-0": {
+    "marker": [
+      334,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-025-B-0": {
+    "marker": [
+      334,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-025-A-1": {
+    "marker": [
+      359,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-025-B-1": {
+    "marker": [
+      359,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-026-A-0": {
+    "marker": [
+      249,
+      222
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-026-B-0": {
+    "marker": [
+      249,
+      222
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-026-A-1": {
+    "marker": [
+      417,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-026-B-1": {
+    "marker": [
+      417,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-027-A-0": {
+    "marker": [
+      320,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-027-B-0": {
+    "marker": [
+      320,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-027-A-1": {
+    "marker": [
+      304,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-027-B-1": {
+    "marker": [
+      304,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-028-A-0": {
+    "marker": [
+      248,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-028-B-0": {
+    "marker": [
+      248,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-028-A-1": {
+    "marker": [
+      413,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-028-B-1": {
+    "marker": [
+      413,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-029-A-0": {
+    "marker": [
+      325,
+      171
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-029-B-0": {
+    "marker": [
+      325,
+      171
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-029-A-1": {
+    "marker": [
+      338,
+      334
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-029-B-1": {
+    "marker": [
+      338,
+      334
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-030-A-0": {
+    "marker": [
+      213,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-030-B-0": {
+    "marker": [
+      213,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-030-A-1": {
+    "marker": [
+      375,
+      224
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-030-B-1": {
+    "marker": [
+      375,
+      224
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911369-031-A-0": {
+    "marker": [
+      338,
+      148
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-031-B-0": {
+    "marker": [
+      338,
+      148
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-031-A-1": {
+    "marker": [
+      346,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911369-031-B-1": {
+    "marker": [
+      346,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  }
+}

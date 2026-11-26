@@ -1,0 +1,12 @@
+{
+  "model_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+  "seed": 17,
+  "epochs": 1,
+  "limit": null,
+  "manifest_hashes": {
+    "train": "c34dc200b1553ea0735bf4736b3652adfe762cfccfbbd8a9db9720977aa64b2d",
+    "test": "867efeabcdd9769ef65ee25fdfe7ac389c046db0759e1642a59c908106eabd88"
+  },
+  "heads_from": "PhysVLMReachability-GitHub\\study\\outputs\\point-token-automatic-20261126",
+  "point_source": "automatic"
+}

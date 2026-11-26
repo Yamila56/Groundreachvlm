@@ -1,0 +1,427 @@
+{
+  "labels": {
+    "Y": 64,
+    "N": 64,
+    "U": 0
+  },
+  "outcomes": {
+    "coordinates_crop": {
+      "certified": 128,
+      "correct": 71,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 31,
+        "Y-Y": 40,
+        "N-N": 31,
+        "Y-N": 24,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 2
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 7
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 9
+      }
+    },
+    "direct_point": {
+      "certified": 128,
+      "correct": 66,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 57,
+        "Y-Y": 61,
+        "Y-N": 3,
+        "N-U": 2,
+        "N-N": 5
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 1
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 1
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 7
+      }
+    },
+    "direct_mean": {
+      "certified": 128,
+      "correct": 67,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 58,
+        "Y-Y": 63,
+        "Y-N": 1,
+        "N-U": 2,
+        "N-N": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 4
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 9
+      }
+    },
+    "pixel_readout": {
+      "certified": 128,
+      "correct": 126,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 62,
+        "Y-Y": 64,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 32
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 31
+      }
+    },
+    "adapted_mean": {
+      "certified": 128,
+      "correct": 90,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 28,
+        "Y-Y": 56,
+        "N-N": 34,
+        "Y-N": 8,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 17
+      }
+    },
+    "adapted_point": {
+      "certified": 128,
+      "correct": 116,
+      "unanswered": 2,
+      "confusion": {
+        "N-N": 62,
+        "Y-Y": 54,
+        "Y-N": 10,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 16
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 30
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 26
+      }
+    },
+    "adapted_point_swapped_map_token": {
+      "certified": 128,
+      "correct": 56,
+      "unanswered": 2,
+      "confusion": {
+        "N-Y": 30,
+        "Y-N": 40,
+        "Y-Y": 24,
+        "N-N": 32,
+        "N-U": 2
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 0
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 12
+      }
+    },
+    "adapted_point_swapped_target_token": {
+      "certified": 128,
+      "correct": 82,
+      "unanswered": 4,
+      "confusion": {
+        "N-Y": 16,
+        "Y-N": 26,
+        "Y-Y": 38,
+        "N-N": 44,
+        "N-U": 4
+      },
+      "target_flip": {
+        "total": 64,
+        "certified": 16,
+        "correct": 0
+      },
+      "workspace_flip": {
+        "total": 64,
+        "certified": 32,
+        "correct": 14
+      },
+      "four": {
+        "total": 32,
+        "certified": 32,
+        "correct": 18
+      }
+    }
+  },
+  "comparisons": {
+    "adapted_point_vs_coordinates_crop": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.71875,
+        "interval95": [
+          0.53125,
+          0.875
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 0.875,
+        "interval95": [
+          0.6875,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.34375,
+        "interval95": [
+          0.09375,
+          0.59375
+        ]
+      }
+    },
+    "adapted_point_vs_direct_point": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.90625,
+        "interval95": [
+          0.8125,
+          1.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 0.9375,
+        "interval95": [
+          0.8125,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.3125,
+        "interval95": [
+          0.03125,
+          0.59375
+        ]
+      }
+    },
+    "adapted_point_vs_direct_mean": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.8125,
+        "interval95": [
+          0.625,
+          0.96875
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.375,
+        "interval95": [
+          0.0625,
+          0.6875
+        ]
+      }
+    },
+    "adapted_point_vs_pixel_readout": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": -0.0625,
+        "interval95": [
+          -0.15625,
+          0.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": -0.125,
+        "interval95": [
+          -0.28125,
+          0.0
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_mean": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.5,
+        "interval95": [
+          0.25,
+          0.75
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.1875,
+        "interval95": [
+          -0.03125,
+          0.4375
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_point_swapped_map_token": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.9375,
+        "interval95": [
+          0.84375,
+          1.0
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.0,
+        "interval95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "adapted_point_vs_adapted_point_swapped_target_token": {
+      "workspace_flip": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.5,
+        "interval95": [
+          0.25,
+          0.75
+        ]
+      },
+      "target_flip": {
+        "n": 16,
+        "layouts": 8,
+        "difference": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "workspace_stable": {
+        "n": 32,
+        "layouts": 16,
+        "difference": 0.03125,
+        "interval95": [
+          0.0,
+          0.09375
+        ]
+      }
+    }
+  }
+}

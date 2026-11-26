@@ -21,6 +21,7 @@ def audit(selection_path):
     reached_errors = []
     negative_margins = []
     uncertified = 0
+    identical_stable = 0
     client = bullet.connect(bullet.DIRECT)
     try:
         for entry in selection["selection"]:
@@ -74,11 +75,14 @@ def audit(selection_path):
                 reached_errors.append(float(error))
                 bullet.removeBody(robot)
             if len(map_digests) != 2:
-                raise ValueError(f"Identical workspace maps at {entry['scene']}")
+                if not entry.get("allow_identical_stable_maps") or truth not in ("YY", "NN"):
+                    raise ValueError(f"Identical workspace maps at {entry['scene']}")
+                identical_stable += 1
     finally:
         bullet.disconnect(client)
     return {
         "selection_sha256": digest(selection_path), "pairs": len(hashes),
+        **({"identical_stable_maps": identical_stable} if identical_stable else {}),
         "reachable_witnesses": len(reached_errors), "max_fk_error_m": max(reached_errors, default=None),
         "unreachable_bounds": len(negative_margins), "minimum_bound_margin_m": min(negative_margins, default=None),
         **({"unknown": uncertified} if uncertified else {}),

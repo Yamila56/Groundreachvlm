@@ -1,0 +1,3330 @@
+{
+  "anchor-911361-000-A-0": {
+    "marker": [
+      210,
+      221
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-000-B-0": {
+    "marker": [
+      210,
+      221
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-000-A-1": {
+    "marker": [
+      374,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-000-B-1": {
+    "marker": [
+      374,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-001-A-0": {
+    "marker": [
+      292,
+      176
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-001-B-0": {
+    "marker": [
+      292,
+      176
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-001-A-1": {
+    "marker": [
+      313,
+      335
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-001-B-1": {
+    "marker": [
+      313,
+      335
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-002-A-0": {
+    "marker": [
+      212,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-002-B-0": {
+    "marker": [
+      212,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-002-A-1": {
+    "marker": [
+      375,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-002-B-1": {
+    "marker": [
+      375,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-003-A-0": {
+    "marker": [
+      322,
+      176
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-003-B-0": {
+    "marker": [
+      322,
+      176
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-003-A-1": {
+    "marker": [
+      308,
+      338
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-003-B-1": {
+    "marker": [
+      308,
+      338
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-004-A-0": {
+    "marker": [
+      213,
+      242
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-004-B-0": {
+    "marker": [
+      213,
+      242
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-004-A-1": {
+    "marker": [
+      376,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-004-B-1": {
+    "marker": [
+      376,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-005-A-0": {
+    "marker": [
+      332,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-005-B-0": {
+    "marker": [
+      332,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-005-A-1": {
+    "marker": [
+      342,
+      330
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-005-B-1": {
+    "marker": [
+      342,
+      330
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-006-A-0": {
+    "marker": [
+      241,
+      258
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-006-B-0": {
+    "marker": [
+      241,
+      258
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-006-A-1": {
+    "marker": [
+      408,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-006-B-1": {
+    "marker": [
+      408,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-007-A-0": {
+    "marker": [
+      307,
+      166
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-007-B-0": {
+    "marker": [
+      307,
+      166
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-007-A-1": {
+    "marker": [
+      326,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-007-B-1": {
+    "marker": [
+      326,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-008-A-0": {
+    "marker": [
+      244,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-008-B-0": {
+    "marker": [
+      244,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-008-A-1": {
+    "marker": [
+      405,
+      221
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-008-B-1": {
+    "marker": [
+      405,
+      221
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-009-A-0": {
+    "marker": [
+      339,
+      165
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-009-B-0": {
+    "marker": [
+      339,
+      165
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-009-A-1": {
+    "marker": [
+      338,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-009-B-1": {
+    "marker": [
+      338,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-010-A-0": {
+    "marker": [
+      248,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-010-B-0": {
+    "marker": [
+      248,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-010-A-1": {
+    "marker": [
+      412,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-010-B-1": {
+    "marker": [
+      412,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-011-A-0": {
+    "marker": [
+      319,
+      172
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-011-B-0": {
+    "marker": [
+      319,
+      172
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-011-A-1": {
+    "marker": [
+      298,
+      339
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-011-B-1": {
+    "marker": [
+      298,
+      339
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-012-A-0": {
+    "marker": [
+      220,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-012-B-0": {
+    "marker": [
+      220,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-012-A-1": {
+    "marker": [
+      387,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-012-B-1": {
+    "marker": [
+      387,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-013-A-0": {
+    "marker": [
+      292,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-013-B-0": {
+    "marker": [
+      292,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-013-A-1": {
+    "marker": [
+      303,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-013-B-1": {
+    "marker": [
+      303,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-014-A-0": {
+    "marker": [
+      243,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-014-B-0": {
+    "marker": [
+      243,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-014-A-1": {
+    "marker": [
+      410,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-014-B-1": {
+    "marker": [
+      410,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-015-A-0": {
+    "marker": [
+      324,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-015-B-0": {
+    "marker": [
+      324,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-015-A-1": {
+    "marker": [
+      322,
+      321
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-015-B-1": {
+    "marker": [
+      322,
+      321
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-016-A-0": {
+    "marker": [
+      230,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-016-B-0": {
+    "marker": [
+      230,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-016-A-1": {
+    "marker": [
+      394,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-016-B-1": {
+    "marker": [
+      394,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-017-A-0": {
+    "marker": [
+      292,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-017-B-0": {
+    "marker": [
+      292,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-017-A-1": {
+    "marker": [
+      298,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-017-B-1": {
+    "marker": [
+      298,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-018-A-0": {
+    "marker": [
+      236,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-018-B-0": {
+    "marker": [
+      236,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-018-A-1": {
+    "marker": [
+      397,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-018-B-1": {
+    "marker": [
+      397,
+      215
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-019-A-0": {
+    "marker": [
+      339,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-019-B-0": {
+    "marker": [
+      339,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-019-A-1": {
+    "marker": [
+      324,
+      308
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-019-B-1": {
+    "marker": [
+      324,
+      308
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-020-A-0": {
+    "marker": [
+      246,
+      265
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-020-B-0": {
+    "marker": [
+      246,
+      265
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-020-A-1": {
+    "marker": [
+      409,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-020-B-1": {
+    "marker": [
+      409,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-021-A-0": {
+    "marker": [
+      299,
+      161
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-021-B-0": {
+    "marker": [
+      299,
+      161
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-021-A-1": {
+    "marker": [
+      292,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-021-B-1": {
+    "marker": [
+      292,
+      327
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-022-A-0": {
+    "marker": [
+      229,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-022-B-0": {
+    "marker": [
+      229,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-022-A-1": {
+    "marker": [
+      396,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-022-B-1": {
+    "marker": [
+      396,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-023-A-0": {
+    "marker": [
+      323,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-023-B-0": {
+    "marker": [
+      323,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-023-A-1": {
+    "marker": [
+      319,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-023-B-1": {
+    "marker": [
+      319,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-024-A-0": {
+    "marker": [
+      223,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-024-B-0": {
+    "marker": [
+      223,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-024-A-1": {
+    "marker": [
+      386,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-024-B-1": {
+    "marker": [
+      386,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-025-A-0": {
+    "marker": [
+      311,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-025-B-0": {
+    "marker": [
+      311,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-025-A-1": {
+    "marker": [
+      310,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-025-B-1": {
+    "marker": [
+      310,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-026-A-0": {
+    "marker": [
+      226,
+      222
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-026-B-0": {
+    "marker": [
+      226,
+      222
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-026-A-1": {
+    "marker": [
+      388,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-026-B-1": {
+    "marker": [
+      388,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-027-A-0": {
+    "marker": [
+      329,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-027-B-0": {
+    "marker": [
+      329,
+      151
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-027-A-1": {
+    "marker": [
+      330,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-027-B-1": {
+    "marker": [
+      330,
+      317
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-028-A-0": {
+    "marker": [
+      213,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-028-B-0": {
+    "marker": [
+      213,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-028-A-1": {
+    "marker": [
+      379,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-028-B-1": {
+    "marker": [
+      379,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-029-A-0": {
+    "marker": [
+      292,
+      164
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-029-B-0": {
+    "marker": [
+      292,
+      164
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-029-A-1": {
+    "marker": [
+      294,
+      325
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-029-B-1": {
+    "marker": [
+      294,
+      325
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-030-A-0": {
+    "marker": [
+      222,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-030-B-0": {
+    "marker": [
+      222,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-030-A-1": {
+    "marker": [
+      386,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-030-B-1": {
+    "marker": [
+      386,
+      229
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-031-A-0": {
+    "marker": [
+      317,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-031-B-0": {
+    "marker": [
+      317,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-031-A-1": {
+    "marker": [
+      313,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-031-B-1": {
+    "marker": [
+      313,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-032-A-0": {
+    "marker": [
+      260,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-032-B-0": {
+    "marker": [
+      260,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-032-A-1": {
+    "marker": [
+      423,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-032-B-1": {
+    "marker": [
+      423,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-033-A-0": {
+    "marker": [
+      345,
+      160
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-033-B-0": {
+    "marker": [
+      345,
+      160
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-033-A-1": {
+    "marker": [
+      347,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-033-B-1": {
+    "marker": [
+      347,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-034-A-0": {
+    "marker": [
+      221,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-034-B-0": {
+    "marker": [
+      221,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-034-A-1": {
+    "marker": [
+      389,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-034-B-1": {
+    "marker": [
+      389,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-035-A-0": {
+    "marker": [
+      305,
+      148
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-035-B-0": {
+    "marker": [
+      305,
+      148
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-035-A-1": {
+    "marker": [
+      325,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-035-B-1": {
+    "marker": [
+      325,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-036-A-0": {
+    "marker": [
+      251,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-036-B-0": {
+    "marker": [
+      251,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-036-A-1": {
+    "marker": [
+      415,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-036-B-1": {
+    "marker": [
+      415,
+      253
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-037-A-0": {
+    "marker": [
+      333,
+      147
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-037-B-0": {
+    "marker": [
+      333,
+      147
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-037-A-1": {
+    "marker": [
+      320,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-037-B-1": {
+    "marker": [
+      320,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-038-A-0": {
+    "marker": [
+      236,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-038-B-0": {
+    "marker": [
+      236,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-038-A-1": {
+    "marker": [
+      402,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-038-B-1": {
+    "marker": [
+      402,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-039-A-0": {
+    "marker": [
+      322,
+      163
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-039-B-0": {
+    "marker": [
+      322,
+      163
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-039-A-1": {
+    "marker": [
+      331,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-039-B-1": {
+    "marker": [
+      331,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-040-A-0": {
+    "marker": [
+      254,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-040-B-0": {
+    "marker": [
+      254,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-040-A-1": {
+    "marker": [
+      418,
+      255
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-040-B-1": {
+    "marker": [
+      418,
+      255
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-041-A-0": {
+    "marker": [
+      324,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-041-B-0": {
+    "marker": [
+      324,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-041-A-1": {
+    "marker": [
+      320,
+      312
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-041-B-1": {
+    "marker": [
+      320,
+      312
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-042-A-0": {
+    "marker": [
+      229,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-042-B-0": {
+    "marker": [
+      229,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-042-A-1": {
+    "marker": [
+      391,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-042-B-1": {
+    "marker": [
+      391,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-043-A-0": {
+    "marker": [
+      332,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-043-B-0": {
+    "marker": [
+      332,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-043-A-1": {
+    "marker": [
+      337,
+      326
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-043-B-1": {
+    "marker": [
+      337,
+      326
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-044-A-0": {
+    "marker": [
+      263,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-044-B-0": {
+    "marker": [
+      263,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-044-A-1": {
+    "marker": [
+      426,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-044-B-1": {
+    "marker": [
+      426,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-045-A-0": {
+    "marker": [
+      324,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-045-B-0": {
+    "marker": [
+      324,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-045-A-1": {
+    "marker": [
+      308,
+      310
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-045-B-1": {
+    "marker": [
+      308,
+      310
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-046-A-0": {
+    "marker": [
+      238,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-046-B-0": {
+    "marker": [
+      238,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-046-A-1": {
+    "marker": [
+      403,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-046-B-1": {
+    "marker": [
+      403,
+      234
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-047-A-0": {
+    "marker": [
+      302,
+      152
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-047-B-0": {
+    "marker": [
+      302,
+      152
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-047-A-1": {
+    "marker": [
+      322,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-047-B-1": {
+    "marker": [
+      322,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-048-A-0": {
+    "marker": [
+      221,
+      266
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-048-B-0": {
+    "marker": [
+      221,
+      266
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-048-A-1": {
+    "marker": [
+      384,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-048-B-1": {
+    "marker": [
+      384,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-049-A-0": {
+    "marker": [
+      343,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-049-B-0": {
+    "marker": [
+      343,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-049-A-1": {
+    "marker": [
+      324,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-049-B-1": {
+    "marker": [
+      324,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-050-A-0": {
+    "marker": [
+      252,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-050-B-0": {
+    "marker": [
+      252,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-050-A-1": {
+    "marker": [
+      421,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-050-B-1": {
+    "marker": [
+      421,
+      247
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-051-A-0": {
+    "marker": [
+      310,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-051-B-0": {
+    "marker": [
+      310,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-051-A-1": {
+    "marker": [
+      315,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-051-B-1": {
+    "marker": [
+      315,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-052-A-0": {
+    "marker": [
+      243,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-052-B-0": {
+    "marker": [
+      243,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-052-A-1": {
+    "marker": [
+      409,
+      208
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-052-B-1": {
+    "marker": [
+      409,
+      208
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-053-A-0": {
+    "marker": [
+      348,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-053-B-0": {
+    "marker": [
+      348,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-053-A-1": {
+    "marker": [
+      339,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-053-B-1": {
+    "marker": [
+      339,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-054-A-0": {
+    "marker": [
+      222,
+      216
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-054-B-0": {
+    "marker": [
+      222,
+      216
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-054-A-1": {
+    "marker": [
+      388,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-054-B-1": {
+    "marker": [
+      388,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-055-A-0": {
+    "marker": [
+      350,
+      165
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-055-B-0": {
+    "marker": [
+      350,
+      165
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-055-A-1": {
+    "marker": [
+      329,
+      331
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-055-B-1": {
+    "marker": [
+      329,
+      331
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-056-A-0": {
+    "marker": [
+      252,
+      256
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-056-B-0": {
+    "marker": [
+      252,
+      256
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-056-A-1": {
+    "marker": [
+      418,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-056-B-1": {
+    "marker": [
+      418,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-057-A-0": {
+    "marker": [
+      334,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-057-B-0": {
+    "marker": [
+      334,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-057-A-1": {
+    "marker": [
+      333,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-057-B-1": {
+    "marker": [
+      333,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-058-A-0": {
+    "marker": [
+      254,
+      259
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-058-B-0": {
+    "marker": [
+      254,
+      259
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-058-A-1": {
+    "marker": [
+      417,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-058-B-1": {
+    "marker": [
+      417,
+      239
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-059-A-0": {
+    "marker": [
+      313,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-059-B-0": {
+    "marker": [
+      313,
+      150
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-059-A-1": {
+    "marker": [
+      312,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-059-B-1": {
+    "marker": [
+      312,
+      316
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-060-A-0": {
+    "marker": [
+      246,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-060-B-0": {
+    "marker": [
+      246,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-060-A-1": {
+    "marker": [
+      410,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-060-B-1": {
+    "marker": [
+      410,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-061-A-0": {
+    "marker": [
+      341,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-061-B-0": {
+    "marker": [
+      341,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-061-A-1": {
+    "marker": [
+      329,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-061-B-1": {
+    "marker": [
+      329,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-062-A-0": {
+    "marker": [
+      239,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-062-B-0": {
+    "marker": [
+      239,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-062-A-1": {
+    "marker": [
+      404,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-062-B-1": {
+    "marker": [
+      404,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-063-A-0": {
+    "marker": [
+      332,
+      175
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-063-B-0": {
+    "marker": [
+      332,
+      175
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-063-A-1": {
+    "marker": [
+      339,
+      342
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-063-B-1": {
+    "marker": [
+      339,
+      342
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-064-A-0": {
+    "marker": [
+      229,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-064-B-0": {
+    "marker": [
+      229,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-064-A-1": {
+    "marker": [
+      399,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-064-B-1": {
+    "marker": [
+      399,
+      252
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-065-A-0": {
+    "marker": [
+      327,
+      142
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-065-B-0": {
+    "marker": [
+      327,
+      142
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-065-A-1": {
+    "marker": [
+      324,
+      312
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-065-B-1": {
+    "marker": [
+      324,
+      312
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-066-A-0": {
+    "marker": [
+      224,
+      241
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-066-B-0": {
+    "marker": [
+      224,
+      241
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-066-A-1": {
+    "marker": [
+      390,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-066-B-1": {
+    "marker": [
+      390,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-067-A-0": {
+    "marker": [
+      333,
+      143
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-067-B-0": {
+    "marker": [
+      333,
+      143
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-067-A-1": {
+    "marker": [
+      340,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-067-B-1": {
+    "marker": [
+      340,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-068-A-0": {
+    "marker": [
+      243,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-068-B-0": {
+    "marker": [
+      243,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-068-A-1": {
+    "marker": [
+      411,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-068-B-1": {
+    "marker": [
+      411,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-069-A-0": {
+    "marker": [
+      318,
+      152
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-069-B-0": {
+    "marker": [
+      318,
+      152
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-069-A-1": {
+    "marker": [
+      318,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-069-B-1": {
+    "marker": [
+      318,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-070-A-0": {
+    "marker": [
+      234,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-070-B-0": {
+    "marker": [
+      234,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-070-A-1": {
+    "marker": [
+      398,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-070-B-1": {
+    "marker": [
+      398,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-071-A-0": {
+    "marker": [
+      332,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-071-B-0": {
+    "marker": [
+      332,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-071-A-1": {
+    "marker": [
+      347,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-071-B-1": {
+    "marker": [
+      347,
+      323
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-072-A-0": {
+    "marker": [
+      230,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-072-B-0": {
+    "marker": [
+      230,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-072-A-1": {
+    "marker": [
+      398,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-072-B-1": {
+    "marker": [
+      398,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-073-A-0": {
+    "marker": [
+      347,
+      136
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-073-B-0": {
+    "marker": [
+      347,
+      136
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-073-A-1": {
+    "marker": [
+      336,
+      302
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-073-B-1": {
+    "marker": [
+      336,
+      302
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-074-A-0": {
+    "marker": [
+      242,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-074-B-0": {
+    "marker": [
+      242,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-074-A-1": {
+    "marker": [
+      404,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-074-B-1": {
+    "marker": [
+      404,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-075-A-0": {
+    "marker": [
+      310,
+      138
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-075-B-0": {
+    "marker": [
+      310,
+      138
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-075-A-1": {
+    "marker": [
+      299,
+      303
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-075-B-1": {
+    "marker": [
+      299,
+      303
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-076-A-0": {
+    "marker": [
+      224,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-076-B-0": {
+    "marker": [
+      224,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-076-A-1": {
+    "marker": [
+      388,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-076-B-1": {
+    "marker": [
+      388,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-077-A-0": {
+    "marker": [
+      338,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-077-B-0": {
+    "marker": [
+      338,
+      157
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-077-A-1": {
+    "marker": [
+      336,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-077-B-1": {
+    "marker": [
+      336,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-078-A-0": {
+    "marker": [
+      222,
+      261
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-078-B-0": {
+    "marker": [
+      222,
+      261
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-078-A-1": {
+    "marker": [
+      387,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-078-B-1": {
+    "marker": [
+      387,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-079-A-0": {
+    "marker": [
+      342,
+      160
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-079-B-0": {
+    "marker": [
+      342,
+      160
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-079-A-1": {
+    "marker": [
+      321,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-079-B-1": {
+    "marker": [
+      321,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-080-A-0": {
+    "marker": [
+      250,
+      254
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-080-B-0": {
+    "marker": [
+      250,
+      254
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-080-A-1": {
+    "marker": [
+      412,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-080-B-1": {
+    "marker": [
+      412,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-081-A-0": {
+    "marker": [
+      338,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-081-B-0": {
+    "marker": [
+      338,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-081-A-1": {
+    "marker": [
+      316,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-081-B-1": {
+    "marker": [
+      316,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-082-A-0": {
+    "marker": [
+      250,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-082-B-0": {
+    "marker": [
+      250,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-082-A-1": {
+    "marker": [
+      413,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-082-B-1": {
+    "marker": [
+      413,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-083-A-0": {
+    "marker": [
+      298,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-083-B-0": {
+    "marker": [
+      298,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-083-A-1": {
+    "marker": [
+      303,
+      329
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-083-B-1": {
+    "marker": [
+      303,
+      329
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-084-A-0": {
+    "marker": [
+      241,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-084-B-0": {
+    "marker": [
+      241,
+      223
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-084-A-1": {
+    "marker": [
+      406,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-084-B-1": {
+    "marker": [
+      406,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-085-A-0": {
+    "marker": [
+      346,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-085-B-0": {
+    "marker": [
+      346,
+      155
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-085-A-1": {
+    "marker": [
+      350,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-085-B-1": {
+    "marker": [
+      350,
+      318
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-086-A-0": {
+    "marker": [
+      256,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-086-B-0": {
+    "marker": [
+      256,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-086-A-1": {
+    "marker": [
+      416,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-086-B-1": {
+    "marker": [
+      416,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-087-A-0": {
+    "marker": [
+      322,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-087-B-0": {
+    "marker": [
+      322,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-087-A-1": {
+    "marker": [
+      323,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-087-B-1": {
+    "marker": [
+      323,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-088-A-0": {
+    "marker": [
+      262,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-088-B-0": {
+    "marker": [
+      262,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-088-A-1": {
+    "marker": [
+      423,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-088-B-1": {
+    "marker": [
+      423,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-089-A-0": {
+    "marker": [
+      328,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-089-B-0": {
+    "marker": [
+      328,
+      144
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-089-A-1": {
+    "marker": [
+      318,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-089-B-1": {
+    "marker": [
+      318,
+      309
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-090-A-0": {
+    "marker": [
+      225,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-090-B-0": {
+    "marker": [
+      225,
+      250
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-090-A-1": {
+    "marker": [
+      390,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-090-B-1": {
+    "marker": [
+      390,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-091-A-0": {
+    "marker": [
+      310,
+      139
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-091-B-0": {
+    "marker": [
+      310,
+      139
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-091-A-1": {
+    "marker": [
+      293,
+      308
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-091-B-1": {
+    "marker": [
+      293,
+      308
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-092-A-0": {
+    "marker": [
+      254,
+      212
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-092-B-0": {
+    "marker": [
+      254,
+      212
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-092-A-1": {
+    "marker": [
+      420,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-092-B-1": {
+    "marker": [
+      420,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-093-A-0": {
+    "marker": [
+      322,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-093-B-0": {
+    "marker": [
+      322,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-093-A-1": {
+    "marker": [
+      326,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-093-B-1": {
+    "marker": [
+      326,
+      324
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-094-A-0": {
+    "marker": [
+      222,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-094-B-0": {
+    "marker": [
+      222,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-094-A-1": {
+    "marker": [
+      391,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-094-B-1": {
+    "marker": [
+      391,
+      227
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-095-A-0": {
+    "marker": [
+      310,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-095-B-0": {
+    "marker": [
+      310,
+      156
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-095-A-1": {
+    "marker": [
+      323,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-095-B-1": {
+    "marker": [
+      323,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-096-A-0": {
+    "marker": [
+      223,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-096-B-0": {
+    "marker": [
+      223,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-096-A-1": {
+    "marker": [
+      388,
+      242
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-096-B-1": {
+    "marker": [
+      388,
+      242
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-097-A-0": {
+    "marker": [
+      316,
+      149
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-097-B-0": {
+    "marker": [
+      316,
+      149
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-097-A-1": {
+    "marker": [
+      307,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-097-B-1": {
+    "marker": [
+      307,
+      314
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-098-A-0": {
+    "marker": [
+      216,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-098-B-0": {
+    "marker": [
+      216,
+      248
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-098-A-1": {
+    "marker": [
+      383,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-098-B-1": {
+    "marker": [
+      383,
+      233
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-099-A-0": {
+    "marker": [
+      325,
+      130
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-099-B-0": {
+    "marker": [
+      325,
+      130
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-099-A-1": {
+    "marker": [
+      342,
+      296
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-099-B-1": {
+    "marker": [
+      342,
+      296
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-100-A-0": {
+    "marker": [
+      266,
+      257
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-100-B-0": {
+    "marker": [
+      266,
+      257
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-100-A-1": {
+    "marker": [
+      434,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-100-B-1": {
+    "marker": [
+      434,
+      243
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-101-A-0": {
+    "marker": [
+      332,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-101-B-0": {
+    "marker": [
+      332,
+      153
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-101-A-1": {
+    "marker": [
+      310,
+      313
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-101-B-1": {
+    "marker": [
+      310,
+      313
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-102-A-0": {
+    "marker": [
+      249,
+      209
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-102-B-0": {
+    "marker": [
+      249,
+      209
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-102-A-1": {
+    "marker": [
+      409,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-102-B-1": {
+    "marker": [
+      409,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-103-A-0": {
+    "marker": [
+      333,
+      171
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-103-B-0": {
+    "marker": [
+      333,
+      171
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911361-103-A-1": {
+    "marker": [
+      336,
+      340
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911361-103-B-1": {
+    "marker": [
+      336,
+      340
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  }
+}

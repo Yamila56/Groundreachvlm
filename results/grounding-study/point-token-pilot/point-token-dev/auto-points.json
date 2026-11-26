@@ -1,0 +1,642 @@
+{
+  "anchor-911363-000-A-0": {
+    "marker": [
+      239,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-000-B-0": {
+    "marker": [
+      239,
+      236
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-000-A-1": {
+    "marker": [
+      400,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-000-B-1": {
+    "marker": [
+      400,
+      225
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-001-A-0": {
+    "marker": [
+      311,
+      172
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-001-B-0": {
+    "marker": [
+      311,
+      172
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-001-A-1": {
+    "marker": [
+      324,
+      338
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-001-B-1": {
+    "marker": [
+      324,
+      338
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-002-A-0": {
+    "marker": [
+      242,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-002-B-0": {
+    "marker": [
+      242,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-002-A-1": {
+    "marker": [
+      407,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-002-B-1": {
+    "marker": [
+      407,
+      231
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-003-A-0": {
+    "marker": [
+      283,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-003-B-0": {
+    "marker": [
+      283,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-003-A-1": {
+    "marker": [
+      285,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-003-B-1": {
+    "marker": [
+      285,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-004-A-0": {
+    "marker": [
+      260,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-004-B-0": {
+    "marker": [
+      260,
+      237
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-004-A-1": {
+    "marker": [
+      424,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-004-B-1": {
+    "marker": [
+      424,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-005-A-0": {
+    "marker": [
+      330,
+      167
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-005-B-0": {
+    "marker": [
+      330,
+      167
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-005-A-1": {
+    "marker": [
+      308,
+      334
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-005-B-1": {
+    "marker": [
+      308,
+      334
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-006-A-0": {
+    "marker": [
+      256,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-006-B-0": {
+    "marker": [
+      256,
+      235
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-006-A-1": {
+    "marker": [
+      419,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-006-B-1": {
+    "marker": [
+      419,
+      238
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-007-A-0": {
+    "marker": [
+      285,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-007-B-0": {
+    "marker": [
+      285,
+      158
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-007-A-1": {
+    "marker": [
+      304,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-007-B-1": {
+    "marker": [
+      304,
+      319
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-008-A-0": {
+    "marker": [
+      231,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-008-B-0": {
+    "marker": [
+      231,
+      226
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-008-A-1": {
+    "marker": [
+      400,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-008-B-1": {
+    "marker": [
+      400,
+      244
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-009-A-0": {
+    "marker": [
+      314,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-009-B-0": {
+    "marker": [
+      314,
+      162
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-009-A-1": {
+    "marker": [
+      319,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-009-B-1": {
+    "marker": [
+      319,
+      328
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-010-A-0": {
+    "marker": [
+      222,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-010-B-0": {
+    "marker": [
+      222,
+      240
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-010-A-1": {
+    "marker": [
+      388,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-010-B-1": {
+    "marker": [
+      388,
+      246
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-011-A-0": {
+    "marker": [
+      294,
+      178
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-011-B-0": {
+    "marker": [
+      294,
+      178
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-011-A-1": {
+    "marker": [
+      307,
+      345
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-011-B-1": {
+    "marker": [
+      307,
+      345
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-012-A-0": {
+    "marker": [
+      241,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-012-B-0": {
+    "marker": [
+      241,
+      232
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-012-A-1": {
+    "marker": [
+      408,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-012-B-1": {
+    "marker": [
+      408,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-013-A-0": {
+    "marker": [
+      323,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-013-B-0": {
+    "marker": [
+      323,
+      159
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-013-A-1": {
+    "marker": [
+      310,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-013-B-1": {
+    "marker": [
+      310,
+      322
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-014-A-0": {
+    "marker": [
+      241,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-014-B-0": {
+    "marker": [
+      241,
+      230
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-014-A-1": {
+    "marker": [
+      402,
+      241
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-014-B-1": {
+    "marker": [
+      402,
+      241
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-015-A-0": {
+    "marker": [
+      308,
+      164
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-015-B-0": {
+    "marker": [
+      308,
+      164
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-015-A-1": {
+    "marker": [
+      300,
+      329
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-015-B-1": {
+    "marker": [
+      300,
+      329
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-016-A-0": {
+    "marker": [
+      235,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-016-B-0": {
+    "marker": [
+      235,
+      245
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-016-A-1": {
+    "marker": [
+      403,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-016-B-1": {
+    "marker": [
+      403,
+      249
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-017-A-0": {
+    "marker": [
+      325,
+      146
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-017-B-0": {
+    "marker": [
+      325,
+      146
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-017-A-1": {
+    "marker": [
+      319,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-017-B-1": {
+    "marker": [
+      319,
+      315
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-018-A-0": {
+    "marker": [
+      222,
+      219
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-018-B-0": {
+    "marker": [
+      222,
+      219
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-018-A-1": {
+    "marker": [
+      387,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-018-B-1": {
+    "marker": [
+      387,
+      228
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-019-A-0": {
+    "marker": [
+      321,
+      170
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-019-B-0": {
+    "marker": [
+      321,
+      170
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  },
+  "anchor-911363-019-A-1": {
+    "marker": [
+      332,
+      333
+    ],
+    "correct_marker": true,
+    "prediction": "Y"
+  },
+  "anchor-911363-019-B-1": {
+    "marker": [
+      332,
+      333
+    ],
+    "correct_marker": true,
+    "prediction": "N"
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "coordinates_crop": {
+    "anchor-911351-000-A-0": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "N",
+      "margin": -0.125,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "N",
+      "margin": -0.125,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "N",
+      "margin": -0.125,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "N",
+      "margin": -0.125,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "N",
+      "margin": -0.25,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y",
+      "margin": 0.125,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y",
+      "margin": 0.125,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "Y",
+      "margin": 0.125,
+      "grid_index": [
+        8,
+        3
+      ]
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "N",
+      "margin": 0.0,
+      "grid_index": [
+        8,
+        3
+      ]
+    }
+  },
+  "direct_point": {
+    "anchor-911351-000-A-0": {
+      "answer": "Y",
+      "margin": 0.90625,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "Y",
+      "margin": 1.6875,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "Y",
+      "margin": 1.9375,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "Y",
+      "margin": 2.25,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "Y",
+      "margin": 2.5,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "Y",
+      "margin": 2.6875,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "Y",
+      "margin": 0.125,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "Y",
+      "margin": 2.375,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "Y",
+      "margin": 2.0625,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "Y",
+      "margin": 2.21875,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "Y",
+      "margin": 0.84375,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "Y",
+      "margin": 1.3125,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y",
+      "margin": 0.8125,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y",
+      "margin": 1.375,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "Y",
+      "margin": 1.625,
+      "grid_index": [
+        8,
+        3
+      ]
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "Y",
+      "margin": 2.75,
+      "grid_index": [
+        8,
+        3
+      ]
+    }
+  },
+  "direct_mean": {
+    "anchor-911351-000-A-0": {
+      "answer": "Y",
+      "margin": 2.75,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "Y",
+      "margin": 3.0,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "Y",
+      "margin": 2.8125,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "Y",
+      "margin": 2.75,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "Y",
+      "margin": 0.5,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "Y",
+      "margin": 2.1875,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "Y",
+      "margin": 0.8125,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "Y",
+      "margin": 2.3125,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "Y",
+      "margin": 3.0,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "Y",
+      "margin": 3.84375,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "Y",
+      "margin": 3.09375,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "Y",
+      "margin": 3.65625,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y",
+      "margin": 1.875,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y",
+      "margin": 3.25,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "Y",
+      "margin": 1.78125,
+      "grid_index": [
+        8,
+        3
+      ]
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "Y",
+      "margin": 3.375,
+      "grid_index": [
+        8,
+        3
+      ]
+    }
+  },
+  "pixel_readout": {
+    "anchor-911351-000-A-0": {
+      "answer": "N"
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "Y"
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "Y"
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "N"
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "Y"
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "Y"
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "N"
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "Y"
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y"
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "N"
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "Y"
+    }
+  },
+  "adapted_mean": {
+    "anchor-911351-000-A-0": {
+      "answer": "Y",
+      "margin": 2.0,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "Y",
+      "margin": 2.25,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "Y",
+      "margin": 2.25,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "Y",
+      "margin": 2.125,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "Y",
+      "margin": 2.0,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "Y",
+      "margin": 1.75,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "Y",
+      "margin": 2.0,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "Y",
+      "margin": 1.75,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "Y",
+      "margin": 2.125,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "Y",
+      "margin": 3.1875,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "Y",
+      "margin": 2.125,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "Y",
+      "margin": 3.0,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y",
+      "margin": 2.375,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y",
+      "margin": 2.8125,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "Y",
+      "margin": 2.3125,
+      "grid_index": [
+        8,
+        3
+      ]
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "Y",
+      "margin": 3.125,
+      "grid_index": [
+        8,
+        3
+      ]
+    }
+  },
+  "adapted_point": {
+    "anchor-911351-000-A-0": {
+      "answer": "Y",
+      "margin": 0.96875,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-B-0": {
+      "answer": "Y",
+      "margin": 2.0,
+      "grid_index": [
+        3,
+        2
+      ]
+    },
+    "anchor-911351-000-A-1": {
+      "answer": "Y",
+      "margin": 4.5625,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-000-B-1": {
+      "answer": "Y",
+      "margin": 3.0,
+      "grid_index": [
+        3,
+        8
+      ]
+    },
+    "anchor-911351-001-A-0": {
+      "answer": "Y",
+      "margin": 3.15625,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-B-0": {
+      "answer": "N",
+      "margin": -0.625,
+      "grid_index": [
+        3,
+        3
+      ]
+    },
+    "anchor-911351-001-A-1": {
+      "answer": "Y",
+      "margin": 1.625,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-001-B-1": {
+      "answer": "Y",
+      "margin": 1.5,
+      "grid_index": [
+        7,
+        3
+      ]
+    },
+    "anchor-911351-002-A-0": {
+      "answer": "Y",
+      "margin": 3.96875,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-B-0": {
+      "answer": "Y",
+      "margin": 1.9375,
+      "grid_index": [
+        4,
+        2
+      ]
+    },
+    "anchor-911351-002-A-1": {
+      "answer": "Y",
+      "margin": 1.25,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-002-B-1": {
+      "answer": "Y",
+      "margin": 1.9375,
+      "grid_index": [
+        2,
+        7
+      ]
+    },
+    "anchor-911351-003-A-0": {
+      "answer": "Y",
+      "margin": 3.5,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-B-0": {
+      "answer": "Y",
+      "margin": 1.59375,
+      "grid_index": [
+        2,
+        3
+      ]
+    },
+    "anchor-911351-003-A-1": {
+      "answer": "N",
+      "margin": -2.375,
+      "grid_index": [
+        8,
+        3
+      ]
+    },
+    "anchor-911351-003-B-1": {
+      "answer": "Y",
+      "margin": 4.5625,
+      "grid_index": [
+        8,
+        3
+      ]
+    }
+  }
+}

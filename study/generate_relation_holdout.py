@@ -151,8 +151,11 @@ def build(output, count, seed):
     save_split(output, seed, rows, detector, references)
 
 
-def build_anchor_switch(output, count, seed, confirmation, physical_probe=False):
-    output.mkdir(parents=True, exist_ok=False)
+def build_anchor_switch(output, count, seed, confirmation, physical_probe=False, balanced_points=False,
+                        resume=False, vary_pattern_direction=False):
+    if resume and (output / "manifest.json").exists():
+        raise ValueError("Resume requires an unfinished output directory")
+    output.mkdir(parents=True, exist_ok=resume)
     rng = np.random.default_rng(seed)
     rows, detector = [], []
     references = [[], []]
@@ -189,7 +192,7 @@ def build_anchor_switch(output, count, seed, confirmation, physical_probe=False)
         center = rng.uniform([.12, -.055], [.40, .055])
         scene = f"anchor-{seed}-{layout:03}"
         directory = output / scene
-        directory.mkdir()
+        directory.mkdir(exist_ok=resume)
         plural, shape, color, names = assets[(layout // 4) % len(assets)]
         noun = plural.removesuffix("es") if shape == "box" else plural.removesuffix("s")
         anchors = names if rng.integers(2) else names[::-1]
@@ -203,20 +206,46 @@ def build_anchor_switch(output, count, seed, confirmation, physical_probe=False)
             else:
                 tint, geometry = name.split()
                 objects[name], shapes[name] = ((*pos, .245), colors[tint]), geometry
-        bases = [[*(center + offset * basis[axis]), .20] for offset in (-.64, .64)]
+        pattern = "legacy"
+        if balanced_points:
+            pattern_index = (layout + layout//4) % 4 if vary_pattern_direction else layout % 4
+            pattern = ("cross", "both_reachable", "both_unreachable", "workspace_flip")[pattern_index]
+            along, across = basis[axis], basis[1-axis]
+            side = float(rng.choice([-1, 1]))
+            offsets = {
+                "cross": (-.74*along, .74*along),
+                "both_reachable": (-.06*along, .08*along),
+                "both_unreachable": (side*1.45*across, -side*1.45*across),
+                "workspace_flip": (.02*along, side*1.45*across),
+            }[pattern]
+            bases = [[*(center+offset), .20] for offset in offsets]
+        else:
+            bases = [[*(center + offset * basis[axis]), .20] for offset in (-.64, .64)]
         if rng.integers(2):
             bases.reverse()
-        generate_pair(directory, objects_layout=objects, scene_id=scene, bases=bases, camera_yaw=yaw,
-                      shapes=shapes, point_quantile=float(rng.choice([.38, .5, .62])))
-        fixture = json.loads((directory / "paired_pilot.json").read_text(encoding="utf-8"))
+        fixture_path = directory / "paired_pilot.json"
+        quantile = float(rng.choice([.38, .5, .62]))
+        if not resume or not fixture_path.is_file():
+            generate_pair(directory, objects_layout=objects, scene_id=scene, bases=bases, camera_yaw=yaw,
+                          shapes=shapes, point_quantile=quantile)
+        fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
+        if not np.array_equal(bases, [c["base_m"] for c in fixture["configurations"].values()]):
+            raise ValueError(f"Existing workspace poses differ for {scene}")
         positive = int(direction > 0)
         queries = [(target_names[i + positive], noun, anchor, terms[axis][positive], axis, direction, True)
                    for i, anchor in enumerate(anchors)]
+        if balanced_points:
+            queries = [(target_names[2*i], noun, anchor, terms[axis][i], axis, 2*i-1, True)
+                       for i, anchor in enumerate(anchors)]
         paired_rows, detector_rows, certificates = collect(output, scene, layout, yaw, target_names, queries, fixture)
+        if pattern == "both_unreachable":
+            for certificate in certificates:
+                certificate["allow_identical_stable_maps"] = True
         chromatic = "same-anchor-color" if anchors[0].split()[0] == anchors[1].split()[0] else (
             "target-anchor-color-match" if noun.split()[0] in (anchor.split()[0] for anchor in anchors) else
             "distinct-colors")
-        rows.extend(dict(row, anchor_palette=chromatic) for row in paired_rows)
+        rows.extend(dict(row, anchor_palette=chromatic, **({"layout_pattern": pattern} if balanced_points else {}))
+                    for row in paired_rows)
         detector.extend(detector_rows)
         for collection, certificate in zip(references, certificates, strict=True):
             collection.append(certificate)
@@ -230,6 +259,9 @@ if __name__ == "__main__":
     parser.add_argument("--count", type=int, required=True)
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--anchor-switch", action="store_true")
+    parser.add_argument("--balanced-points", action="store_true")
+    parser.add_argument("--vary-pattern-direction", action="store_true")
+    parser.add_argument("--resume-balanced-points", action="store_true")
     asset_set = parser.add_mutually_exclusive_group()
     asset_set.add_argument("--confirmation", action="store_true")
     asset_set.add_argument("--physical-probe", action="store_true")
@@ -238,7 +270,15 @@ if __name__ == "__main__":
     sys.path.insert(0, str(SIMULATOR))
     if (args.confirmation or args.physical_probe) and not args.anchor_switch:
         parser.error("A custom anchor asset set requires --anchor-switch")
+    if args.balanced_points and not args.anchor_switch:
+        parser.error("--balanced-points requires --anchor-switch")
+    if args.resume_balanced_points and not args.balanced_points:
+        parser.error("--resume-balanced-points requires --balanced-points")
+    if args.vary_pattern_direction and not args.balanced_points:
+        parser.error("--vary-pattern-direction requires --balanced-points")
     if args.anchor_switch:
-        build_anchor_switch(args.output.resolve(), args.count, args.seed, args.confirmation, args.physical_probe)
+        build_anchor_switch(args.output.resolve(), args.count, args.seed, args.confirmation,
+                            args.physical_probe, args.balanced_points, args.resume_balanced_points,
+                            args.vary_pattern_direction)
     else:
         build(args.output.resolve(), args.count, args.seed)
