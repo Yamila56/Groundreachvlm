@@ -1,0 +1,13 @@
+{
+  "model_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+  "seed": 29,
+  "epochs": 1,
+  "limit": null,
+  "manifest_hashes": {
+    "train": "c34dc200b1553ea0735bf4736b3652adfe762cfccfbbd8a9db9720977aa64b2d",
+    "test": "a4b723345c4e91542945e40c77a8961b54dc3e3c44bf4923de6d824a320b849e"
+  },
+  "heads_from": "results/grounding-study/point-token-pilot/point-token-automatic-permuted",
+  "point_source": "automatic",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct"
+}

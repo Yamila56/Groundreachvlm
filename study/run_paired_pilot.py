@@ -5,12 +5,16 @@ import hashlib
 import json
 import os
 import sys
-import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import cv2
 import numpy as np
 import pybullet as bullet
+
+if not __package__:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from groundreach.geometry.reachability import workspace_bound as urdf_workspace_bound
 
 ROOT = Path(__file__).resolve().parents[1]
 UPSTREAM = Path(os.environ.get("PHYSVLM_UPSTREAM", str(ROOT))).resolve()
@@ -21,19 +25,7 @@ TOLERANCE = 0.01
 
 
 def workspace_bound(base):
-    joints = {
-        joint.find("child").get("link"): joint for joint in ET.parse(URDF).getroot().findall("joint")
-    }
-    chain = []
-    link = TOOL_LINK
-    while link in joints:
-        joint = joints[link]
-        if joint.get("type") not in {"revolute", "fixed"}:
-            raise ValueError("Panda bound requires a chain without prismatic joints")
-        origin = joint.find("origin")
-        chain.append(np.fromstring(origin.get("xyz", "0 0 0") if origin is not None else "0 0 0", sep=" "))
-        link = joint.find("parent").get("link")
-    return base + chain[-1], sum(np.linalg.norm(offset) for offset in chain[:-1])
+    return urdf_workspace_bound(base, URDF, TOOL_LINK)
 
 
 def create_box(center, half_extents, color):

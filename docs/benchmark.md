@@ -16,7 +16,7 @@ Replaying 70 Panda scenes yields **70/70 byte-identical S-P Map files**. The geo
 
 The original radial labels differ from the sampled-workspace labels at **15/128** designated visible points. Three of the 64 radial positives have no visible point within the workspace-cloud threshold. The designated pixel is the valid instance pixel closest to the pixel-coordinate median. Its mask-based selection uses simulator annotations for evaluation.
 
-An independent run uses 27 additional scenes and 48 questions. It reproduces all 27 map files byte for byte and reaches 99.85% pixel agreement. Two of its 48 designated points disagree with the radial labels. The size of this discrepancy varies across scene draws. [Independent replay](results/grounding-study/source-map-geometry-replication.json)
+An independent run uses 27 additional scenes and 48 questions. It reproduces all 27 map files byte for byte and reaches 99.85% pixel agreement. Two of its 48 designated points disagree with the radial labels. The size of this discrepancy varies across scene draws. [Independent replay](../results/grounding-study/source-map-geometry-replication.json)
 
 Re-scoring the same saved answers against both definitions illustrates the effect of label choice. The models answered the original object-level question in every case.
 
@@ -28,4 +28,4 @@ Re-scoring the same saved answers against both definitions illustrates the effec
 
 The retrospective point agreement quantifies how much the label definition affects this comparison. A point-specific benchmark can explicitly designate the queried point and use separate IK certificates.
 
-[Replay data and PCD hash](results/grounding-study/source-map-geometry.json) · [Replay script](study/audit_source_map_geometry.py) · [Readout results](results/grounding-study/learned-reranker.json)
+[Replay data and PCD hash](../results/grounding-study/source-map-geometry.json) · [Replay script](../study/audit_source_map_geometry.py) · [Readout results](../results/grounding-study/learned-reranker.json)

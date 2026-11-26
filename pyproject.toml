@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groundreach"
+version = "0.1.0"
+description = "Point-conditioned workspace map readout for frozen vision-language models"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy", "Pillow"]
+
+[project.optional-dependencies]
+vlm = ["torch", "transformers==4.57.1", "torchvision"]
+simulation = ["pybullet==3.2.7", "scipy", "opencv-python-headless", "pandas", "openpyxl", "tqdm", "open3d==0.20.0"]
+figures = ["matplotlib"]
+test = ["pytest", "torch"]
+
+[project.scripts]
+groundreach-point-token = "groundreach.cli:point_token"
+groundreach-reproduce = "groundreach.cli:reproduce"
+
+[tool.setuptools.packages.find]
+include = ["groundreach*"]

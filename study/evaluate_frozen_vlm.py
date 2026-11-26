@@ -10,13 +10,14 @@ from pathlib import Path
 
 from PIL import Image, ImageChops
 
-LEGEND = (
-    "Image 1 is the RGB scene. Image 2 is a spatial map aligned pixel-for-pixel with it. "
-    "Small black marks in image 1 identify the points to check on the object surfaces. "
-    "A point is reachable if its map color is strongly saturated "
-    "(largest minus smallest RGB component is at least 83 on the 0–255 scale). "
-    "Check the point on the object named by the question. Respond with exactly Yes or No."
-)
+import sys
+
+if not __package__:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from groundreach.io import image, read, save
+from groundreach.models.prompts import LEGEND
+from groundreach.vision.spatial_map import shared_point_crop, workspace_mask
 
 
 def auto_boxes(rows, root, candidate_path, reference_path):
@@ -51,32 +52,6 @@ def auto_boxes(rows, root, candidate_path, reference_path):
     return positions, {key: record["prediction"] for key, record in reference.items()}
 
 
-def read(path):
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def save(path, value):
-    pending = path.with_suffix(".tmp")
-    pending.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    pending.replace(path)
-
-
-def image(path, expected):
-    if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
-        raise ValueError(f"Image hash changed: {path}")
-    with Image.open(path) as source:
-        return source.convert("RGB")
-
-
-def workspace_mask(spatial):
-    r, g, b = spatial.split()
-    brightest = ImageChops.lighter(ImageChops.lighter(r, g), b)
-    darkest = ImageChops.darker(ImageChops.darker(r, g), b)
-    return ImageChops.subtract(brightest, darkest).point(
-        [255 if value >= 83 else 0 for value in range(256)]
-    )
-
-
 def point_crop(row, width, height):
     x, y = row["point"]
     x0, y0, x1, y1 = row["box"]
@@ -91,11 +66,6 @@ def shared_targets(rows):
     if any(len(points) != 2 or points[0] == points[1] for points in groups.values()):
         raise ValueError("Shared crops require two distinct target points for every scene-map pair")
     return groups
-
-
-def shared_point_crop(points, width, height):
-    xs, ys = zip(*points)
-    return (max(0, min(xs)-48), max(0, min(ys)-48), min(width, max(xs)+49), min(height, max(ys)+49))
 
 
 def oracle_view(row, mode, rgb, spatial, points=None):
