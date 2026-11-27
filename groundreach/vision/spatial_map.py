@@ -3,12 +3,19 @@
 from PIL import ImageChops
 
 
+WORKSPACE_CHROMA_THRESHOLD = 83
+
+
+def classify_chroma(value):
+    return "U" if value is None else "Y" if value >= WORKSPACE_CHROMA_THRESHOLD else "N"
+
+
 def workspace_mask(spatial):
     r, g, b = spatial.split()
     brightest = ImageChops.lighter(ImageChops.lighter(r, g), b)
     darkest = ImageChops.darker(ImageChops.darker(r, g), b)
     return ImageChops.subtract(brightest, darkest).point(
-        [255 if value >= 83 else 0 for value in range(256)]
+        [255 if value >= WORKSPACE_CHROMA_THRESHOLD else 0 for value in range(256)]
     )
 
 

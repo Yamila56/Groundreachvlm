@@ -29,7 +29,7 @@ At the specified pixels, the sampled upstream workspace agrees with all 231 cert
 Replay the frozen per-question archive against the published counts with Python 3 and the standard library.
 
 ```bash
-bash study/run_marked_point_study.sh replay
+bash experiments/relational_grounding/run_marked_point_study.sh replay
 ```
 
 To regenerate the held-out scenes and run the detector, ranker, map rules and frozen model, use the pinned checkpoints and the `run` entry point documented in the repository README. Scene generation independently replays the certificates and writes `data/certificate-audit.json`. The ranker uses the two bundled historical checkpoints. The replay archive also retains the strict predictions of the historical local projector controls.

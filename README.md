@@ -69,6 +69,8 @@ The CPU replay recomputes certified counts and layout-paired statistics for all 
 
 For GPU inference and training, install `.[vlm]` with CUDA PyTorch and compatible torchvision. The `groundreach-point-token` command accepts a reference configuration, rendered manifests, and localization predictions. It can load the saved residual heads for inference. The runner verifies cached versus native logits, frozen parameters during training, and head reload consistency. The guide covers the pinned simulator and the earlier PhysVLM environment. [Reproduction guide](docs/reproduction.md) · [Reference configurations](configs)
 
+The reproduction guide also covers the [data preparation and localization commands](docs/reproduction.md#s-p-map-and-localization-preparation). The core implementations are in [simulation](groundreach/simulation), [grounding](groundreach/grounding) and [geometry](groundreach/geometry).
+
 ## References
 
 The simulation and S-P Maps build on [PhysVLM](https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability_CVPR_2025_paper.html). The current adapter uses [Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct). The grounding pipeline uses [Grounding DINO](https://arxiv.org/abs/2303.05499) and [CLIP](https://proceedings.mlr.press/v139/radford21a.html).

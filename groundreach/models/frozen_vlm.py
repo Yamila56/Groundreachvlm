@@ -1,7 +1,8 @@
 """Frozen visual cache and point-token injection."""
 
+from contextlib import ExitStack
+
 import torch
-from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
 
 from groundreach.models.prompts import LEGEND
 from groundreach.vision.point_selection import select_features
@@ -11,10 +12,13 @@ QUESTION = "Is the specified surface point in the robot's reachable space?"
 
 class FrozenVLM:
     def __init__(self, path):
+        from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
+
+        self.device = torch.device("cuda")
         self.processor = AutoProcessor.from_pretrained(path, local_files_only=True)
         self.model = Qwen3VLForConditionalGeneration.from_pretrained(
-            path, dtype=torch.bfloat16, local_files_only=True,
-        ).to("cuda").eval().requires_grad_(False)
+            path, dtype=torch.bfloat16, local_files_only=True, use_safetensors=True,
+        ).to(self.device).eval().requires_grad_(False)
         tokenizer = self.processor.tokenizer
         choices = [tokenizer.encode(word, add_special_tokens=False) for word in ("No", "Yes", ".")]
         if any(len(choice) != 1 for choice in choices):
@@ -29,7 +33,7 @@ class FrozenVLM:
         messages = [{"role":"user","content":[{"type":"image","image":rgb},
                                                 {"type":"image","image":spatial},{"type":"text","text":text}]}]
         inputs = self.processor.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
-                                                     return_dict=True, return_tensors="pt").to("cuda")
+                                                     return_dict=True, return_tensors="pt").to(self.device)
         vision = self.model.visual(inputs.pixel_values.to(self.model.visual.dtype), grid_thw=inputs.image_grid_thw)
         merge = self.model.visual.spatial_merge_size
         _, rows, cols = inputs.image_grid_thw[-1].tolist()
@@ -48,32 +52,32 @@ class FrozenVLM:
         return example
 
     def logits(self, example, token=None, *, replay=True):
-        inputs = {key:value.to("cuda") for key,value in example["inputs"].items()}
+        inputs = {key:value.to(self.device) for key,value in example["inputs"].items()}
         if token is not None:
             original_ids = inputs["input_ids"]
             inputs["input_ids"] = torch.cat((original_ids, original_ids.new_full((1,1), self.slot)),dim=1)
             mask = inputs["attention_mask"]
             inputs["attention_mask"] = torch.cat((mask, mask.new_ones((1,1))),dim=1)
-        inputs["pixel_values"] = torch.empty(0, device="cuda")
+        inputs["pixel_values"] = torch.empty(0, device=self.device)
         if not replay:
-            inputs["pixel_values"] = example["pixels"].to("cuda")
-        callbacks = []
-        if replay:
-            visual, deep = example["vision"]
-        original_forward = self.model.visual.forward
-        if replay:
-            self.model.visual.forward = lambda *args, **kwargs: (visual.to("cuda"), [x.to("cuda") for x in deep])
-        if token is not None:
-            def inject(_, ids, values):
-                if ids[0][0,-1].item() != self.slot:
-                    raise ValueError("The physical token is outside the designated slot")
-                return torch.cat((values[:,:-1], token.to(values.dtype).view(1,1,-1)),dim=1)
-            callbacks.append(self.model.get_input_embeddings().register_forward_hook(inject))
-        try:
-            logits = self.model(**inputs,use_cache=False,logits_to_keep=1).logits[0,-1].float()
-        finally:
+            inputs["pixel_values"] = example["pixels"].to(self.device)
+        with ExitStack() as cleanup:
             if replay:
-                self.model.visual.forward = original_forward
-            for callback in callbacks:
-                callback.remove()
-        return logits[[self.no,self.yes]]
+                visual, deep = example["vision"]
+                original_forward = self.model.visual.forward
+                cleanup.callback(setattr, self.model.visual, "forward", original_forward)
+
+                def replay_visual(*args, **kwargs):
+                    return visual.to(self.device), [value.to(self.device) for value in deep]
+
+                self.model.visual.forward = replay_visual
+            if token is not None:
+                def inject(_, ids, values):
+                    if ids[0][0, -1].item() != self.slot:
+                        raise ValueError("The physical token is outside the designated slot")
+                    return torch.cat((values[:, :-1], token.to(values.dtype).view(1, 1, -1)), dim=1)
+
+                handle = self.model.get_input_embeddings().register_forward_hook(inject)
+                cleanup.callback(handle.remove)
+            logits = self.model(**inputs, use_cache=False, logits_to_keep=1).logits[0, -1].float()
+        return logits[[self.no, self.yes]]

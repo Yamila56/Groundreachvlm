@@ -1,16 +1,12 @@
 """Replay the reachability certificates in a frozen fixture selection."""
 
-import hashlib
 import json
 
 import numpy as np
 import pybullet as bullet
 
 from groundreach.geometry.reachability import workspace_bound
-
-
-def digest(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+from groundreach.io import sha256_file as digest
 
 
 def audit(selection_path, urdf, tool_link, tolerance):
@@ -85,3 +81,49 @@ def audit(selection_path, urdf, tool_link, tolerance):
         "unreachable_bounds": len(negative_margins), "minimum_bound_margin_m": min(negative_margins, default=None),
         **({"unknown": uncertified} if uncertified else {}),
     }
+
+
+def certify(base, targets, urdf, tool_link, tolerance):
+    robot = bullet.loadURDF(str(urdf), basePosition=base, useFixedBase=True)
+    joints = [bullet.getJointInfo(robot, i) for i in range(bullet.getNumJoints(robot))]
+    tool = next(joint[0] for joint in joints if joint[12].decode() == tool_link)
+    moving = [joint for joint in joints if joint[2] != bullet.JOINT_FIXED]
+    lower = np.array([joint[8] for joint in moving])
+    upper = np.array([joint[9] for joint in moving])
+    rng = np.random.default_rng(17)
+    origin, radius = workspace_bound(base, urdf, tool_link)
+    starts = np.vstack([(lower + upper) / 2, rng.uniform(lower, upper, size=(15, len(moving)))])
+
+    def reset(values):
+        for joint, value in zip(moving, values, strict=True):
+            bullet.resetJointState(robot, joint[0], value)
+        return np.array(bullet.getLinkState(robot, tool, computeForwardKinematics=True)[4])
+
+    for start in starts:
+        if np.linalg.norm(reset(start) - origin) > radius + 1e-6:
+            raise RuntimeError("FK witness violates the certified upper bound")
+    results = {}
+    for name, target in targets.items():
+        point = np.asarray(target["position_m"])
+        distance = np.linalg.norm(point - origin)
+        evidence = {"bound_origin_m": origin.tolist(), "radius_m": radius, "distance_m": distance}
+        if distance > radius + tolerance:
+            results[name] = {"label": "N", "source": "URDF outer bound", **evidence}
+            continue
+        best = {"label": "U", "source": "IK not certified", "fk_error_m": None}
+        for start in starts:
+            reset(start)
+            angles = np.array(bullet.calculateInverseKinematics(
+                robot, tool, point, lowerLimits=lower.tolist(), upperLimits=upper.tolist(),
+                jointRanges=(upper - lower).tolist(), restPoses=start.tolist(),
+                maxNumIterations=400, residualThreshold=1e-5,
+            ))
+            if np.any(angles < lower - 1e-6) or np.any(angles > upper + 1e-6):
+                continue
+            error = np.linalg.norm(reset(angles) - point)
+            if best["fk_error_m"] is None or error < best["fk_error_m"]:
+                best = {"label": "Y" if error <= tolerance else "U",
+                        "source": "joint-limited IK and FK", "fk_error_m": error, "joints": angles.tolist()}
+        results[name] = {**evidence, **best}
+    bullet.removeBody(robot)
+    return results

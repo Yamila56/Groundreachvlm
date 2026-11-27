@@ -1,25 +1,24 @@
 """Run the point-token study from a recorded protocol or replay its evidence."""
 
 import argparse
-import hashlib
 from pathlib import Path
 
-from groundreach.io import read
+from groundreach.io import read, sha256_file
 
 
-def point_token():
+def point_token(*, inference_only=False):
     parser = argparse.ArgumentParser(description="Run the matched point-token study.")
     for name in ("config", "model", "train", "test", "output"):
         parser.add_argument(f"--{name}", required=True, type=Path)
-    for name in ("train-predictions", "test-predictions", "load-heads"):
+    for name in ("train-predictions", "test-predictions"):
         parser.add_argument(f"--{name}", type=Path)
+    parser.add_argument("--load-heads", type=Path, required=inference_only)
     args = parser.parse_args()
     cfg = read(args.config)
     if cfg["point_source"] == "automatic" and not (args.train_predictions and args.test_predictions):
         parser.error("This reference protocol requires both automatic localization predictions")
     for split in ("train", "test"):
-        with getattr(args, split).open("rb") as stream:
-            actual = hashlib.file_digest(stream, "sha256").hexdigest()
+        actual = sha256_file(getattr(args, split))
         if actual != cfg["manifest_hashes"][split]:
             parser.error(f"The {split} manifest differs from the reference protocol")
     command = ["--model-sha256", cfg["model_sha256"], "--seed", str(cfg["seed"]),
@@ -53,3 +52,8 @@ def reproduce():
         mean = result["outcomes"]["adapted_mean"]
         print(f"{case}: point {point['correct']}, mean {mean['correct']}, "
               f"target switches {point['target_flip']['correct']}, map switches {point['workspace_flip']['correct']}")
+
+
+def infer():
+    """Run the recorded protocol with already trained heads."""
+    point_token(inference_only=True)

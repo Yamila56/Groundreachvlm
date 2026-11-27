@@ -11,6 +11,7 @@ requires-python = ">=3.11"
 dependencies = ["numpy", "Pillow"]
 
 [project.optional-dependencies]
+grounding = ["torch", "transformers==4.57.1", "opencv-python-headless"]
 vlm = ["torch", "transformers==4.57.1", "torchvision"]
 simulation = ["pybullet==3.2.7", "scipy", "opencv-python-headless", "pandas", "openpyxl", "tqdm", "open3d==0.20.0"]
 figures = ["matplotlib"]
@@ -18,7 +19,15 @@ test = ["pytest", "torch"]
 
 [project.scripts]
 groundreach-point-token = "groundreach.cli:point_token"
+groundreach-infer = "groundreach.cli:infer"
+groundreach-prepare = "groundreach.simulation.relation_layouts:main"
+groundreach-detect = "groundreach.grounding.detector:main"
+groundreach-score-regions = "groundreach.grounding.semantic_scoring:main"
+groundreach-bind = "groundreach.evaluation.relational:main"
 groundreach-reproduce = "groundreach.cli:reproduce"
 
 [tool.setuptools.packages.find]
 include = ["groundreach*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

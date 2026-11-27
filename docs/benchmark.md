@@ -28,4 +28,4 @@ Re-scoring the same saved answers against both definitions illustrates the effec
 
 The retrospective point agreement quantifies how much the label definition affects this comparison. A point-specific benchmark can explicitly designate the queried point and use separate IK certificates.
 
-[Replay data and PCD hash](../results/grounding-study/source-map-geometry.json) · [Replay script](../study/audit_source_map_geometry.py) · [Readout results](../results/grounding-study/learned-reranker.json)
+[Replay data and PCD hash](../results/grounding-study/source-map-geometry.json) · [Replay script](../experiments/geometry_audit/audit_source_map_geometry.py) · [Readout results](../results/grounding-study/learned-reranker.json)

@@ -1,7 +1,6 @@
 """Train or evaluate matched point and mean residual heads."""
 
 import argparse
-import hashlib
 import random
 import time
 from pathlib import Path
@@ -12,7 +11,7 @@ from torch import nn
 from groundreach.adapters.residual import ResidualProjection
 from groundreach.evaluation.inference import evaluate, load_examples
 from groundreach.evaluation.metrics import counts
-from groundreach.io import save
+from groundreach.io import save, sha256_file, verify_model_weights
 from groundreach.models.frozen_vlm import FrozenVLM
 
 
@@ -41,10 +40,11 @@ def fit(engine, training, feature, seed, epochs):
 
 
 def run(args):
+    verify_model_weights(args.model, args.model_sha256)
     args.output.mkdir(parents=True,exist_ok=False)
     save(args.output/"protocol.json",dict(
         model_sha256=args.model_sha256, seed=args.seed, epochs=args.epochs, limit=args.limit,
-        manifest_hashes={split:hashlib.sha256(getattr(args,split).read_bytes()).hexdigest() for split in ("train","test")},
+        manifest_hashes={split:sha256_file(getattr(args,split)) for split in ("train","test")},
         heads_from=str(args.load_heads) if args.load_heads else None,
         point_source="automatic" if args.train_predictions else "oracle",
     ))

@@ -1,0 +1,1 @@
+"""PhysVLM-backed scene generation."""
